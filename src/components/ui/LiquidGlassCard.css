@@ -1,0 +1,89 @@
+.lg-svg-filter {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.lg-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.lg-card.is-draggable {
+  cursor: grab;
+}
+
+.lg-card.is-draggable:active {
+  cursor: grabbing;
+}
+
+.lg-card.is-expandable {
+  cursor: pointer;
+}
+
+.lg-layer-bend,
+.lg-layer-face,
+.lg-layer-edge {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.lg-layer-bend {
+  z-index: 0;
+  filter: url(#lg-glass-blur);
+}
+
+.lg-layer-bend.blur-sm {
+  backdrop-filter: blur(8px) saturate(160%); /* taste-skill-ignore */
+  -webkit-backdrop-filter: blur(8px) saturate(160%); /* taste-skill-ignore */
+}
+
+.lg-layer-bend.blur-md {
+  backdrop-filter: blur(14px) saturate(175%); /* taste-skill-ignore */
+  -webkit-backdrop-filter: blur(14px) saturate(175%); /* taste-skill-ignore */
+}
+
+.lg-layer-bend.blur-lg {
+  backdrop-filter: blur(20px) saturate(185%); /* taste-skill-ignore */
+  -webkit-backdrop-filter: blur(20px) saturate(185%); /* taste-skill-ignore */
+}
+
+.lg-layer-bend.blur-xl {
+  backdrop-filter: blur(26px) saturate(195%); /* taste-skill-ignore */
+  -webkit-backdrop-filter: blur(26px) saturate(195%); /* taste-skill-ignore */
+}
+
+.lg-layer-bend.tone-light {
+  background-color: rgba(242, 250, 248, 0.72);
+}
+
+.lg-layer-bend.tone-dark {
+  background-color: rgba(10, 56, 52, 0.78);
+}
+
+.lg-layer-bend.tone-mint {
+  background-color: rgba(224, 245, 241, 0.72);
+}
+
+.lg-layer-bend.tone-clear {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+.lg-layer-face {
+  z-index: 10;
+}
+
+.lg-layer-edge {
+  z-index: 20;
+}
+
+.lg-content {
+  position: relative;
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+}

@@ -1,8 +1,12 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { CSSProperties, FormEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import { ReactLenis } from 'lenis/react'
+import 'lenis/dist/lenis.css'
+import { motion } from 'motion/react'
 import { NAV_ITEMS } from '../config/navigation'
 import SiteFooter from '../components/SiteFooter'
+import LiquidGlassCard, { LiquidGlassFilter } from '../components/ui/LiquidGlassCard'
 import './LandingPage.css'
 
 type Specimen = {
@@ -406,7 +410,9 @@ export default function LandingPage() {
   }
 
   return (
-    <div className="tm-page" ref={rootRef}>
+    <ReactLenis root options={{ lerp: 0.06, duration: 1.4, smoothWheel: true }}>
+      <div className="tm-page" ref={rootRef}>
+      <LiquidGlassFilter />
       {/* Navigation Bar */}
       <header className="tm-header">
         <nav className="tm-nav" aria-label="Điều hướng chính">
@@ -435,7 +441,15 @@ export default function LandingPage() {
         {/* HERO — Bách khoa Pokédex & Đấu trường chiến thuật */}
         <section className="tm-hero" aria-labelledby="hero-title">
           <div className="tm-hero-copy">
-            <div className="tm-hero-top">
+            <LiquidGlassCard
+              className="tm-hero-top"
+              tone="light"
+              blurIntensity="xl"
+              shadowIntensity="md"
+              glowIntensity="sm"
+              borderRadius="28px"
+              draggable
+            >
               <h1 id="hero-title" className="tm-display tm-lines">
                 <span className="tm-line">
                   <span data-line style={s({ '--i': 0 })}>
@@ -462,25 +476,56 @@ export default function LandingPage() {
                   Mở Pokédex Kanto
                 </Link>
               </div>
-            </div>
+            </LiquidGlassCard>
 
             <div className="tm-hero-facts" data-load style={s({ '--d': '520ms' })}>
-              <div className="tm-hero-fact">
+              <LiquidGlassCard
+                className="tm-hero-fact"
+                tone="light"
+                blurIntensity="lg"
+                shadowIntensity="md"
+                glowIntensity="sm"
+                borderRadius="20px"
+                draggable
+              >
                 <span className="tm-hero-fact-num">1.302 loài</span>
                 <span className="tm-hero-fact-desc">Nạp trực tiếp từ PokeAPI v2</span>
-              </div>
-              <div className="tm-hero-fact">
+              </LiquidGlassCard>
+              <LiquidGlassCard
+                className="tm-hero-fact"
+                tone="light"
+                blurIntensity="lg"
+                shadowIntensity="md"
+                glowIntensity="sm"
+                borderRadius="20px"
+                draggable
+              >
                 <span className="tm-hero-fact-num">18 hệ tương khắc</span>
                 <span className="tm-hero-fact-desc">Bảng tính sát thương chuẩn xác</span>
-              </div>
-              <div className="tm-hero-fact">
+              </LiquidGlassCard>
+              <LiquidGlassCard
+                className="tm-hero-fact"
+                tone="light"
+                blurIntensity="lg"
+                shadowIntensity="md"
+                glowIntensity="sm"
+                borderRadius="20px"
+                draggable
+              >
                 <span className="tm-hero-fact-num">Lưới 8×8 rune</span>
                 <span className="tm-hero-fact-desc">Động cơ ghép Match-3 theo lượt</span>
-              </div>
+              </LiquidGlassCard>
             </div>
           </div>
 
-          <div className="tm-hero-stage" data-open>
+          <LiquidGlassCard
+            className="tm-hero-stage"
+            tone="dark"
+            blurIntensity="xl"
+            shadowIntensity="sm"
+            glowIntensity="md"
+            borderRadius="32px"
+          >
             <div className="tm-hero-stage-header">
               <div className="tm-hero-art-box">
                 <img
@@ -549,11 +594,18 @@ export default function LandingPage() {
                 <div className="tm-ui-rune tm-rune-shield">Khiên · +10</div>
               </div>
             </div>
-          </div>
+          </LiquidGlassCard>
         </section>
 
         {/* SECTION 1: SHOWCASE — Bàn phân tích mẫu vật thực địa & Máy tính sát thương 18 hệ */}
-        <section className="tm-showcase" aria-labelledby="showcase-title">
+        <motion.section
+          className="tm-showcase"
+          aria-labelledby="showcase-title"
+          initial={{ opacity: 0.92, y: 24, scale: 0.985 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          viewport={{ once: true, amount: 0.08 }}
+          transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+        >
           <div className="tm-showcase-header">
             <h2 id="showcase-title" className="tm-head" data-reveal style={s({ '--delay': '0ms' })}>
               Bàn phân tích mẫu vật
@@ -608,7 +660,14 @@ export default function LandingPage() {
               </div>
             </div>
 
-            <div className="tm-specimen-dossier" data-reveal style={s({ '--delay': '140ms' })}>
+            <LiquidGlassCard
+              className="tm-specimen-dossier"
+              tone="light"
+              blurIntensity="lg"
+              shadowIntensity="md"
+              glowIntensity="sm"
+              borderRadius="24px"
+            >
               <p className="tm-dossier-title">
                 {activeSpecimen.name} · {activeSpecimen.category}
               </p>
@@ -657,12 +716,19 @@ export default function LandingPage() {
                   <span className="tm-verdict-tag">{matchupVerdict}</span>
                 </div>
               </div>
-            </div>
+            </LiquidGlassCard>
           </div>
-        </section>
+        </motion.section>
 
         {/* SECTION 3: HOW IT WORKS — Quy trình 4 bước trải nghiệm */}
-        <section className="tm-how" aria-labelledby="how-title">
+        <motion.section
+          className="tm-how"
+          aria-labelledby="how-title"
+          initial={{ opacity: 0.92, y: 24, scale: 0.985 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          viewport={{ once: true, amount: 0.08 }}
+          transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+        >
           <div className="tm-how-split">
             <div className="tm-how-left" data-reveal style={s({ '--delay': '0ms' })}>
               <div>
@@ -742,7 +808,7 @@ export default function LandingPage() {
               ))}
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* SECTION 4: WORK / ARCHIVE — Tám phân hệ hoạt động */}
         <section className="tm-work" aria-labelledby="work-title">
@@ -1083,6 +1149,7 @@ export default function LandingPage() {
 
       {/* SECTION 6: FOOTER — Biểu tượng POKE HUB cỡ lớn */}
       <SiteFooter />
-    </div>
+      </div>
+    </ReactLenis>
   )
 }
