@@ -1,0 +1,63 @@
+.border-beam {
+  position: relative;
+  border-radius: inherit;
+  isolation: isolate;
+}
+
+.border-beam-effect {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  padding: var(--beam-border-width, 1px);
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 296deg,
+    color-mix(in srgb, var(--beam-light-color, #fafafa) 0%, transparent) 304deg,
+    color-mix(in srgb, var(--beam-light-color, #fafafa) 65%, transparent) 316deg,
+    var(--beam-light-color, #fafafa) 326deg,
+    color-mix(in srgb, var(--beam-light-color, #fafafa) 65%, transparent) 336deg,
+    color-mix(in srgb, var(--beam-light-color, #fafafa) 0%, transparent) 346deg,
+    transparent 360deg
+  );
+  background-size: 100% 100%;
+  transform-origin: center;
+  animation: borderBeamRotate var(--beam-duration, 10s) linear infinite;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.border-beam-effect-secondary {
+  animation-delay: calc(var(--beam-duration, 10s) * -0.5);
+  opacity: 0.45;
+}
+
+.border-beam-content {
+  position: relative;
+  z-index: 1;
+  border-radius: inherit;
+  display: block;
+}
+
+.border-beam-effect::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 12px color-mix(in srgb, var(--beam-light-color, #fafafa) 30%, transparent);
+  filter: blur(2px);
+  opacity: 0.7;
+}
+
+@keyframes borderBeamRotate {
+  to {
+    transform: rotate(360deg);
+  }
+}

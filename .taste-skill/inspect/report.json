@@ -1,0 +1,2042 @@
+{
+ "url": "index.html",
+ "at": "2026-10-30T19:02:29.138Z",
+ "allow": [
+  "glass"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 48,
+    "css": 20,
+    "transitions": 28,
+    "scripted": 0,
+    "videos": 1,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 6048,
+     "screens": 6.7,
+     "words": 1027,
+     "img": 18,
+     "video": 1,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 3,
+     "uiAbuse": false,
+     "realPictures": 3,
+     "videoCount": 1,
+     "uiPictures": 3,
+     "pictureSamples": [
+      "6.gif"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Bách khoa Pokédex & Đấu trường 8×8",
+     "words": 7,
+     "chars": 34,
+     "lines": 2,
+     "size": 60.7,
+     "vw": 4.2,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.15,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.41,
+     "top": 167,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Bách khoa Pokédex & Đấu trường 8×8",
+     "words": 7,
+     "lines": 2,
+     "size": 60.7,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Bách khoa Pokédex & Đấu trường 8×8",
+      "words": 7,
+      "chars": 34,
+      "lines": 2,
+      "size": 60.7,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 167,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Bàn phân tích mẫu vật",
+      "words": 5,
+      "chars": 21,
+      "lines": 1,
+      "size": 55.3,
+      "vw": 3.8,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 1067,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Charizard",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.13,
+      "top": 1332,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Slowpoke",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.14,
+      "top": 1397,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Gengar",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.11,
+      "top": 1463,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Tyranitar",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.12,
+      "top": 1528,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Rayquaza",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.13,
+      "top": 1593,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Lucario",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.11,
+      "top": 1659,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Gardevoir",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.13,
+      "top": 1724,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Bước 1: Chọn Pokédex khu vực",
+      "words": 6,
+      "chars": 28,
+      "lines": 2,
+      "size": 55.3,
+      "vw": 3.8,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 2241,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Tám phân hệ dữ liệu",
+      "words": 5,
+      "chars": 19,
+      "lines": 1,
+      "size": 55.3,
+      "vw": 3.8,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 3077,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Khởi chạy phiên tra cứu",
+      "words": 5,
+      "chars": 23,
+      "lines": 1,
+      "size": 55.3,
+      "vw": 3.8,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 4626,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 12,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 7,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      15,
+      16,
+      18,
+      24,
+      32,
+      55,
+      61
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 18.1,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 8.6
+     },
+     "measureChars": 49,
+     "max": {
+      "size": 60.7,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "text": "Bách khoa Pokédex"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.05,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0d060b",
+     "bodyBgHsl": {
+      "h": 317,
+      "s": 0.37,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#f0faf8",
+       "top": 0,
+       "hsl": {
+        "h": 168,
+        "s": 0.5,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#0a3834",
+       "top": 129,
+       "hsl": {
+        "h": 175,
+        "s": 0.7,
+        "l": 0.13
+       }
+      },
+      {
+       "color": "#f7fcfa",
+       "top": 2069,
+       "hsl": {
+        "h": 156,
+        "s": 0.45,
+        "l": 0.98
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0c2422",
+       "share": 0.49
+      },
+      {
+       "color": "#41625f",
+       "share": 0.17
+      },
+      {
+       "color": "#b3dbd7",
+       "share": 0.16
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.16
+      },
+      {
+       "color": "#00e676",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#e4f5f2",
+      "hsl": {
+       "h": 169,
+       "s": 0.46,
+       "l": 0.93
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 19,
+     "inHero": 2,
+     "radius": 0,
+     "height": 33,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Battle Sim",
+      "Vào đấu trường"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 3,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 638
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.89
+     }
+    ],
+    "nav": {
+     "links": 9,
+     "fixed": false,
+     "height": 95,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 6048,
+    "margins": {
+     "left": 36,
+     "right": 36
+    },
+    "sections": [
+     {
+      "sel": "section.tm-hero",
+      "tag": "section",
+      "top": 95,
+      "height": 811,
+      "words": 156,
+      "media": 1,
+      "middle": 111,
+      "heading": {
+       "text": "Bách khoa Pokédex",
+       "size": 61,
+       "tag": "h1"
+      },
+      "left": 57,
+      "right": 56,
+      "textLeft": 57,
+      "textRight": 56,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.tm-showcase",
+      "tag": "section",
+      "top": 938,
+      "height": 1099,
+      "words": 138,
+      "media": 1,
+      "middle": 5,
+      "heading": {
+       "text": "Bàn phân tích mẫu vật",
+       "size": 55,
+       "tag": "h2"
+      },
+      "left": 36,
+      "right": 71,
+      "textLeft": 36,
+      "textRight": 71,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.tm-how",
+      "tag": "section",
+      "top": 2069,
+      "height": 954,
+      "words": 126,
+      "media": 0,
+      "middle": 17,
+      "heading": {
+       "text": "Bước 1: Chọn Pokédex khu vực",
+       "size": 55,
+       "tag": "h2"
+      },
+      "left": 36,
+      "right": 36,
+      "textLeft": 36,
+      "textRight": 36,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.tm-work",
+      "tag": "section",
+      "top": 3055,
+      "height": 1290,
+      "words": 295,
+      "media": 1,
+      "middle": 24,
+      "heading": {
+       "text": "Tám phân hệ dữ liệu",
+       "size": 55,
+       "tag": "h2"
+      },
+      "left": 36,
+      "right": 36,
+      "textLeft": 36,
+      "textRight": 36,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#launch.tm-cta",
+      "tag": "section",
+      "top": 4378,
+      "height": 817,
+      "words": 106,
+      "media": 0,
+      "middle": 217,
+      "heading": {
+       "text": "Khởi chạy phiên tra cứu",
+       "size": 55,
+       "tag": "h2"
+      },
+      "left": 36,
+      "right": 71,
+      "textLeft": 36,
+      "textRight": 84,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.tm-footer",
+      "tag": "footer",
+      "top": 5195,
+      "height": 853,
+      "words": 154,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 36,
+      "right": 36,
+      "textLeft": 36,
+      "textRight": 46,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 1864,
+      "height": 372
+     },
+     {
+      "top": 4216,
+      "height": 364
+     },
+     {
+      "top": 4996,
+      "height": 296
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Bách khoa Pokédex & Đấu trường 8×8",
+      "size": 61,
+      "top": 167,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 79,
+      "n": 5
+     },
+     {
+      "x": 36,
+      "n": 4
+     },
+     {
+      "x": 732,
+      "n": 2
+     },
+     {
+      "x": 940,
+      "n": 1
+     },
+     {
+      "x": 993,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 48,
+    "css": 20,
+    "transitions": 28,
+    "scripted": 0,
+    "videos": 1,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 7595,
+     "screens": 7.4,
+     "words": 1027,
+     "img": 18,
+     "video": 1,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 3,
+     "uiAbuse": false,
+     "realPictures": 3,
+     "videoCount": 1,
+     "uiPictures": 3,
+     "pictureSamples": [
+      "6.gif"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Bách khoa Pokédex & Đấu trường 8×8",
+     "words": 7,
+     "chars": 34,
+     "lines": 2,
+     "size": 41.9,
+     "vw": 5.5,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.15,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.83,
+     "top": 217,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Bách khoa Pokédex & Đấu trường 8×8",
+     "words": 7,
+     "lines": 2,
+     "size": 41.9,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Bách khoa Pokédex & Đấu trường 8×8",
+      "words": 7,
+      "chars": 34,
+      "lines": 2,
+      "size": 41.9,
+      "vw": 5.5,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 217,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Bàn phân tích mẫu vật",
+      "words": 5,
+      "chars": 21,
+      "lines": 1,
+      "size": 39.7,
+      "vw": 5.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 1449,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Bước 1: Chọn Pokédex khu vực",
+      "words": 6,
+      "chars": 28,
+      "lines": 1,
+      "size": 39.7,
+      "vw": 5.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 2907,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Tám phân hệ dữ liệu",
+      "words": 5,
+      "chars": 19,
+      "lines": 1,
+      "size": 39.7,
+      "vw": 5.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 3944,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Khởi chạy phiên tra cứu",
+      "words": 5,
+      "chars": 23,
+      "lines": 1,
+      "size": 39.7,
+      "vw": 5.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 5863,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 5,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      15,
+      18,
+      21,
+      23,
+      40,
+      42
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 18.1,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 8.6
+     },
+     "measureChars": 80,
+     "max": {
+      "size": 41.9,
+      "vw": 5.5,
+      "font": "Plus Jakarta Sans",
+      "text": "Bách khoa Pokédex"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.05,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0d060b",
+     "bodyBgHsl": {
+      "h": 317,
+      "s": 0.37,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#f0faf8",
+       "top": 0,
+       "hsl": {
+        "h": 168,
+        "s": 0.5,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#0a3834",
+       "top": 785,
+       "hsl": {
+        "h": 175,
+        "s": 0.7,
+        "l": 0.13
+       }
+      },
+      {
+       "color": "#f7fcfa",
+       "top": 2779,
+       "hsl": {
+        "h": 156,
+        "s": 0.45,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#062220",
+       "top": 6194,
+       "hsl": {
+        "h": 176,
+        "s": 0.7,
+        "l": 0.08
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0c2422",
+       "share": 0.49
+      },
+      {
+       "color": "#41625f",
+       "share": 0.17
+      },
+      {
+       "color": "#b3dbd7",
+       "share": 0.16
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.16
+      },
+      {
+       "color": "#00e676",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#0c2422"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 26,
+     "inHero": 9,
+     "radius": 0,
+     "height": 30,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Pokemon List",
+      "Ability",
+      "Characteristic",
+      "Pokeathlon Stat",
+      "Games"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 2,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 631
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.86
+     }
+    ],
+    "nav": {
+     "links": 9,
+     "fixed": false,
+     "height": 145,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 7595,
+    "margins": {
+     "left": 21,
+     "right": 22
+    },
+    "sections": [
+     {
+      "sel": "header.tm-header",
+      "tag": "header",
+      "top": 0,
+      "height": 145,
+      "words": 13,
+      "media": 0,
+      "middle": 34,
+      "heading": null,
+      "left": 34,
+      "right": 21,
+      "textLeft": 34,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.tm-hero",
+      "tag": "section",
+      "top": 145,
+      "height": 1187,
+      "words": 156,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Bách khoa Pokédex",
+       "size": 42,
+       "tag": "h1"
+      },
+      "left": 43,
+      "right": 28,
+      "textLeft": 43,
+      "textRight": 28,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.tm-showcase",
+      "tag": "section",
+      "top": 1364,
+      "height": 1383,
+      "words": 138,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Bàn phân tích mẫu vật",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 21,
+      "right": 33,
+      "textLeft": 21,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.tm-how",
+      "tag": "section",
+      "top": 2779,
+      "height": 1133,
+      "words": 126,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Bước 1: Chọn Pokédex khu vực",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 21,
+      "right": 21,
+      "textLeft": 21,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.tm-work-header",
+      "tag": "div",
+      "top": 3944,
+      "height": 151,
+      "words": 38,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Tám phân hệ dữ liệu",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 21,
+      "right": 52,
+      "textLeft": 21,
+      "textRight": 52,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "ul.tm-stagger-grid",
+      "tag": "ul",
+      "top": 4145,
+      "height": 1516,
+      "words": 257,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 21,
+      "right": 0,
+      "textLeft": 21,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#launch.tm-cta",
+      "tag": "section",
+      "top": 5778,
+      "height": 985,
+      "words": 106,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Khởi chạy phiên tra cứu",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 21,
+      "right": 35,
+      "textLeft": 21,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.tm-footer",
+      "tag": "footer",
+      "top": 6763,
+      "height": 833,
+      "words": 154,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 21,
+      "right": 21,
+      "textLeft": 21,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Bách khoa Pokédex & Đấu trường 8×8",
+      "size": 42,
+      "top": 217,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 21,
+      "n": 6
+     },
+     {
+      "x": 64,
+      "n": 5
+     },
+     {
+      "x": 51,
+      "n": 1
+     },
+     {
+      "x": 229,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 48,
+    "css": 20,
+    "transitions": 28,
+    "scripted": 0,
+    "videos": 1,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 10389,
+     "screens": 12.3,
+     "words": 1027,
+     "img": 18,
+     "video": 1,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 3,
+     "uiAbuse": false,
+     "realPictures": 3,
+     "videoCount": 1,
+     "uiPictures": 3,
+     "pictureSamples": [
+      "6.gif"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Bách khoa Pokédex & Đấu trường 8×8",
+     "words": 7,
+     "chars": 34,
+     "lines": 2,
+     "size": 28.1,
+     "vw": 7.2,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.15,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.8,
+     "top": 185,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Bách khoa Pokédex & Đấu trường 8×8",
+     "words": 7,
+     "lines": 2,
+     "size": 28.1,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Bách khoa Pokédex & Đấu trường 8×8",
+      "words": 7,
+      "chars": 34,
+      "lines": 2,
+      "size": 28.1,
+      "vw": 7.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.8,
+      "top": 185,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Bàn phân tích mẫu vật",
+      "words": 5,
+      "chars": 21,
+      "lines": 1,
+      "size": 30.6,
+      "vw": 7.8,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 1911,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Bước 1: Chọn Pokédex khu vực",
+      "words": 6,
+      "chars": 28,
+      "lines": 2,
+      "size": 30.6,
+      "vw": 7.8,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 4490,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Tám phân hệ dữ liệu",
+      "words": 5,
+      "chars": 19,
+      "lines": 1,
+      "size": 30.6,
+      "vw": 7.8,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 5309,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Khởi chạy phiên tra cứu",
+      "words": 5,
+      "chars": 23,
+      "lines": 1,
+      "size": 30.6,
+      "vw": 7.8,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 8125,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 5,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      15,
+      18,
+      20,
+      28,
+      31
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 18.1,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 8.6
+     },
+     "measureChars": 38,
+     "max": {
+      "size": 30.6,
+      "vw": 7.8,
+      "font": "Plus Jakarta Sans",
+      "text": "Bàn phân tích mẫu vật"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.05,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0d060b",
+     "bodyBgHsl": {
+      "h": 317,
+      "s": 0.37,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#f0faf8",
+       "top": 0,
+       "hsl": {
+        "h": 168,
+        "s": 0.5,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#0a3834",
+       "top": 1018,
+       "hsl": {
+        "h": 175,
+        "s": 0.7,
+        "l": 0.13
+       }
+      },
+      {
+       "color": "#062220",
+       "top": 1366,
+       "hsl": {
+        "h": 176,
+        "s": 0.7,
+        "l": 0.08
+       }
+      },
+      {
+       "color": "#0a3934",
+       "top": 2131,
+       "hsl": {
+        "h": 174,
+        "s": 0.7,
+        "l": 0.13
+       }
+      },
+      {
+       "color": "#f7fcfa",
+       "top": 3889,
+       "hsl": {
+        "h": 156,
+        "s": 0.45,
+        "l": 0.98
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0c2422",
+       "share": 0.49
+      },
+      {
+       "color": "#41625f",
+       "share": 0.17
+      },
+      {
+       "color": "#b3dbd7",
+       "share": 0.16
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.16
+      },
+      {
+       "color": "#00e676",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#0c2422"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 26,
+     "inHero": 9,
+     "radius": 0,
+     "height": 29,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Pokemon List",
+      "Ability",
+      "Characteristic",
+      "Pokeathlon Stat",
+      "Games"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 2,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 671
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.83
+     }
+    ],
+    "nav": {
+     "links": 9,
+     "fixed": false,
+     "height": 143,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 10389,
+    "margins": {
+     "left": 21,
+     "right": 21
+    },
+    "sections": [
+     {
+      "sel": "header.tm-header",
+      "tag": "header",
+      "top": 0,
+      "height": 143,
+      "words": 10,
+      "media": 0,
+      "middle": 34,
+      "heading": null,
+      "left": 34,
+      "right": 21,
+      "textLeft": 34,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.tm-hero-copy",
+      "tag": "div",
+      "top": 160,
+      "height": 824,
+      "words": 68,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Bách khoa Pokédex",
+       "size": 28,
+       "tag": "h1"
+      },
+      "left": 38,
+      "right": 46,
+      "textLeft": 38,
+      "textRight": 46,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.tm-hero-stage",
+      "tag": "div",
+      "top": 1018,
+      "height": 840,
+      "words": 88,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 21,
+      "right": 46,
+      "textLeft": 21,
+      "textRight": 46,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.tm-showcase-header",
+      "tag": "div",
+      "top": 1911,
+      "height": 169,
+      "words": 33,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Bàn phân tích mẫu vật",
+       "size": 31,
+       "tag": "h2"
+      },
+      "left": 21,
+      "right": 27,
+      "textLeft": 21,
+      "textRight": 27,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.tm-showcase-stage",
+      "tag": "div",
+      "top": 2131,
+      "height": 1689,
+      "words": 105,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 21,
+      "right": 21,
+      "textLeft": 51,
+      "textRight": 36,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.tm-how-split",
+      "tag": "div",
+      "top": 3928,
+      "height": 998,
+      "words": 99,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 43,
+      "right": 44,
+      "textLeft": 43,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.tm-how-slider-bar.is-in",
+      "tag": "div",
+      "top": 4969,
+      "height": 270,
+      "words": 27,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 21,
+      "right": 21,
+      "textLeft": 21,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.tm-work-header",
+      "tag": "div",
+      "top": 5309,
+      "height": 198,
+      "words": 38,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Tám phân hệ dữ liệu",
+       "size": 31,
+       "tag": "h2"
+      },
+      "left": 21,
+      "right": 32,
+      "textLeft": 21,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "ul.tm-stagger-grid",
+      "tag": "ul",
+      "top": 5557,
+      "height": 2459,
+      "words": 257,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 21,
+      "right": 26,
+      "textLeft": 21,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#launch.tm-cta",
+      "tag": "section",
+      "top": 8087,
+      "height": 1141,
+      "words": 106,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Khởi chạy phiên tra cứu",
+       "size": 31,
+       "tag": "h2"
+      },
+      "left": 21,
+      "right": 28,
+      "textLeft": 21,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.tm-footer",
+      "tag": "footer",
+      "top": 9228,
+      "height": 1161,
+      "words": 154,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 21,
+      "right": 21,
+      "textLeft": 21,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Bách khoa Pokédex & Đấu trường 8×8",
+      "size": 28,
+      "top": 185,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 21,
+      "n": 7
+     },
+     {
+      "x": 38,
+      "n": 5
+     },
+     {
+      "x": 51,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect\\desktop-fold.jpg",
+   "pages": [
+    "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect\\desktop-page-01.jpg",
+    "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect\\tablet-fold.jpg",
+   "pages": [
+    "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect\\tablet-page-01.jpg",
+    "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect\\mobile-fold.jpg",
+   "pages": [
+    "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect\\mobile-page-01.jpg",
+    "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

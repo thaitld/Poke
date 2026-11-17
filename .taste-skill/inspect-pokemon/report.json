@@ -1,0 +1,1658 @@
+{
+ "url": "http://localhost:4173/pokemon",
+ "at": "2026-11-17T07:10:00.586Z",
+ "allow": [
+  "glass"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 3,
+   "filled": [
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 74,
+    "css": 74,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 2670,
+     "screens": 3,
+     "words": 232,
+     "img": 22,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 1,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Danh bạ Quốc gia 1.302 loài Pokémon",
+     "words": 7,
+     "chars": 35,
+     "lines": 2,
+     "size": 56,
+     "vw": 3.9,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 192,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Danh bạ Quốc gia 1.302 loài Pokémon",
+     "words": 7,
+     "lines": 2,
+     "size": 56.4,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Danh bạ Quốc gia 1.302 loài Pokémon",
+      "words": 7,
+      "chars": 35,
+      "lines": 2,
+      "size": 56.4,
+      "vw": 3.9,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.015,
+      "leading": 1.14,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.49,
+      "top": 192,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Danh sách mẫu vật",
+      "words": 4,
+      "chars": 17,
+      "lines": 1,
+      "size": 46.8,
+      "vw": 3.3,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.32,
+      "top": 715,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 2,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.97,
+       "mono": false
+      },
+      {
+       "family": "monospace",
+       "share": 0.03,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      15,
+      16,
+      18,
+      20,
+      23,
+      47,
+      56
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 22.8,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 62,
+     "max": {
+      "size": 56.4,
+      "vw": 3.9,
+      "font": "Plus Jakarta Sans",
+      "text": "Danh bạ Quốc gia"
+     },
+     "monoShare": 0.03,
+     "monoProseShare": 0,
+     "monoFamilies": [
+      "monospace"
+     ],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.05,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0d060b",
+     "bodyBgHsl": {
+      "h": 317,
+      "s": 0.37,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#f0faf8",
+       "top": 0,
+       "hsl": {
+        "h": 168,
+        "s": 0.5,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#f7fcfa",
+       "top": 643,
+       "hsl": {
+        "h": 156,
+        "s": 0.45,
+        "l": 0.98
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#41625f",
+       "share": 0.41
+      },
+      {
+       "color": "#0c2422",
+       "share": 0.36
+      },
+      {
+       "color": "#d81b4c",
+       "share": 0.09
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.07
+      },
+      {
+       "color": "#b3dbd7",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#d81b4c",
+      "hsl": {
+       "h": 344,
+       "s": 0.78,
+       "l": 0.48
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 5,
+     "radius": 0,
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Pokemon List",
+      "Battle Sim",
+      "Xóa lọc",
+      "Tải lại",
+      "Tải thêm 20 loài"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 20,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 838
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.58
+     }
+    ],
+    "nav": {
+     "links": 9,
+     "fixed": false,
+     "height": 92,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 2670,
+    "margins": {
+     "left": 57,
+     "right": 57
+    },
+    "sections": [
+     {
+      "sel": "section.pl-hero",
+      "tag": "section",
+      "top": 92,
+      "height": 520,
+      "words": 59,
+      "media": 1,
+      "middle": 102,
+      "heading": {
+       "text": "Danh bạ Quốc gia",
+       "size": 56,
+       "tag": "h1"
+      },
+      "left": 79,
+      "right": 86,
+      "textLeft": 79,
+      "textRight": 86,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.pl-catalog",
+      "tag": "section",
+      "top": 643,
+      "height": 1912,
+      "words": 132,
+      "media": 0,
+      "middle": 66,
+      "heading": {
+       "text": "Danh sách mẫu vật",
+       "size": 47,
+       "tag": "h2"
+      },
+      "left": 36,
+      "right": 36,
+      "textLeft": 36,
+      "textRight": 57,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Danh bạ Quốc gia 1.302 loài Pokémon",
+      "size": 56,
+      "top": 192,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 57,
+      "n": 6
+     },
+     {
+      "x": 405,
+      "n": 5
+     },
+     {
+      "x": 753,
+      "n": 5
+     },
+     {
+      "x": 1101,
+      "n": 5
+     },
+     {
+      "x": 79,
+      "n": 3
+     },
+     {
+      "x": 36,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 25,
+    "bodySize": 23,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.09,
+    "voidBox": {
+     "x": 540,
+     "y": 660,
+     "w": 660,
+     "h": 180
+    }
+   },
+   "app": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "dark": true,
+    "ground": "#0d060b",
+    "sidebar": null,
+    "topbar": {
+     "h": 92
+    },
+    "canvas": {
+     "left": 36,
+     "right": 57
+    },
+    "hero": {
+     "text": "Danh bạ Quốc gia 1.302 loài Pokémon",
+     "words": 7,
+     "chars": 35,
+     "lines": 2,
+     "size": 56,
+     "vw": 3.9,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 192,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 23,
+     "firstScreen": 6,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 27,
+     "radii": [
+      [
+       0,
+       27
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 3,
+     "tabularShare": 1,
+     "kpiMax": 25.5
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      14,
+      15,
+      16,
+      18,
+      20,
+      23,
+      26,
+      47,
+      56
+     ]
+    },
+    "title": {
+     "text": "Danh bạ Quốc gia\n1.302 loài Pokémon",
+     "size": 56,
+     "top": 192
+    },
+    "colourShare": 0.15
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 74,
+    "css": 74,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 4290,
+     "screens": 4.2,
+     "words": 232,
+     "img": 22,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 1,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Danh bạ Quốc gia 1.302 loài Pokémon",
+     "words": 7,
+     "chars": 35,
+     "lines": 2,
+     "size": 40,
+     "vw": 5.2,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 201,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Danh bạ Quốc gia 1.302 loài Pokémon",
+     "words": 7,
+     "lines": 2,
+     "size": 39.6,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Danh bạ Quốc gia 1.302 loài Pokémon",
+      "words": 7,
+      "chars": 35,
+      "lines": 2,
+      "size": 39.6,
+      "vw": 5.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.015,
+      "leading": 1.14,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 201,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Danh sách mẫu vật",
+      "words": 4,
+      "chars": 17,
+      "lines": 1,
+      "size": 35.8,
+      "vw": 4.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.6,
+      "top": 922,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 2,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.97,
+       "mono": false
+      },
+      {
+       "family": "monospace",
+       "share": 0.03,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      15,
+      16,
+      18,
+      20,
+      36,
+      40
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 20.1,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 67,
+     "max": {
+      "size": 39.6,
+      "vw": 5.2,
+      "font": "Plus Jakarta Sans",
+      "text": "Danh bạ Quốc gia"
+     },
+     "monoShare": 0.03,
+     "monoProseShare": 0,
+     "monoFamilies": [
+      "monospace"
+     ],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.05,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0d060b",
+     "bodyBgHsl": {
+      "h": 317,
+      "s": 0.37,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#f0faf8",
+       "top": 0,
+       "hsl": {
+        "h": 168,
+        "s": 0.5,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#f7fcfa",
+       "top": 880,
+       "hsl": {
+        "h": 156,
+        "s": 0.45,
+        "l": 0.98
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#41625f",
+       "share": 0.41
+      },
+      {
+       "color": "#0c2422",
+       "share": 0.36
+      },
+      {
+       "color": "#d81b4c",
+       "share": 0.09
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.07
+      },
+      {
+       "color": "#b3dbd7",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#d81b4c",
+      "hsl": {
+       "h": 344,
+       "s": 0.78,
+       "l": 0.48
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 5,
+     "radius": 0,
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Pokemon List",
+      "Battle Sim",
+      "Xóa lọc",
+      "Tải lại",
+      "Tải thêm 20 loài"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 20,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 1032
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.69
+     }
+    ],
+    "nav": {
+     "links": 9,
+     "fixed": false,
+     "height": 142,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 4290,
+    "margins": {
+     "left": 43,
+     "right": 43
+    },
+    "sections": [
+     {
+      "sel": "header.pl-header",
+      "tag": "header",
+      "top": 0,
+      "height": 142,
+      "words": 13,
+      "media": 0,
+      "middle": 29,
+      "heading": null,
+      "left": 31,
+      "right": 21,
+      "textLeft": 31,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.pl-hero",
+      "tag": "section",
+      "top": 142,
+      "height": 706,
+      "words": 59,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Danh bạ Quốc gia",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 47,
+      "right": 47,
+      "textLeft": 47,
+      "textRight": 61,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.pl-catalog",
+      "tag": "section",
+      "top": 880,
+      "height": 3295,
+      "words": 132,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Danh sách mẫu vật",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 21,
+      "right": 21,
+      "textLeft": 21,
+      "textRight": 43,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Danh bạ Quốc gia 1.302 loài Pokémon",
+      "size": 40,
+      "top": 201,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 43,
+      "n": 14
+     },
+     {
+      "x": 414,
+      "n": 10
+     },
+     {
+      "x": 21,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 25,
+    "bodySize": 20,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "dark": true,
+    "ground": "#0d060b",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 21,
+     "right": 43
+    },
+    "hero": {
+     "text": "Danh bạ Quốc gia 1.302 loài Pokémon",
+     "words": 7,
+     "chars": 35,
+     "lines": 2,
+     "size": 40,
+     "vw": 5.2,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 201,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 23,
+     "firstScreen": 2,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 27,
+     "radii": [
+      [
+       0,
+       27
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 3,
+     "tabularShare": 1,
+     "kpiMax": 25.5
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      14,
+      15,
+      16,
+      18,
+      20,
+      26,
+      36,
+      40
+     ]
+    },
+    "title": {
+     "text": "Danh bạ Quốc gia\n1.302 loài Pokémon",
+     "size": 40,
+     "top": 201
+    },
+    "colourShare": 0.133
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 10,
+   "filled": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 74,
+    "css": 74,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 7703,
+     "screens": 9.1,
+     "words": 232,
+     "img": 22,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 1,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Danh bạ Quốc gia 1.302 loài Pokémon",
+     "words": 7,
+     "chars": 35,
+     "lines": 2,
+     "size": 30,
+     "vw": 7.7,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 197,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Danh bạ Quốc gia 1.302 loài Pokémon",
+     "words": 7,
+     "lines": 2,
+     "size": 30.2,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Danh bạ Quốc gia 1.302 loài Pokémon",
+      "words": 7,
+      "chars": 35,
+      "lines": 2,
+      "size": 30.2,
+      "vw": 7.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.015,
+      "leading": 1.14,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 197,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Danh sách mẫu vật",
+      "words": 4,
+      "chars": 17,
+      "lines": 1,
+      "size": 28.2,
+      "vw": 7.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 1078,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 2,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.97,
+       "mono": false
+      },
+      {
+       "family": "monospace",
+       "share": 0.03,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      15,
+      16,
+      18,
+      19,
+      20,
+      28,
+      30
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 19.1,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 32,
+     "max": {
+      "size": 30.2,
+      "vw": 7.7,
+      "font": "Plus Jakarta Sans",
+      "text": "Danh bạ Quốc gia"
+     },
+     "monoShare": 0.03,
+     "monoProseShare": 0,
+     "monoFamilies": [
+      "monospace"
+     ],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.05,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0d060b",
+     "bodyBgHsl": {
+      "h": 317,
+      "s": 0.37,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#f0faf8",
+       "top": 0,
+       "hsl": {
+        "h": 168,
+        "s": 0.5,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#0a3834",
+       "top": 604,
+       "hsl": {
+        "h": 175,
+        "s": 0.7,
+        "l": 0.13
+       }
+      },
+      {
+       "color": "#f7fcfa",
+       "top": 1035,
+       "hsl": {
+        "h": 156,
+        "s": 0.45,
+        "l": 0.98
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#41625f",
+       "share": 0.41
+      },
+      {
+       "color": "#0c2422",
+       "share": 0.36
+      },
+      {
+       "color": "#d81b4c",
+       "share": 0.09
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.07
+      },
+      {
+       "color": "#b3dbd7",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#d81b4c",
+      "hsl": {
+       "h": 344,
+       "s": 0.78,
+       "l": 0.48
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 4,
+     "radius": 0,
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Pokemon List",
+      "Battle Sim",
+      "Xóa lọc",
+      "Tải lại"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 20,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 1279
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.83
+     }
+    ],
+    "nav": {
+     "links": 9,
+     "fixed": false,
+     "height": 142,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 7703,
+    "margins": {
+     "left": 21,
+     "right": 43
+    },
+    "sections": [
+     {
+      "sel": "header.pl-header",
+      "tag": "header",
+      "top": 0,
+      "height": 142,
+      "words": 10,
+      "media": 0,
+      "middle": 29,
+      "heading": null,
+      "left": 31,
+      "right": 21,
+      "textLeft": 31,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.pl-hero",
+      "tag": "section",
+      "top": 142,
+      "height": 861,
+      "words": 59,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Danh bạ Quốc gia",
+       "size": 30,
+       "tag": "h1"
+      },
+      "left": 43,
+      "right": 43,
+      "textLeft": 43,
+      "textRight": 64,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.pl-catalog-header",
+      "tag": "div",
+      "top": 1078,
+      "height": 167,
+      "words": 20,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Danh sách mẫu vật",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 21,
+      "right": 21,
+      "textLeft": 21,
+      "textRight": 95,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.pl-grid",
+      "tag": "div",
+      "top": 1279,
+      "height": 5919,
+      "words": 91,
+      "media": 0,
+      "middle": 61,
+      "heading": {
+       "text": "Bulbasaur",
+       "size": 20,
+       "tag": "h3"
+      },
+      "left": 43,
+      "right": 43,
+      "textLeft": 43,
+      "textRight": 43,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.pl-load-more-bar",
+      "tag": "div",
+      "top": 7240,
+      "height": 240,
+      "words": 21,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Trạng thái đồng bộ",
+       "size": 19,
+       "tag": "h3"
+      },
+      "left": 51,
+      "right": 51,
+      "textLeft": 51,
+      "textRight": 97,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.pl-footer",
+      "tag": "footer",
+      "top": 7523,
+      "height": 181,
+      "words": 15,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 21,
+      "right": 67,
+      "textLeft": 21,
+      "textRight": 67,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Danh bạ Quốc gia 1.302 loài Pokémon",
+      "size": 30,
+      "top": 197,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 43,
+      "n": 24
+     },
+     {
+      "x": 21,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 25,
+    "bodySize": 19,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "dark": true,
+    "ground": "#0d060b",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 21,
+     "right": -76
+    },
+    "hero": {
+     "text": "Danh bạ Quốc gia 1.302 loài Pokémon",
+     "words": 7,
+     "chars": 35,
+     "lines": 2,
+     "size": 30,
+     "vw": 7.7,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 197,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 23,
+     "firstScreen": 2,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 24,
+     "radii": [
+      [
+       0,
+       24
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 3,
+     "tabularShare": 1,
+     "kpiMax": 21.25
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      14,
+      15,
+      16,
+      18,
+      19,
+      20,
+      21,
+      28,
+      30
+     ]
+    },
+    "title": {
+     "text": "Danh bạ Quốc gia\n1.302 loài Pokémon",
+     "size": 30,
+     "top": 197
+    },
+    "colourShare": 0.155
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "colour-sprawl",
+   "width": 1440,
+   "message": "15% of the first screen is strongly coloured.",
+   "fix": "Keep the screen neutral and spend colour on data and status: the studied screens sit near 3%, and only tinted styles reach 10–15%, as pale tints rather than saturated fills.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "below-fold",
+   "width": 1440,
+   "message": "Only 6 of 23 blocks start on the first 1440px screen.",
+   "fix": "Every block the brief names shows its header and first rows on the first desktop screen: size the headline block to its question, cap long lists with \"View all\", and put time-sensitive blocks before long tables."
+  },
+  {
+   "level": "WARN",
+   "id": "app-title-size",
+   "width": 1440,
+   "message": "The h1 is 56px (\"Danh bạ Quốc gia\n1.302 loài Pokémon\").",
+   "fix": "An app screen is not a landing page: the title is 18-32px (20-24px on a phone).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-pokemon\\desktop-fold.jpg",
+   "pages": [
+    "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-pokemon\\desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-pokemon\\tablet-fold.jpg",
+   "pages": [
+    "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-pokemon\\tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-pokemon\\mobile-fold.jpg",
+   "pages": [
+    "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-pokemon\\mobile-page-01.jpg",
+    "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-pokemon\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
