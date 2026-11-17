@@ -1,0 +1,2051 @@
+{
+ "url": "http://localhost:4173/ability",
+ "at": "2026-11-17T08:15:22.275Z",
+ "allow": [
+  "glass"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 33,
+    "css": 33,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 2890,
+     "screens": 3.2,
+     "words": 467,
+     "img": 24,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 2,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 2,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Từ điển Kỹ năng Nội tại Pokémon",
+     "words": 7,
+     "chars": 31,
+     "lines": 2,
+     "size": 56,
+     "vw": 3.9,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 192,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Từ điển Kỹ năng Nội tại Pokémon",
+     "words": 7,
+     "lines": 2,
+     "size": 56.4,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Từ điển Kỹ năng Nội tại Pokémon",
+      "words": 7,
+      "chars": 31,
+      "lines": 2,
+      "size": 56.4,
+      "vw": 3.9,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.015,
+      "leading": 1.14,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.49,
+      "top": 192,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Stench",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 34.6,
+      "vw": 2.4,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.08,
+      "top": 878,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Pokémon sở hữu kỹ năng Stench",
+      "words": 6,
+      "chars": 29,
+      "lines": 1,
+      "size": 45.1,
+      "vw": 3.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.49,
+      "top": 1237,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Poke Hub",
+      "words": 2,
+      "chars": 8,
+      "lines": 2,
+      "size": 34.6,
+      "vw": 2.4,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.24,
+      "top": 2371,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 4,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      18,
+      20,
+      21,
+      23,
+      35,
+      45,
+      56
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 18.1,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6.5
+     },
+     "measureChars": 79,
+     "max": {
+      "size": 56.4,
+      "vw": 3.9,
+      "font": "Plus Jakarta Sans",
+      "text": "Từ điển Kỹ năng"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.04,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Kỹ năng nội tại",
+      "above": "Stench",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 13.8,
+      "top": 842
+     }
+    ],
+    "numbered": [
+     {
+      "text": "#001",
+      "size": 23,
+      "top": 839
+     }
+    ],
+    "color": {
+     "bodyBg": "#0d060b",
+     "bodyBgHsl": {
+      "h": 317,
+      "s": 0.37,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#f0faf8",
+       "top": 0,
+       "hsl": {
+        "h": 168,
+        "s": 0.5,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#f7fcfa",
+       "top": 731,
+       "hsl": {
+        "h": 156,
+        "s": 0.45,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#0a3834",
+       "top": 2295,
+       "hsl": {
+        "h": 175,
+        "s": 0.7,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#41625f",
+       "share": 0.41
+      },
+      {
+       "color": "#0c2422",
+       "share": 0.37
+      },
+      {
+       "color": "#b3dbd7",
+       "share": 0.1
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.07
+      },
+      {
+       "color": "#d81b4c",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#e4f5f2",
+      "hsl": {
+       "h": 169,
+       "s": 0.46,
+       "l": 0.93
+      },
+      "fg": "#0c2422"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 12,
+     "inHero": 11,
+     "radius": 0,
+     "height": 31,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Ability",
+      "Battle Sim",
+      "Tra cứu",
+      "Mặc định",
+      "Stench (#1)"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 939
+      },
+      {
+       "count": 10,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 1371
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.68
+     }
+    ],
+    "nav": {
+     "links": 9,
+     "fixed": false,
+     "height": 92,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 2890,
+    "margins": {
+     "left": 46,
+     "right": 70
+    },
+    "sections": [
+     {
+      "sel": "section.ab-hero",
+      "tag": "section",
+      "top": 92,
+      "height": 608,
+      "words": 78,
+      "media": 1,
+      "middle": 102,
+      "heading": {
+       "text": "Từ điển Kỹ năng",
+       "size": 56,
+       "tag": "h1"
+      },
+      "left": 79,
+      "right": 86,
+      "textLeft": 79,
+      "textRight": 86,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.ab-dossier-grid",
+      "tag": "div",
+      "top": 803,
+      "height": 400,
+      "words": 107,
+      "media": 0,
+      "middle": 95,
+      "heading": {
+       "text": "Stench",
+       "size": 35,
+       "tag": "h2"
+      },
+      "left": 72,
+      "right": 79,
+      "textLeft": 72,
+      "textRight": 79,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.ab-pokemon-grid",
+      "tag": "div",
+      "top": 1371,
+      "height": 853,
+      "words": 110,
+      "media": 0,
+      "middle": 77,
+      "heading": {
+       "text": "Gloom",
+       "size": 20,
+       "tag": "h3"
+      },
+      "left": 56,
+      "right": 65,
+      "textLeft": 56,
+      "textRight": 65,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.sf-footer",
+      "tag": "footer",
+      "top": 2295,
+      "height": 595,
+      "words": 109,
+      "media": 0,
+      "middle": 29,
+      "heading": {
+       "text": "Poke",
+       "size": 35,
+       "tag": "span"
+      },
+      "left": 46,
+      "right": 46,
+      "textLeft": 46,
+      "textRight": 46,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Từ điển Kỹ năng Nội tại Pokémon",
+      "size": 56,
+      "top": 192,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 72,
+      "n": 4
+     },
+     {
+      "x": 652,
+      "n": 4
+     },
+     {
+      "x": 56,
+      "n": 3
+     },
+     {
+      "x": 403,
+      "n": 3
+     },
+     {
+      "x": 751,
+      "n": 2
+     },
+     {
+      "x": 1099,
+      "n": 2
+     },
+     {
+      "x": 36,
+      "n": 1
+     },
+     {
+      "x": 92,
+      "n": 1
+     },
+     {
+      "x": 582,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 21,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.13,
+    "voidBox": {
+     "x": 0,
+     "y": 720,
+     "w": 1440,
+     "h": 120
+    }
+   },
+   "app": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "dark": true,
+    "ground": "#0d060b",
+    "sidebar": null,
+    "topbar": {
+     "h": 92
+    },
+    "canvas": {
+     "left": 46,
+     "right": 70
+    },
+    "hero": {
+     "text": "Từ điển Kỹ năng Nội tại Pokémon",
+     "words": 7,
+     "chars": 31,
+     "lines": 2,
+     "size": 56,
+     "vw": 3.9,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 192,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 2,
+    "layout": {
+     "panels": 15,
+     "firstScreen": 4,
+     "ragged": [],
+     "voids": [
+      {
+       "gap": 55,
+       "at": 1112,
+       "panel": "Tóm tắt hiệu ứng chiến đấu (EN)"
+      }
+     ]
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 19,
+     "radii": [
+      [
+       0,
+       19
+      ]
+     ],
+     "heavyBorders": 1,
+     "borderSamples": [
+      "#144743 on #062220 (1.6:1)"
+     ],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 2,
+     "hues": 2,
+     "samples": [
+      {
+       "hue": 175,
+       "size": 56,
+       "radius": "0px"
+      },
+      {
+       "hue": 344,
+       "size": 40,
+       "radius": "50%"
+      }
+     ]
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 1,
+     "tabularShare": 1,
+     "kpiMax": 21.25
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      21,
+      23,
+      35,
+      45,
+      56
+     ]
+    },
+    "title": {
+     "text": "Từ điển Kỹ năng\nNội tại Pokémon",
+     "size": 56,
+     "top": 192
+    },
+    "colourShare": 0.151
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 29,
+    "css": 29,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 4065,
+     "screens": 4,
+     "words": 467,
+     "img": 24,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 2,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 2,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Từ điển Kỹ năng Nội tại Pokémon",
+     "words": 7,
+     "chars": 31,
+     "lines": 2,
+     "size": 40,
+     "vw": 5.2,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 201,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Từ điển Kỹ năng Nội tại Pokémon",
+     "words": 7,
+     "lines": 2,
+     "size": 39.6,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Từ điển Kỹ năng Nội tại Pokémon",
+      "words": 7,
+      "chars": 31,
+      "lines": 2,
+      "size": 39.6,
+      "vw": 5.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.015,
+      "leading": 1.14,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 201,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Stench",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 28.1,
+      "vw": 3.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.15,
+      "top": 1074,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Pokémon sở hữu kỹ năng Stench",
+      "words": 6,
+      "chars": 29,
+      "lines": 1,
+      "size": 35.8,
+      "vw": 4.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.72,
+      "top": 1729,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Poke Hub",
+      "words": 2,
+      "chars": 8,
+      "lines": 2,
+      "size": 29.8,
+      "vw": 3.9,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.44,
+      "top": 3353,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 4,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      18,
+      20,
+      21,
+      23,
+      28,
+      30,
+      36,
+      40
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 18.1,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6.5
+     },
+     "measureChars": 75,
+     "max": {
+      "size": 39.6,
+      "vw": 5.2,
+      "font": "Plus Jakarta Sans",
+      "text": "Từ điển Kỹ năng"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.04,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Kỹ năng nội tại",
+      "above": "Stench",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 13.8,
+      "top": 1038
+     }
+    ],
+    "numbered": [
+     {
+      "text": "#001",
+      "size": 23,
+      "top": 1036
+     }
+    ],
+    "color": {
+     "bodyBg": "#0d060b",
+     "bodyBgHsl": {
+      "h": 317,
+      "s": 0.37,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#f0faf8",
+       "top": 0,
+       "hsl": {
+        "h": 168,
+        "s": 0.5,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#f7fcfa",
+       "top": 968,
+       "hsl": {
+        "h": 156,
+        "s": 0.45,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#0a3834",
+       "top": 3303,
+       "hsl": {
+        "h": 175,
+        "s": 0.7,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#41625f",
+       "share": 0.41
+      },
+      {
+       "color": "#0c2422",
+       "share": 0.37
+      },
+      {
+       "color": "#b3dbd7",
+       "share": 0.1
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.07
+      },
+      {
+       "color": "#d81b4c",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#e4f5f2",
+      "hsl": {
+       "h": 169,
+       "s": 0.46,
+       "l": 0.93
+      },
+      "fg": "#0c2422"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 12,
+     "inHero": 11,
+     "radius": 0,
+     "height": 31,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Ability",
+      "Battle Sim",
+      "Tra cứu",
+      "Mặc định",
+      "Stench (#1)"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 10,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 1848
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.78
+     }
+    ],
+    "nav": {
+     "links": 9,
+     "fixed": false,
+     "height": 142,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 4065,
+    "margins": {
+     "left": 31,
+     "right": 47
+    },
+    "sections": [
+     {
+      "sel": "header.ab-header",
+      "tag": "header",
+      "top": 0,
+      "height": 142,
+      "words": 13,
+      "media": 0,
+      "middle": 29,
+      "heading": null,
+      "left": 31,
+      "right": 21,
+      "textLeft": 31,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.ab-hero",
+      "tag": "section",
+      "top": 142,
+      "height": 794,
+      "words": 78,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Từ điển Kỹ năng",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 47,
+      "right": 47,
+      "textLeft": 47,
+      "textRight": 61,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.ab-dossier-grid",
+      "tag": "div",
+      "top": 1010,
+      "height": 684,
+      "words": 107,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Stench",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 47,
+      "right": 47,
+      "textLeft": 47,
+      "textRight": 47,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.ab-pokemon-grid",
+      "tag": "div",
+      "top": 1848,
+      "height": 1412,
+      "words": 110,
+      "media": 0,
+      "middle": 65,
+      "heading": {
+       "text": "Gloom",
+       "size": 20,
+       "tag": "h3"
+      },
+      "left": 41,
+      "right": 50,
+      "textLeft": 41,
+      "textRight": 50,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.sf-footer",
+      "tag": "footer",
+      "top": 3303,
+      "height": 763,
+      "words": 109,
+      "media": 0,
+      "middle": 441,
+      "heading": {
+       "text": "Poke",
+       "size": 30,
+       "tag": "span"
+      },
+      "left": 31,
+      "right": 0,
+      "textLeft": 31,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Từ điển Kỹ năng Nội tại Pokémon",
+      "size": 40,
+      "top": 201,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 41,
+      "n": 13
+     },
+     {
+      "x": 412,
+      "n": 5
+     },
+     {
+      "x": 21,
+      "n": 1
+     },
+     {
+      "x": 66,
+      "n": 1
+     },
+     {
+      "x": 454,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 21,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "dark": true,
+    "ground": "#0d060b",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 31,
+     "right": -211
+    },
+    "hero": {
+     "text": "Từ điển Kỹ năng Nội tại Pokémon",
+     "words": 7,
+     "chars": 31,
+     "lines": 2,
+     "size": 40,
+     "vw": 5.2,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 201,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 2,
+    "layout": {
+     "panels": 15,
+     "firstScreen": 2,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 20,
+     "radii": [
+      [
+       0,
+       20
+      ]
+     ],
+     "heavyBorders": 1,
+     "borderSamples": [
+      "#144743 on #062220 (1.6:1)"
+     ],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 2,
+     "hues": 2,
+     "samples": [
+      {
+       "hue": 175,
+       "size": 56,
+       "radius": "0px"
+      },
+      {
+       "hue": 344,
+       "size": 40,
+       "radius": "50%"
+      }
+     ]
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 1,
+     "tabularShare": 1,
+     "kpiMax": 21.25
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      21,
+      23,
+      28,
+      30,
+      36,
+      40
+     ]
+    },
+    "title": {
+     "text": "Từ điển Kỹ năng\nNội tại Pokémon",
+     "size": 40,
+     "top": 201
+    },
+    "colourShare": 0.126
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 29,
+    "css": 29,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 6741,
+     "screens": 8,
+     "words": 467,
+     "img": 24,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 2,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 2,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Từ điển Kỹ năng Nội tại Pokémon",
+     "words": 7,
+     "chars": 31,
+     "lines": 2,
+     "size": 30,
+     "vw": 7.7,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 197,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Từ điển Kỹ năng Nội tại Pokémon",
+     "words": 7,
+     "lines": 2,
+     "size": 30.2,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Từ điển Kỹ năng Nội tại Pokémon",
+      "words": 7,
+      "chars": 31,
+      "lines": 2,
+      "size": 30.2,
+      "vw": 7.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.015,
+      "leading": 1.14,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 197,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "#001",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 23,
+      "vw": 5.9,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.16,
+      "top": 1235,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Stench",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 28.1,
+      "vw": 7.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 1273,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Pokémon sở hữu kỹ năng Stench",
+      "words": 6,
+      "chars": 29,
+      "lines": 2,
+      "size": 28.2,
+      "vw": 7.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 2407,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Poke Hub",
+      "words": 2,
+      "chars": 8,
+      "lines": 2,
+      "size": 29.8,
+      "vw": 7.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 5519,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 5,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      18,
+      19,
+      20,
+      21,
+      23,
+      28,
+      30
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 18.1,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6.5
+     },
+     "measureChars": 33,
+     "max": {
+      "size": 30.2,
+      "vw": 7.7,
+      "font": "Plus Jakarta Sans",
+      "text": "Từ điển Kỹ năng"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.04,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Kỹ năng nội tại",
+      "above": "Stench",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 13.8,
+      "top": 1237
+     }
+    ],
+    "numbered": [
+     {
+      "text": "#001",
+      "size": 23,
+      "top": 1235
+     }
+    ],
+    "color": {
+     "bodyBg": "#0d060b",
+     "bodyBgHsl": {
+      "h": 317,
+      "s": 0.37,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#f0faf8",
+       "top": 0,
+       "hsl": {
+        "h": 168,
+        "s": 0.5,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#0a3834",
+       "top": 771,
+       "hsl": {
+        "h": 175,
+        "s": 0.7,
+        "l": 0.13
+       }
+      },
+      {
+       "color": "#f7fcfa",
+       "top": 1167,
+       "hsl": {
+        "h": 156,
+        "s": 0.45,
+        "l": 0.98
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#41625f",
+       "share": 0.41
+      },
+      {
+       "color": "#0c2422",
+       "share": 0.37
+      },
+      {
+       "color": "#b3dbd7",
+       "share": 0.1
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.07
+      },
+      {
+       "color": "#d81b4c",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#e4f5f2",
+      "hsl": {
+       "h": 169,
+       "s": 0.46,
+       "l": 0.93
+      },
+      "fg": "#0c2422"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 12,
+     "inHero": 11,
+     "radius": 0,
+     "height": 31,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Ability",
+      "Battle Sim",
+      "Tra cứu",
+      "Mặc định",
+      "Stench (#1)"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 10,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 2585
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.83
+     }
+    ],
+    "nav": {
+     "links": 9,
+     "fixed": false,
+     "height": 142,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 6741,
+    "margins": {
+     "left": 21,
+     "right": 32
+    },
+    "sections": [
+     {
+      "sel": "header.ab-header",
+      "tag": "header",
+      "top": 0,
+      "height": 142,
+      "words": 10,
+      "media": 0,
+      "middle": 29,
+      "heading": null,
+      "left": 31,
+      "right": 21,
+      "textLeft": 31,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.ab-hero",
+      "tag": "section",
+      "top": 142,
+      "height": 993,
+      "words": 78,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Từ điển Kỹ năng",
+       "size": 30,
+       "tag": "h1"
+      },
+      "left": 43,
+      "right": 43,
+      "textLeft": 43,
+      "textRight": 50,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.ab-dossier-grid",
+      "tag": "div",
+      "top": 1209,
+      "height": 1164,
+      "words": 107,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Stench",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 47,
+      "right": 47,
+      "textLeft": 47,
+      "textRight": 47,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.ab-holders-header",
+      "tag": "div",
+      "top": 2407,
+      "height": 144,
+      "words": 21,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Pokémon sở hữu kỹ năng",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 21,
+      "right": 31,
+      "textLeft": 21,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.ab-pokemon-grid",
+      "tag": "div",
+      "top": 2585,
+      "height": 2841,
+      "words": 110,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Gloom",
+       "size": 20,
+       "tag": "h3"
+      },
+      "left": 41,
+      "right": 50,
+      "textLeft": 41,
+      "textRight": 50,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.sf-footer",
+      "tag": "footer",
+      "top": 5468,
+      "height": 1273,
+      "words": 109,
+      "media": 0,
+      "middle": 817,
+      "heading": {
+       "text": "Poke",
+       "size": 30,
+       "tag": "span"
+      },
+      "left": 29,
+      "right": 0,
+      "textLeft": 29,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Từ điển Kỹ năng Nội tại Pokémon",
+      "size": 30,
+      "top": 197,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 41,
+      "n": 18
+     },
+     {
+      "x": 21,
+      "n": 2
+     },
+     {
+      "x": 66,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 21,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "dark": true,
+    "ground": "#0d060b",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 21,
+     "right": -586
+    },
+    "hero": {
+     "text": "Từ điển Kỹ năng Nội tại Pokémon",
+     "words": 7,
+     "chars": 31,
+     "lines": 2,
+     "size": 30,
+     "vw": 7.7,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 197,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 2,
+    "layout": {
+     "panels": 15,
+     "firstScreen": 2,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 20,
+     "radii": [
+      [
+       0,
+       20
+      ]
+     ],
+     "heavyBorders": 1,
+     "borderSamples": [
+      "#144743 on #062220 (1.6:1)"
+     ],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 2,
+     "hues": 2,
+     "samples": [
+      {
+       "hue": 175,
+       "size": 56,
+       "radius": "0px"
+      },
+      {
+       "hue": 344,
+       "size": 40,
+       "radius": "50%"
+      }
+     ]
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 1,
+     "tabularShare": 1,
+     "kpiMax": 21.25
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      23,
+      28,
+      30
+     ]
+    },
+    "title": {
+     "text": "Từ điển Kỹ năng\nNội tại Pokémon",
+     "size": 30,
+     "top": 197
+    },
+    "colourShare": 0.16
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "colour-sprawl",
+   "width": 1440,
+   "message": "15% of the first screen is strongly coloured.",
+   "fix": "Keep the screen neutral and spend colour on data and status: the studied screens sit near 3%, and only tinted styles reach 10–15%, as pale tints rather than saturated fills.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "below-fold",
+   "width": 1440,
+   "message": "Only 4 of 15 blocks start on the first 1440px screen.",
+   "fix": "Every block the brief names shows its header and first rows on the first desktop screen: size the headline block to its question, cap long lists with \"View all\", and put time-sensitive blocks before long tables."
+  },
+  {
+   "level": "WARN",
+   "id": "panel-void",
+   "width": 1440,
+   "message": "1 card(s) hold a blank band inside: 55px in \"Tóm tắt hiệu ứng chiến đấu (EN)\".",
+   "fix": "A card stretches to its neighbour only when it has content to fill. Keep a legend or a note directly under its chart (only an action or a total may sit at a stretched card's foot), let a short card keep its own height (align-items: start), and let a filtered block shrink to its rows."
+  },
+  {
+   "level": "WARN",
+   "id": "app-title-size",
+   "width": 1440,
+   "message": "The h1 is 56px (\"Từ điển Kỹ năng\nNội tại Pokémon\").",
+   "fix": "An app screen is not a landing page: the title is 18-32px (20-24px on a phone).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-ability\\desktop-fold.jpg",
+   "pages": [
+    "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-ability\\desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-ability\\tablet-fold.jpg",
+   "pages": [
+    "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-ability\\tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-ability\\mobile-fold.jpg",
+   "pages": [
+    "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-ability\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

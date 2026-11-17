@@ -76,8 +76,8 @@ function App() {
         <Route path="/index.html" element={<LandingPage />} />
         <Route path="/pokemon" element={<PokemonListPage />} />
         <Route path="/pokemon-list" element={<Navigate to="/pokemon" replace />} />
+        <Route path="/ability" element={<AbilityPage />} />
         <Route element={<AppLayout />}>
-          <Route path="/ability" element={<AbilityPage />} />
           <Route path="/characteristic" element={<CharacteristicPage />} />
           <Route path="/characteristic/:id" element={<CharacteristicPage />} />
           <Route path="/pokeathlon-stat" element={<PokeathlonStatPage />} />

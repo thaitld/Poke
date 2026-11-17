@@ -233,7 +233,7 @@
   column-gap: var(--gutter);
   align-items: start;
   overflow: clip;
-  background: url('/assets/slowpoke-water.jpg') no-repeat center top / cover;
+  background: url('/assets/hero-bg.jpg') no-repeat center center / cover;
 }
 
 .tm-hero-copy {
@@ -247,15 +247,13 @@
 }
 
 .tm-hero-top {
+  padding: 2.25rem 2.5rem;
+}
+
+.tm-hero-top > .lg-content {
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
-  padding: 2.25rem 2.5rem;
-  background-color: rgba(255, 255, 255, 0.78);
-  backdrop-filter: blur(24px) saturate(190%); /* taste-skill-ignore */
-  -webkit-backdrop-filter: blur(24px) saturate(190%); /* taste-skill-ignore */
-  clip-path: polygon(24px 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%, 0 24px);
-  box-shadow: inset 0 1.5px 2px rgba(255, 255, 255, 0.95), inset 0 -1.5px 2px rgba(10, 56, 52, 0.06); /* taste-skill-ignore */
 }
 
 .tm-lines .tm-line {
@@ -285,15 +283,13 @@
 }
 
 .tm-hero-fact {
-  background-color: rgba(255, 255, 255, 0.82);
-  backdrop-filter: blur(18px) saturate(180%); /* taste-skill-ignore */
-  -webkit-backdrop-filter: blur(18px) saturate(180%); /* taste-skill-ignore */
   padding: 1.15rem 1.25rem;
-  clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+}
+
+.tm-hero-fact > .lg-content {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-  box-shadow: inset 0 1.5px 2px rgba(255, 255, 255, 0.95), inset 0 -1px 2px rgba(10, 56, 52, 0.05); /* taste-skill-ignore */
 }
 
 .tm-hero-fact-num {
@@ -312,20 +308,18 @@
 /* The Shaped Stage (Columns 7-12, bleeding right and bottom) */
 .tm-hero-stage {
   grid-column: 7 / 13;
-  background-color: rgba(10, 56, 52, 0.94);
-  backdrop-filter: blur(28px) saturate(170%); /* taste-skill-ignore */
-  -webkit-backdrop-filter: blur(28px) saturate(170%); /* taste-skill-ignore */
   color: var(--field-1-ink);
   margin-right: calc(var(--margin) * -1);
   margin-bottom: -3.5rem;
   padding: 2.75rem var(--margin) 3.5rem 2.75rem;
   min-height: 78svh;
-  clip-path: polygon(56px 0, 100% 0, 100% 100%, 0 100%, 0 56px);
+}
+
+.tm-hero-stage > .lg-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 1.75rem;
-  box-shadow: inset 0 1.5px 2px rgba(255, 255, 255, 0.3), inset 0 -1px 2px rgba(0, 0, 0, 0.25); /* taste-skill-ignore */
 }
 
 .tm-hero-stage-header {
@@ -667,15 +661,13 @@
 
 .tm-specimen-dossier {
   grid-column: 9 / 13;
-  background-color: rgba(255, 255, 255, 0.84);
-  backdrop-filter: blur(24px) saturate(180%); /* taste-skill-ignore */
-  -webkit-backdrop-filter: blur(24px) saturate(180%); /* taste-skill-ignore */
   padding: 1.75rem;
-  clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);
+}
+
+.tm-specimen-dossier > .lg-content {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  box-shadow: inset 0 1.5px 3px rgba(255, 255, 255, 0.95), inset 0 -1px 2px rgba(10, 56, 52, 0.05); /* taste-skill-ignore */
 }
 
 .tm-dossier-title {
@@ -1542,6 +1534,63 @@
 
   50% {
     opacity: 0.7;
+  }
+}
+
+/* --- Smooth Scroll Stacking Cards (Desktop >= 1025px) --- */
+@media (min-width: 1025px) {
+  .tm-header {
+    position: relative;
+    z-index: 60;
+  }
+
+  .tm-hero {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: 100svh;
+  }
+
+  .tm-showcase {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    min-height: 100svh;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    box-shadow: 0 -18px 48px rgba(10, 56, 52, 0.22); /* taste-skill-ignore */
+  }
+
+  .tm-how {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    min-height: 100svh;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    box-shadow: 0 -18px 48px rgba(10, 56, 52, 0.2); /* taste-skill-ignore */
+  }
+
+  .tm-work {
+    position: relative;
+    z-index: 40;
+    padding-top: clamp(4.5rem, 8vw, 7rem);
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    box-shadow: 0 -18px 48px rgba(10, 56, 52, 0.18); /* taste-skill-ignore */
+  }
+
+  .tm-cta {
+    position: relative;
+    z-index: 50;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    box-shadow: 0 -18px 48px rgba(10, 56, 52, 0.25); /* taste-skill-ignore */
+  }
+
+  .tm-page .sf-footer {
+    position: relative;
+    z-index: 60;
   }
 }
 
