@@ -3,6 +3,7 @@ import type { CSSProperties } from 'react'
 import { Link } from 'react-router-dom'
 import { NAV_ITEMS } from '../config/navigation'
 import { extractId, formatName, spriteFor } from '../utils/pokemon'
+import SiteFooter from '../components/SiteFooter'
 import './PokemonListPage.css'
 
 const PAGE_SIZE = 20
@@ -464,15 +465,7 @@ function PokemonListPage() {
         </section>
       </main>
 
-      <footer className="pl-footer">
-        <Link to="/" className="pl-wordmark">
-          <img src="/assets/logo.jpg" alt="Poke Hub Logo" className="pl-wordmark-logo" />
-          <span>Poke Hub</span>
-        </Link>
-        <p className="pl-footer-note">
-          Poke Hub · Đồng bộ dữ liệu thời gian thực từ PokeAPI v2
-        </p>
-      </footer>
+      <SiteFooter />
     </div>
   )
 }

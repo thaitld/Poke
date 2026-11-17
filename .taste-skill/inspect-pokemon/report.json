@@ -1,6 +1,6 @@
 {
  "url": "http://localhost:4173/pokemon",
- "at": "2026-11-17T07:40:55.029Z",
+ "at": "2026-11-17T08:00:31.958Z",
  "allow": [
   "glass"
  ],
@@ -9,15 +9,16 @@
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 3,
+   "screens": 4,
    "filled": [
+    1,
     1,
     1,
     1
    ],
    "motion": {
-    "elements": 75,
-    "css": 74,
+    "elements": 77,
+    "css": 76,
     "transitions": 1,
     "scripted": 0,
     "videos": 0,
@@ -29,21 +30,21 @@
      "h": 900
     },
     "page": {
-     "height": 2545,
-     "screens": 2.8,
-     "words": 233,
-     "img": 22,
+     "height": 3025,
+     "screens": 3.4,
+     "words": 332,
+     "img": 34,
      "video": 0,
      "canvas": 0,
-     "svg": 0,
+     "svg": 1,
      "sections": 2,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
-     "uiFragments": 1,
+     "uiFragments": 2,
      "uiAbuse": false,
      "realPictures": 1,
      "videoCount": 0,
-     "uiPictures": 1,
+     "uiPictures": 2,
      "pictureSamples": [],
      "blendText": 0,
      "sideScrollers": 0,
@@ -117,10 +118,31 @@
       "top": 715,
       "tag": "h2",
       "kind": "heading"
+     },
+     {
+      "text": "Poke Hub",
+      "words": 2,
+      "chars": 8,
+      "lines": 2,
+      "size": 34.6,
+      "vw": 2.4,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.24,
+      "top": 2506,
+      "tag": "a",
+      "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 2,
+     "count": 3,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 0,
@@ -144,10 +166,11 @@
       18,
       20,
       23,
+      35,
       47,
       56
      ],
-     "sizeCount": 8,
+     "sizeCount": 9,
      "notLoaded": [],
      "body": {
       "font": "Plus Jakarta Sans",
@@ -171,8 +194,8 @@
      "microLabels": 0,
      "microLabelShare": 0,
      "microSamples": [],
-     "upperShare": 0,
-     "centerShare": 0.05,
+     "upperShare": 0.02,
+     "centerShare": 0.03,
      "smallText": 0
     },
     "eyebrows": [],
@@ -203,28 +226,37 @@
         "s": 0.45,
         "l": 0.98
        }
+      },
+      {
+       "color": "#0a3834",
+       "top": 2430,
+       "hsl": {
+        "h": 175,
+        "s": 0.7,
+        "l": 0.13
+       }
       }
      ],
      "textColors": [
       {
        "color": "#0c2422",
-       "share": 0.45
+       "share": 0.42
       },
       {
        "color": "#41625f",
-       "share": 0.31
-      },
-      {
-       "color": "#d81b4c",
-       "share": 0.11
-      },
-      {
-       "color": "#ffffff",
-       "share": 0.06
+       "share": 0.25
       },
       {
        "color": "#b3dbd7",
-       "share": 0.05
+       "share": 0.14
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.09
+      },
+      {
+       "color": "#d81b4c",
+       "share": 0.08
       }
      ],
      "button": {
@@ -239,7 +271,7 @@
      "lowContrast": []
     },
     "buttons": {
-     "count": 8,
+     "count": 9,
      "inHero": 6,
      "radius": 0,
      "height": 43,
@@ -311,9 +343,9 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 2545,
+    "pageH": 3025,
     "margins": {
-     "left": 57,
+     "left": 55,
      "right": 57
     },
     "sections": [
@@ -337,7 +369,7 @@
       "fullBleed": true,
       "footer": false,
       "hero": true,
-      "continues": false,
+      "continues": true,
       "pinned": false
      },
      {
@@ -357,6 +389,29 @@
       "right": 36,
       "textLeft": 36,
       "textRight": 49,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.sf-footer",
+      "tag": "footer",
+      "top": 2430,
+      "height": 595,
+      "words": 109,
+      "media": 0,
+      "middle": 29,
+      "heading": {
+       "text": "Poke",
+       "size": 35,
+       "tag": "span"
+      },
+      "left": 46,
+      "right": 46,
+      "textLeft": 46,
+      "textRight": 46,
       "fullBleed": false,
       "footer": true,
       "hero": false,
@@ -401,7 +456,7 @@
      }
     ],
     "leftBlocks": 25,
-    "bodySize": 23,
+    "bodySize": 15,
     "stage": false,
     "explains": true,
     "slivers": [],
@@ -425,7 +480,7 @@
      "h": 92
     },
     "canvas": {
-     "left": 36,
+     "left": 46,
      "right": 57
     },
     "hero": {
@@ -445,33 +500,46 @@
      "align": "left",
      "position": "left"
     },
-    "charts": 0,
+    "charts": 2,
     "layout": {
-     "panels": 23,
+     "panels": 24,
      "firstScreen": 6,
      "ragged": [],
      "voids": []
     },
     "tiles": 0,
     "panels": {
-     "count": 26,
+     "count": 27,
      "radii": [
       [
        0,
-       26
+       27
       ]
      ],
-     "heavyBorders": 0,
-     "borderSamples": [],
+     "heavyBorders": 1,
+     "borderSamples": [
+      "#144743 on #062220 (1.6:1)"
+     ],
      "heavyShadows": 0,
      "softShadows": 0,
      "shadowSamples": [],
      "glass": 0
     },
     "chips": {
-     "count": 0,
-     "hues": 0,
-     "samples": []
+     "count": 2,
+     "hues": 2,
+     "samples": [
+      {
+       "hue": 175,
+       "size": 56,
+       "radius": "0px"
+      },
+      {
+       "hue": 344,
+       "size": 40,
+       "radius": "50%"
+      }
+     ]
     },
     "numbers": {
      "cells": 0,
@@ -491,10 +559,12 @@
       14,
       15,
       16,
+      17,
       18,
       20,
       23,
       26,
+      35,
       47,
       56
      ]
@@ -521,8 +591,8 @@
     1
    ],
    "motion": {
-    "elements": 67,
-    "css": 66,
+    "elements": 69,
+    "css": 68,
     "transitions": 1,
     "scripted": 0,
     "videos": 0,
@@ -534,24 +604,24 @@
      "h": 1024
     },
     "page": {
-     "height": 4173,
-     "screens": 4.1,
-     "words": 233,
-     "img": 22,
+     "height": 4821,
+     "screens": 4.7,
+     "words": 332,
+     "img": 34,
      "video": 0,
      "canvas": 0,
-     "svg": 0,
+     "svg": 1,
      "sections": 2,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
-     "uiFragments": 1,
+     "uiFragments": 2,
      "uiAbuse": false,
      "realPictures": 1,
      "videoCount": 0,
-     "uiPictures": 1,
+     "uiPictures": 2,
      "pictureSamples": [],
      "blendText": 0,
-     "sideScrollers": 0,
+     "sideScrollers": 1,
      "brokenImages": [],
      "emoji": [],
      "videosNoPoster": 0
@@ -622,10 +692,31 @@
       "top": 919,
       "tag": "h2",
       "kind": "heading"
+     },
+     {
+      "text": "Poke Hub",
+      "words": 2,
+      "chars": 8,
+      "lines": 2,
+      "size": 29.8,
+      "vw": 3.9,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.44,
+      "top": 4109,
+      "tag": "a",
+      "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 2,
+     "count": 3,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 0,
@@ -648,10 +739,11 @@
       16,
       18,
       20,
+      30,
       36,
       40
      ],
-     "sizeCount": 7,
+     "sizeCount": 8,
      "notLoaded": [],
      "body": {
       "font": "Plus Jakarta Sans",
@@ -675,8 +767,8 @@
      "microLabels": 0,
      "microLabelShare": 0,
      "microSamples": [],
-     "upperShare": 0,
-     "centerShare": 0.05,
+     "upperShare": 0.02,
+     "centerShare": 0.03,
      "smallText": 0
     },
     "eyebrows": [],
@@ -707,28 +799,37 @@
         "s": 0.45,
         "l": 0.98
        }
+      },
+      {
+       "color": "#0a3834",
+       "top": 4059,
+       "hsl": {
+        "h": 175,
+        "s": 0.7,
+        "l": 0.13
+       }
       }
      ],
      "textColors": [
       {
        "color": "#0c2422",
-       "share": 0.45
+       "share": 0.42
       },
       {
        "color": "#41625f",
-       "share": 0.31
-      },
-      {
-       "color": "#d81b4c",
-       "share": 0.11
-      },
-      {
-       "color": "#ffffff",
-       "share": 0.06
+       "share": 0.25
       },
       {
        "color": "#b3dbd7",
-       "share": 0.05
+       "share": 0.14
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.09
+      },
+      {
+       "color": "#d81b4c",
+       "share": 0.08
       }
      ],
      "button": {
@@ -743,7 +844,7 @@
      "lowContrast": []
     },
     "buttons": {
-     "count": 8,
+     "count": 9,
      "inHero": 6,
      "radius": 0,
      "height": 43,
@@ -815,7 +916,7 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 4173,
+    "pageH": 4821,
     "margins": {
      "left": 31,
      "right": 43
@@ -927,9 +1028,32 @@
       "textLeft": 51,
       "textRight": 275,
       "fullBleed": false,
-      "footer": true,
+      "footer": false,
       "hero": false,
       "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.sf-footer",
+      "tag": "footer",
+      "top": 4059,
+      "height": 763,
+      "words": 109,
+      "media": 0,
+      "middle": 441,
+      "heading": {
+       "text": "Poke",
+       "size": 30,
+       "tag": "span"
+      },
+      "left": 31,
+      "right": 0,
+      "textLeft": 31,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
       "pinned": false
      }
     ],
@@ -958,7 +1082,7 @@
      }
     ],
     "leftBlocks": 25,
-    "bodySize": 20,
+    "bodySize": 15,
     "stage": false,
     "explains": true,
     "slivers": [],
@@ -975,8 +1099,8 @@
     "sidebar": null,
     "topbar": null,
     "canvas": {
-     "left": 21,
-     "right": 43
+     "left": 31,
+     "right": -110
     },
     "hero": {
      "text": "Danh bạ Quốc gia 1.302 loài Pokémon",
@@ -995,33 +1119,46 @@
      "align": "left",
      "position": "left"
     },
-    "charts": 0,
+    "charts": 2,
     "layout": {
-     "panels": 23,
+     "panels": 24,
      "firstScreen": 2,
      "ragged": [],
      "voids": []
     },
     "tiles": 0,
     "panels": {
-     "count": 26,
+     "count": 28,
      "radii": [
       [
        0,
-       26
+       28
       ]
      ],
-     "heavyBorders": 0,
-     "borderSamples": [],
+     "heavyBorders": 1,
+     "borderSamples": [
+      "#144743 on #062220 (1.6:1)"
+     ],
      "heavyShadows": 0,
      "softShadows": 0,
      "shadowSamples": [],
      "glass": 0
     },
     "chips": {
-     "count": 0,
-     "hues": 0,
-     "samples": []
+     "count": 2,
+     "hues": 2,
+     "samples": [
+      {
+       "hue": 175,
+       "size": 56,
+       "radius": "0px"
+      },
+      {
+       "hue": 344,
+       "size": 40,
+       "radius": "50%"
+      }
+     ]
     },
     "numbers": {
      "cells": 0,
@@ -1041,9 +1178,11 @@
       14,
       15,
       16,
+      17,
       18,
       20,
       26,
+      30,
       36,
       40
      ]
@@ -1061,8 +1200,9 @@
    "width": 390,
    "height": 844,
    "load": "load",
-   "screens": 9,
+   "screens": 10,
    "filled": [
+    1,
     1,
     1,
     1,
@@ -1074,8 +1214,8 @@
     1
    ],
    "motion": {
-    "elements": 67,
-    "css": 66,
+    "elements": 69,
+    "css": 68,
     "transitions": 1,
     "scripted": 0,
     "videos": 0,
@@ -1087,24 +1227,24 @@
      "h": 844
     },
     "page": {
-     "height": 7180,
-     "screens": 8.5,
-     "words": 233,
-     "img": 22,
+     "height": 8272,
+     "screens": 9.8,
+     "words": 332,
+     "img": 34,
      "video": 0,
      "canvas": 0,
-     "svg": 0,
+     "svg": 1,
      "sections": 2,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
-     "uiFragments": 1,
+     "uiFragments": 2,
      "uiAbuse": false,
      "realPictures": 1,
      "videoCount": 0,
-     "uiPictures": 1,
+     "uiPictures": 2,
      "pictureSamples": [],
      "blendText": 0,
-     "sideScrollers": 0,
+     "sideScrollers": 1,
      "brokenImages": [],
      "emoji": [],
      "videosNoPoster": 0
@@ -1175,10 +1315,31 @@
       "top": 1054,
       "tag": "h2",
       "kind": "heading"
+     },
+     {
+      "text": "Poke Hub",
+      "words": 2,
+      "chars": 8,
+      "lines": 2,
+      "size": 29.8,
+      "vw": 7.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 7049,
+      "tag": "a",
+      "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 2,
+     "count": 3,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 0,
@@ -1229,8 +1390,8 @@
      "microLabels": 0,
      "microLabelShare": 0,
      "microSamples": [],
-     "upperShare": 0,
-     "centerShare": 0.05,
+     "upperShare": 0.02,
+     "centerShare": 0.03,
      "smallText": 0
     },
     "eyebrows": [],
@@ -1275,23 +1436,23 @@
      "textColors": [
       {
        "color": "#0c2422",
-       "share": 0.45
+       "share": 0.42
       },
       {
        "color": "#41625f",
-       "share": 0.31
-      },
-      {
-       "color": "#d81b4c",
-       "share": 0.11
-      },
-      {
-       "color": "#ffffff",
-       "share": 0.06
+       "share": 0.25
       },
       {
        "color": "#b3dbd7",
-       "share": 0.05
+       "share": 0.14
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.09
+      },
+      {
+       "color": "#d81b4c",
+       "share": 0.08
       }
      ],
      "button": {
@@ -1306,7 +1467,7 @@
      "lowContrast": []
     },
     "buttons": {
-     "count": 8,
+     "count": 9,
      "inHero": 4,
      "radius": 0,
      "height": 43,
@@ -1371,10 +1532,10 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 7180,
+    "pageH": 8272,
     "margins": {
-     "left": 21,
-     "right": 43
+     "left": 29,
+     "right": 41
     },
     "sections": [
      {
@@ -1489,18 +1650,22 @@
       "pinned": false
      },
      {
-      "sel": "footer.pl-footer",
+      "sel": "footer.sf-footer",
       "tag": "footer",
       "top": 6999,
-      "height": 181,
-      "words": 15,
+      "height": 1273,
+      "words": 109,
       "media": 0,
-      "middle": 0,
-      "heading": null,
-      "left": 21,
-      "right": 67,
-      "textLeft": 21,
-      "textRight": 67,
+      "middle": 817,
+      "heading": {
+       "text": "Poke",
+       "size": 30,
+       "tag": "span"
+      },
+      "left": 29,
+      "right": 0,
+      "textLeft": 29,
+      "textRight": 41,
       "fullBleed": false,
       "footer": true,
       "hero": false,
@@ -1529,7 +1694,7 @@
      }
     ],
     "leftBlocks": 25,
-    "bodySize": 19,
+    "bodySize": 15,
     "stage": false,
     "explains": true,
     "slivers": [],
@@ -1547,7 +1712,7 @@
     "topbar": null,
     "canvas": {
      "left": 21,
-     "right": -76
+     "right": -486
     },
     "hero": {
      "text": "Danh bạ Quốc gia 1.302 loài Pokémon",
@@ -1566,33 +1731,46 @@
      "align": "left",
      "position": "left"
     },
-    "charts": 0,
+    "charts": 2,
     "layout": {
-     "panels": 23,
+     "panels": 24,
      "firstScreen": 2,
      "ragged": [],
      "voids": []
     },
     "tiles": 0,
     "panels": {
-     "count": 23,
+     "count": 25,
      "radii": [
       [
        0,
-       23
+       25
       ]
      ],
-     "heavyBorders": 0,
-     "borderSamples": [],
+     "heavyBorders": 1,
+     "borderSamples": [
+      "#144743 on #062220 (1.6:1)"
+     ],
      "heavyShadows": 0,
      "softShadows": 0,
      "shadowSamples": [],
      "glass": 0
     },
     "chips": {
-     "count": 0,
-     "hues": 0,
-     "samples": []
+     "count": 2,
+     "hues": 2,
+     "samples": [
+      {
+       "hue": 175,
+       "size": 56,
+       "radius": "0px"
+      },
+      {
+       "hue": 344,
+       "size": 40,
+       "radius": "50%"
+      }
+     ]
     },
     "numbers": {
      "cells": 0,
@@ -1612,6 +1790,7 @@
       14,
       15,
       16,
+      17,
       18,
       19,
       20,
@@ -1646,7 +1825,7 @@
    "level": "WARN",
    "id": "below-fold",
    "width": 1440,
-   "message": "Only 6 of 23 blocks start on the first 1440px screen.",
+   "message": "Only 6 of 24 blocks start on the first 1440px screen.",
    "fix": "Every block the brief names shows its header and first rows on the first desktop screen: size the headline block to its question, cap long lists with \"View all\", and put time-sensitive blocks before long tables."
   },
   {
