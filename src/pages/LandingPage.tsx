@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import type { CSSProperties, FormEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { NAV_ITEMS } from '../config/navigation'
+import SiteFooter from '../components/SiteFooter'
 import './LandingPage.css'
 
 type Specimen = {
@@ -1081,145 +1082,7 @@ export default function LandingPage() {
       </main>
 
       {/* SECTION 6: FOOTER — Biểu tượng POKE HUB cỡ lớn */}
-      <footer className="tm-footer">
-        <div className="tm-footer-mark" aria-hidden="true" data-reveal style={s({ '--delay': '0ms' })}>
-          <svg viewBox="0 0 1360 220" width={1360} height={220} role="presentation">
-            {/* Block 1: P */}
-            <polygon points="24,0 184,0 184,220 0,220 0,24" fill="#0a3834" />
-            <text x="92" y="164" textAnchor="middle" fill="#ffffff" fontFamily="Plus Jakarta Sans, sans-serif" fontWeight="700" fontSize="148">P</text>
-            {/* Block 2: O */}
-            <polygon points="188,36 356,36 356,220 188,220" fill="#e8f5f3" />
-            <text x="272" y="176" textAnchor="middle" fill="#102624" fontFamily="Plus Jakarta Sans, sans-serif" fontWeight="700" fontSize="136">O</text>
-            {/* Block 3: K */}
-            <polygon points="360,12 528,12 528,220 360,220" fill="#0a3834" />
-            <text x="444" y="168" textAnchor="middle" fill="#ffffff" fontFamily="Plus Jakarta Sans, sans-serif" fontWeight="700" fontSize="144">K</text>
-            {/* Block 4: E */}
-            <polygon points="532,48 692,48 692,220 532,220" fill="#e8f5f3" />
-            <text x="612" y="178" textAnchor="middle" fill="#102624" fontFamily="Plus Jakarta Sans, sans-serif" fontWeight="700" fontSize="132">E</text>
-            {/* Block 5: Chamfered Motif Emblem */}
-            <polygon points="720,24 836,24 860,48 860,220 696,220 696,48" fill="#e62654" />
-            <polygon points="756,88 800,88 814,102 814,146 800,160 756,160 742,146 742,102" fill="#ffffff" />
-            {/* Block 6: H */}
-            <polygon points="864,0 1028,0 1028,220 864,220" fill="#0a3834" />
-            <text x="946" y="164" textAnchor="middle" fill="#ffffff" fontFamily="Plus Jakarta Sans, sans-serif" fontWeight="700" fontSize="148">H</text>
-            {/* Block 7: U */}
-            <polygon points="1032,32 1196,32 1196,220 1032,220" fill="#e8f5f3" />
-            <text x="1114" y="174" textAnchor="middle" fill="#102624" fontFamily="Plus Jakarta Sans, sans-serif" fontWeight="700" fontSize="138">U</text>
-            {/* Block 8: B */}
-            <polygon points="1200,16 1336,16 1360,40 1360,220 1200,220" fill="#0a3834" />
-            <text x="1280" y="168" textAnchor="middle" fill="#ffffff" fontFamily="Plus Jakarta Sans, sans-serif" fontWeight="700" fontSize="142">B</text>
-          </svg>
-        </div>
-
-        <div className="tm-footer-grid">
-          <div className="tm-footer-col">
-            <span className="tm-footer-col-title">Chỉ mục chính</span>
-            <ul className="tm-footer-list">
-              <li>
-                <Link to="/pokemon" className="tm-link">
-                  Danh bạ loài Pokémon
-                </Link>
-              </li>
-              <li>
-                <Link to="/pokedex" className="tm-link">
-                  Bách khoa Pokédex
-                </Link>
-              </li>
-              <li>
-                <Link to="/games" className="tm-link">
-                  Các thế hệ game
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="tm-footer-col">
-            <span className="tm-footer-col-title">Cơ chế &amp; Chỉ số</span>
-            <ul className="tm-footer-list">
-              <li>
-                <Link to="/ability" className="tm-link">
-                  Từ điển kỹ năng
-                </Link>
-              </li>
-              <li>
-                <Link to="/characteristic" className="tm-link">
-                  Đặc tính cá thể IV
-                </Link>
-              </li>
-              <li>
-                <Link to="/pokeathlon-stat" className="tm-link">
-                  Chỉ số Pokéathlon
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="tm-footer-col">
-            <span className="tm-footer-col-title">Thế giới &amp; Đấu trường</span>
-            <ul className="tm-footer-list">
-              <li>
-                <Link to="/locations" className="tm-link">
-                  Địa danh &amp; Tuyến đường
-                </Link>
-              </li>
-              <li>
-                <Link to="/battle" className="tm-link">
-                  Đấu trường Match-3
-                </Link>
-              </li>
-              <li>
-                <Link to="/pokedex/johto" className="tm-link">
-                  Bách khoa vùng Johto
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="tm-footer-col">
-            <span className="tm-footer-col-title">Khu vực Pokédex</span>
-            <ul className="tm-footer-list">
-              <li>
-                <Link to="/pokedex/kanto" className="tm-link">
-                  Vùng Kanto (151)
-                </Link>
-              </li>
-              <li>
-                <Link to="/pokedex/hoenn" className="tm-link">
-                  Vùng Hoenn (202)
-                </Link>
-              </li>
-              <li>
-                <Link to="/pokedex/sinnoh" className="tm-link">
-                  Vùng Sinnoh (210)
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="tm-footer-col-wide">
-            <span className="tm-footer-col-title">Ghi công bản quyền &amp; Nguồn tư liệu mở</span>
-            <p className="tm-credits">
-              Dữ liệu chỉ số Pokémon, danh mục khu vực và tác phẩm nghệ thuật Sugimori chính thức được cung cấp bởi
-              PokeAPI v2 (pokeapi.co). Pokémon và tên nhân vật thuộc bản quyền của Nintendo, Creatures Inc. và GAME FREAK.
-            </p>
-            <p className="tm-credits">
-              Thước phim tư liệu:{' '}
-              <a href="https://commons.wikimedia.org/wiki/File:Dung_beetle_dance_(long)_from_journal.pone.0030211.ogv">
-                “Dung beetle dance (long) from journal.pone.0030211”
-              </a>{' '}
-              bởi Baird E, Byrne MJ, Smolka J, Warrant EJ, Dacke M (2012), giấy phép{' '}
-              <a href="https://creativecommons.org/licenses/by-sa/2.5">CC BY-SA 2.5</a>, qua Wikimedia Commons.
-            </p>
-          </div>
-        </div>
-
-        <div className="tm-footer-bottom">
-          <p className="tm-body">Poke Hub · Xây dựng với React 19, TypeScript và PokeAPI v2</p>
-          <Link to="/pokemon" className="tm-btn">
-            Xem toàn bộ loài
-          </Link>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   )
 }
