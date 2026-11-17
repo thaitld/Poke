@@ -1,6 +1,6 @@
 {
  "url": "http://localhost:4173/pokemon",
- "at": "2026-11-17T07:10:00.586Z",
+ "at": "2026-11-17T07:40:55.029Z",
  "allow": [
   "glass"
  ],
@@ -16,9 +16,9 @@
     1
    ],
    "motion": {
-    "elements": 74,
+    "elements": 75,
     "css": 74,
-    "transitions": 0,
+    "transitions": 1,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -29,9 +29,9 @@
      "h": 900
     },
     "page": {
-     "height": 2670,
-     "screens": 3,
-     "words": 232,
+     "height": 2545,
+     "screens": 2.8,
+     "words": 233,
      "img": 22,
      "video": 0,
      "canvas": 0,
@@ -113,7 +113,7 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.32,
+      "widthRatio": 0.33,
       "top": 715,
       "tag": "h2",
       "kind": "heading"
@@ -132,16 +132,11 @@
      "families": [
       {
        "family": "Plus Jakarta Sans",
-       "share": 0.97,
-       "mono": false
-      },
-      {
-       "family": "monospace",
-       "share": 0.03,
+       "share": 1,
        "mono": false
       }
      ],
-     "familyCount": 2,
+     "familyCount": 1,
      "sizes": [
       14,
       15,
@@ -169,11 +164,9 @@
       "font": "Plus Jakarta Sans",
       "text": "Danh bạ Quốc gia"
      },
-     "monoShare": 0.03,
+     "monoShare": 0,
      "monoProseShare": 0,
-     "monoFamilies": [
-      "monospace"
-     ],
+     "monoFamilies": [],
      "monoSamples": [],
      "microLabels": 0,
      "microLabelShare": 0,
@@ -214,42 +207,42 @@
      ],
      "textColors": [
       {
-       "color": "#41625f",
-       "share": 0.41
+       "color": "#0c2422",
+       "share": 0.45
       },
       {
-       "color": "#0c2422",
-       "share": 0.36
+       "color": "#41625f",
+       "share": 0.31
       },
       {
        "color": "#d81b4c",
-       "share": 0.09
+       "share": 0.11
       },
       {
        "color": "#ffffff",
-       "share": 0.07
+       "share": 0.06
       },
       {
        "color": "#b3dbd7",
-       "share": 0.04
+       "share": 0.05
       }
      ],
      "button": {
-      "bg": "#d81b4c",
+      "bg": "#ffffff",
       "hsl": {
-       "h": 344,
-       "s": 0.78,
-       "l": 0.48
+       "h": 0,
+       "s": 0,
+       "l": 1
       },
-      "fg": "#ffffff"
+      "fg": "#0c2422"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 7,
-     "inHero": 5,
+     "count": 8,
+     "inHero": 6,
      "radius": 0,
-     "height": 48,
+     "height": 43,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
@@ -259,7 +252,7 @@
       "Battle Sim",
       "Xóa lọc",
       "Tải lại",
-      "Tải thêm 20 loài"
+      "← Trước"
      ]
     },
     "surfaces": {
@@ -282,6 +275,12 @@
      "mediaRadius": 0,
      "textShadow": 0,
      "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 287
+      },
       {
        "count": 20,
        "iconTopped": false,
@@ -312,7 +311,7 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 2670,
+    "pageH": 2545,
     "margins": {
      "left": 57,
      "right": 57
@@ -323,7 +322,7 @@
       "tag": "section",
       "top": 92,
       "height": 520,
-      "words": 59,
+      "words": 65,
       "media": 1,
       "middle": 102,
       "heading": {
@@ -345,8 +344,8 @@
       "sel": "section.pl-catalog",
       "tag": "section",
       "top": 643,
-      "height": 1912,
-      "words": 132,
+      "height": 1787,
+      "words": 115,
       "media": 0,
       "middle": 66,
       "heading": {
@@ -357,7 +356,7 @@
       "left": 36,
       "right": 36,
       "textLeft": 36,
-      "textRight": 57,
+      "textRight": 49,
       "fullBleed": false,
       "footer": true,
       "hero": false,
@@ -406,11 +405,11 @@
     "stage": false,
     "explains": true,
     "slivers": [],
-    "voidShare": 0.09,
+    "voidShare": 0.07,
     "voidBox": {
      "x": 540,
      "y": 660,
-     "w": 660,
+     "w": 480,
      "h": 180
     }
    },
@@ -455,11 +454,11 @@
     },
     "tiles": 0,
     "panels": {
-     "count": 27,
+     "count": 26,
      "radii": [
       [
        0,
-       27
+       26
       ]
      ],
      "heavyBorders": 0,
@@ -477,7 +476,7 @@
     "numbers": {
      "cells": 0,
      "leftAligned": 0,
-     "figures": 3,
+     "figures": 4,
      "tabularShare": 1,
      "kpiMax": 25.5
     },
@@ -505,7 +504,7 @@
      "size": 56,
      "top": 192
     },
-    "colourShare": 0.15
+    "colourShare": 0.145
    },
    "consoleErrors": []
   },
@@ -522,9 +521,9 @@
     1
    ],
    "motion": {
-    "elements": 74,
-    "css": 74,
-    "transitions": 0,
+    "elements": 67,
+    "css": 66,
+    "transitions": 1,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -535,9 +534,9 @@
      "h": 1024
     },
     "page": {
-     "height": 4290,
-     "screens": 4.2,
-     "words": 232,
+     "height": 4173,
+     "screens": 4.1,
+     "words": 233,
      "img": 22,
      "video": 0,
      "canvas": 0,
@@ -619,8 +618,8 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.6,
-      "top": 922,
+      "widthRatio": 0.62,
+      "top": 919,
       "tag": "h2",
       "kind": "heading"
      }
@@ -638,16 +637,11 @@
      "families": [
       {
        "family": "Plus Jakarta Sans",
-       "share": 0.97,
-       "mono": false
-      },
-      {
-       "family": "monospace",
-       "share": 0.03,
+       "share": 1,
        "mono": false
       }
      ],
-     "familyCount": 2,
+     "familyCount": 1,
      "sizes": [
       14,
       15,
@@ -674,11 +668,9 @@
       "font": "Plus Jakarta Sans",
       "text": "Danh bạ Quốc gia"
      },
-     "monoShare": 0.03,
+     "monoShare": 0,
      "monoProseShare": 0,
-     "monoFamilies": [
-      "monospace"
-     ],
+     "monoFamilies": [],
      "monoSamples": [],
      "microLabels": 0,
      "microLabelShare": 0,
@@ -709,7 +701,7 @@
       },
       {
        "color": "#f7fcfa",
-       "top": 880,
+       "top": 877,
        "hsl": {
         "h": 156,
         "s": 0.45,
@@ -719,42 +711,42 @@
      ],
      "textColors": [
       {
-       "color": "#41625f",
-       "share": 0.41
+       "color": "#0c2422",
+       "share": 0.45
       },
       {
-       "color": "#0c2422",
-       "share": 0.36
+       "color": "#41625f",
+       "share": 0.31
       },
       {
        "color": "#d81b4c",
-       "share": 0.09
+       "share": 0.11
       },
       {
        "color": "#ffffff",
-       "share": 0.07
+       "share": 0.06
       },
       {
        "color": "#b3dbd7",
-       "share": 0.04
+       "share": 0.05
       }
      ],
      "button": {
-      "bg": "#d81b4c",
+      "bg": "#ffffff",
       "hsl": {
-       "h": 344,
-       "s": 0.78,
-       "l": 0.48
+       "h": 0,
+       "s": 0,
+       "l": 1
       },
-      "fg": "#ffffff"
+      "fg": "#0c2422"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 7,
-     "inHero": 5,
+     "count": 8,
+     "inHero": 6,
      "radius": 0,
-     "height": 48,
+     "height": 43,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
@@ -764,7 +756,7 @@
       "Battle Sim",
       "Xóa lọc",
       "Tải lại",
-      "Tải thêm 20 loài"
+      "← Trước"
      ]
     },
     "surfaces": {
@@ -788,10 +780,16 @@
      "textShadow": 0,
      "cardRows": [
       {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 600
+      },
+      {
        "count": 20,
        "iconTopped": false,
        "rounded": false,
-       "top": 1032
+       "top": 1097
       }
      ]
     },
@@ -817,9 +815,9 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 4290,
+    "pageH": 4173,
     "margins": {
-     "left": 43,
+     "left": 31,
      "right": 43
     },
     "sections": [
@@ -846,8 +844,8 @@
       "sel": "section.pl-hero",
       "tag": "section",
       "top": 142,
-      "height": 706,
-      "words": 59,
+      "height": 703,
+      "words": 65,
       "media": 1,
       "middle": 0,
       "heading": {
@@ -866,11 +864,11 @@
       "pinned": false
      },
      {
-      "sel": "section.pl-catalog",
-      "tag": "section",
-      "top": 880,
-      "height": 3295,
-      "words": 132,
+      "sel": "div.pl-catalog-header",
+      "tag": "div",
+      "top": 919,
+      "height": 143,
+      "words": 20,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -879,9 +877,55 @@
        "tag": "h2"
       },
       "left": 21,
-      "right": 21,
+      "right": 268,
       "textLeft": 21,
+      "textRight": 268,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.pl-grid",
+      "tag": "div",
+      "top": 1097,
+      "height": 2701,
+      "words": 71,
+      "media": 0,
+      "middle": 64,
+      "heading": {
+       "text": "Bulbasaur",
+       "size": 20,
+       "tag": "h3"
+      },
+      "left": 43,
+      "right": 43,
+      "textLeft": 43,
       "textRight": 43,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.pl-load-more-bar",
+      "tag": "div",
+      "top": 3840,
+      "height": 176,
+      "words": 24,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Điều hướng trang",
+       "size": 20,
+       "tag": "h3"
+      },
+      "left": 51,
+      "right": 275,
+      "textLeft": 51,
+      "textRight": 275,
       "fullBleed": false,
       "footer": true,
       "hero": false,
@@ -960,11 +1004,11 @@
     },
     "tiles": 0,
     "panels": {
-     "count": 27,
+     "count": 26,
      "radii": [
       [
        0,
-       27
+       26
       ]
      ],
      "heavyBorders": 0,
@@ -982,7 +1026,7 @@
     "numbers": {
      "cells": 0,
      "leftAligned": 0,
-     "figures": 3,
+     "figures": 4,
      "tabularShare": 1,
      "kpiMax": 25.5
     },
@@ -1009,7 +1053,7 @@
      "size": 40,
      "top": 201
     },
-    "colourShare": 0.133
+    "colourShare": 0.122
    },
    "consoleErrors": []
   },
@@ -1017,9 +1061,8 @@
    "width": 390,
    "height": 844,
    "load": "load",
-   "screens": 10,
+   "screens": 9,
    "filled": [
-    1,
     1,
     1,
     1,
@@ -1031,9 +1074,9 @@
     1
    ],
    "motion": {
-    "elements": 74,
-    "css": 74,
-    "transitions": 0,
+    "elements": 67,
+    "css": 66,
+    "transitions": 1,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -1044,9 +1087,9 @@
      "h": 844
     },
     "page": {
-     "height": 7703,
-     "screens": 9.1,
-     "words": 232,
+     "height": 7180,
+     "screens": 8.5,
+     "words": 233,
      "img": 22,
      "video": 0,
      "canvas": 0,
@@ -1129,7 +1172,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.89,
-      "top": 1078,
+      "top": 1054,
       "tag": "h2",
       "kind": "heading"
      }
@@ -1147,16 +1190,11 @@
      "families": [
       {
        "family": "Plus Jakarta Sans",
-       "share": 0.97,
-       "mono": false
-      },
-      {
-       "family": "monospace",
-       "share": 0.03,
+       "share": 1,
        "mono": false
       }
      ],
-     "familyCount": 2,
+     "familyCount": 1,
      "sizes": [
       14,
       15,
@@ -1184,11 +1222,9 @@
       "font": "Plus Jakarta Sans",
       "text": "Danh bạ Quốc gia"
      },
-     "monoShare": 0.03,
+     "monoShare": 0,
      "monoProseShare": 0,
-     "monoFamilies": [
-      "monospace"
-     ],
+     "monoFamilies": [],
      "monoSamples": [],
      "microLabels": 0,
      "microLabelShare": 0,
@@ -1228,7 +1264,7 @@
       },
       {
        "color": "#f7fcfa",
-       "top": 1035,
+       "top": 1012,
        "hsl": {
         "h": 156,
         "s": 0.45,
@@ -1238,42 +1274,42 @@
      ],
      "textColors": [
       {
-       "color": "#41625f",
-       "share": 0.41
+       "color": "#0c2422",
+       "share": 0.45
       },
       {
-       "color": "#0c2422",
-       "share": 0.36
+       "color": "#41625f",
+       "share": 0.31
       },
       {
        "color": "#d81b4c",
-       "share": 0.09
+       "share": 0.11
       },
       {
        "color": "#ffffff",
-       "share": 0.07
+       "share": 0.06
       },
       {
        "color": "#b3dbd7",
-       "share": 0.04
+       "share": 0.05
       }
      ],
      "button": {
-      "bg": "#d81b4c",
+      "bg": "#ffffff",
       "hsl": {
-       "h": 344,
-       "s": 0.78,
-       "l": 0.48
+       "h": 0,
+       "s": 0,
+       "l": 1
       },
-      "fg": "#ffffff"
+      "fg": "#0c2422"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 7,
+     "count": 8,
      "inHero": 4,
      "radius": 0,
-     "height": 48,
+     "height": 43,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
@@ -1309,7 +1345,7 @@
        "count": 20,
        "iconTopped": false,
        "rounded": false,
-       "top": 1279
+       "top": 1249
       }
      ]
     },
@@ -1335,7 +1371,7 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 7703,
+    "pageH": 7180,
     "margins": {
      "left": 21,
      "right": 43
@@ -1364,8 +1400,8 @@
       "sel": "section.pl-hero",
       "tag": "section",
       "top": 142,
-      "height": 861,
-      "words": 59,
+      "height": 838,
+      "words": 65,
       "media": 1,
       "middle": 0,
       "heading": {
@@ -1376,7 +1412,7 @@
       "left": 43,
       "right": 43,
       "textLeft": 43,
-      "textRight": 64,
+      "textRight": 47,
       "fullBleed": true,
       "footer": false,
       "hero": true,
@@ -1386,8 +1422,8 @@
      {
       "sel": "div.pl-catalog-header",
       "tag": "div",
-      "top": 1078,
-      "height": 167,
+      "top": 1054,
+      "height": 161,
       "words": 20,
       "media": 0,
       "middle": 0,
@@ -1399,7 +1435,7 @@
       "left": 21,
       "right": 21,
       "textLeft": 21,
-      "textRight": 95,
+      "textRight": 34,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1409,9 +1445,9 @@
      {
       "sel": "div.pl-grid",
       "tag": "div",
-      "top": 1279,
-      "height": 5919,
-      "words": 91,
+      "top": 1249,
+      "height": 5420,
+      "words": 71,
       "media": 0,
       "middle": 61,
       "heading": {
@@ -1432,20 +1468,20 @@
      {
       "sel": "div.pl-load-more-bar",
       "tag": "div",
-      "top": 7240,
-      "height": 240,
-      "words": 21,
+      "top": 6711,
+      "height": 245,
+      "words": 24,
       "media": 0,
       "middle": 0,
       "heading": {
-       "text": "Trạng thái đồng bộ",
+       "text": "Điều hướng trang",
        "size": 19,
        "tag": "h3"
       },
       "left": 51,
       "right": 51,
       "textLeft": 51,
-      "textRight": 97,
+      "textRight": 60,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1455,7 +1491,7 @@
      {
       "sel": "footer.pl-footer",
       "tag": "footer",
-      "top": 7523,
+      "top": 6999,
       "height": 181,
       "words": 15,
       "media": 0,
@@ -1539,11 +1575,11 @@
     },
     "tiles": 0,
     "panels": {
-     "count": 24,
+     "count": 23,
      "radii": [
       [
        0,
-       24
+       23
       ]
      ],
      "heavyBorders": 0,
@@ -1561,7 +1597,7 @@
     "numbers": {
      "cells": 0,
      "leftAligned": 0,
-     "figures": 3,
+     "figures": 4,
      "tabularShare": 1,
      "kpiMax": 21.25
     },
@@ -1589,7 +1625,7 @@
      "size": 30,
      "top": 197
     },
-    "colourShare": 0.155
+    "colourShare": 0.151
    },
    "consoleErrors": []
   }
@@ -1599,7 +1635,7 @@
    "level": "WARN",
    "id": "colour-sprawl",
    "width": 1440,
-   "message": "15% of the first screen is strongly coloured.",
+   "message": "14% of the first screen is strongly coloured.",
    "fix": "Keep the screen neutral and spend colour on data and status: the studied screens sit near 3%, and only tinted styles reach 10–15%, as pale tints rather than saturated fills.",
    "alsoAt": [
     768,

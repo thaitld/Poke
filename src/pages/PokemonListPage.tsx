@@ -1,12 +1,12 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import type { CSSProperties } from 'react'
 import { Link } from 'react-router-dom'
 import { NAV_ITEMS } from '../config/navigation'
 import { extractId, formatName, spriteFor } from '../utils/pokemon'
 import './PokemonListPage.css'
 
-const PRIMARY_ENDPOINT = 'https://pokeapi.co/api/v2/listPokemons?limit=20'
-const FALLBACK_ENDPOINT = 'https://pokeapi.co/api/v2/pokemon?limit=20'
+const PAGE_SIZE = 20
+const API_BASE = 'https://pokeapi.co/api/v2/pokemon'
 
 type PokemonEntry = {
   name?: string
@@ -58,58 +58,59 @@ const animatedSpriteFor = (id: number | null, name?: string) => {
   return spriteFor(id, name)
 }
 
+const buildPageTokens = (current: number, total: number): Array<number | 'ellipsis'> => {
+  if (total <= 7) {
+    return Array.from({ length: total }, (_, i) => i + 1)
+  }
+
+  const tokens: Array<number | 'ellipsis'> = [1]
+  const start = Math.max(2, current - 1)
+  const end = Math.min(total - 1, current + 1)
+
+  if (start > 2) tokens.push('ellipsis')
+  for (let p = start; p <= end; p++) {
+    tokens.push(p)
+  }
+  if (end < total - 1) tokens.push('ellipsis')
+  tokens.push(total)
+
+  return tokens
+}
+
 function PokemonListPage() {
+  const catalogRef = useRef<HTMLElement>(null)
   const [items, setItems] = useState<PokemonEntry[]>([])
-  const [meta, setMeta] = useState<{ count?: number; next?: string | null }>()
+  const [totalApiCount, setTotalApiCount] = useState<number | undefined>(undefined)
   const [status, setStatus] = useState<'loading' | 'success' | 'error'>('loading')
   const [errorMessage, setErrorMessage] = useState('')
   const [query, setQuery] = useState('')
-  const [pageUrl, setPageUrl] = useState(PRIMARY_ENDPOINT)
-  const [loadingMore, setLoadingMore] = useState(false)
+  const [currentPage, setCurrentPage] = useState(1)
   const [refreshKey, setRefreshKey] = useState(0)
-  const [endpointInUse, setEndpointInUse] = useState(PRIMARY_ENDPOINT)
 
   useEffect(() => {
     let isActive = true
-    const append = pageUrl !== PRIMARY_ENDPOINT
+    const offset = (currentPage - 1) * PAGE_SIZE
+    const targetUrl = `${API_BASE}?limit=${PAGE_SIZE}&offset=${offset}`
 
     const load = async () => {
-      if (append) {
-        setLoadingMore(true)
-      } else {
-        setStatus('loading')
-      }
+      setStatus('loading')
 
       try {
-        const response = await fetch(pageUrl)
-        let data: unknown
-
+        const response = await fetch(targetUrl)
         if (!response.ok) {
-          if (pageUrl === PRIMARY_ENDPOINT) {
-            const fallbackResponse = await fetch(FALLBACK_ENDPOINT)
-            if (!fallbackResponse.ok) {
-              throw new Error(`HTTP ${fallbackResponse.status}`)
-            }
-            data = (await fallbackResponse.json()) as unknown
-            setEndpointInUse(FALLBACK_ENDPOINT)
-          } else {
-            throw new Error(`HTTP ${response.status}`)
-          }
-        } else {
-          data = (await response.json()) as unknown
-          if (pageUrl.includes('/pokemon')) {
-            setEndpointInUse(FALLBACK_ENDPOINT)
-          } else {
-            setEndpointInUse(PRIMARY_ENDPOINT)
-          }
+          throw new Error(`HTTP ${response.status}`)
         }
+        const data = (await response.json()) as unknown
+
         if (!isActive) return
 
         const list = extractList(data)
         const metadata = extractMeta(data)
 
-        setItems((prev) => (append ? [...prev, ...list] : list))
-        setMeta({ count: metadata.count, next: metadata.next ?? null })
+        setItems(list)
+        if (typeof metadata.count === 'number') {
+          setTotalApiCount(metadata.count)
+        }
         setStatus('success')
         setErrorMessage('')
       } catch (error) {
@@ -118,10 +119,6 @@ function PokemonListPage() {
         setErrorMessage(
           error instanceof Error ? error.message : 'Không thể tải dữ liệu từ PokeAPI.'
         )
-      } finally {
-        if (isActive) {
-          setLoadingMore(false)
-        }
       }
     }
 
@@ -130,7 +127,7 @@ function PokemonListPage() {
     return () => {
       isActive = false
     }
-  }, [pageUrl, refreshKey])
+  }, [currentPage, refreshKey])
 
   const filtered = useMemo(() => {
     if (!query.trim()) return items
@@ -142,17 +139,78 @@ function PokemonListPage() {
     )
   }, [items, query])
 
+  const totalCount = totalApiCount ?? items.length
+  const totalPages = Math.max(1, Math.ceil(totalCount / PAGE_SIZE))
+  const pageTokens = useMemo(
+    () => buildPageTokens(currentPage, totalPages),
+    [currentPage, totalPages]
+  )
+
+  const startIndex = (currentPage - 1) * PAGE_SIZE
+  const rangeStart = items.length > 0 ? startIndex + 1 : 0
+  const rangeEnd = startIndex + items.length
+
+  const goToPage = (page: number, scrollToTop = false) => {
+    const next = Math.min(Math.max(1, page), totalPages)
+    if (next === currentPage) return
+    setCurrentPage(next)
+    if (scrollToTop) {
+      catalogRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }
+
   const handleRefresh = () => {
-    setItems([])
-    setMeta(undefined)
-    setPageUrl(PRIMARY_ENDPOINT)
-    setEndpointInUse(PRIMARY_ENDPOINT)
+    setQuery('')
+    setCurrentPage(1)
+    setTotalApiCount(undefined)
     setRefreshKey((value) => value + 1)
   }
 
-  const totalCount = meta?.count ?? items.length
   const statusLabel =
     status === 'loading' ? 'Đang tải' : status === 'error' ? 'Lỗi kết nối' : 'Sẵn sàng'
+
+  const renderPagination = (scrollToTop: boolean) => (
+    <nav className="pl-pagination" aria-label="Phân trang danh sách Pokémon">
+      <button
+        type="button"
+        className="pl-page-btn pl-page-nav"
+        onClick={() => goToPage(currentPage - 1, scrollToTop)}
+        disabled={currentPage <= 1 || status === 'loading'}
+      >
+        ← Trước
+      </button>
+
+      <div className="pl-page-numbers">
+        {pageTokens.map((token, idx) =>
+          token === 'ellipsis' ? (
+            <span className="pl-page-ellipsis" key={`ellipsis-${idx}`} aria-hidden="true">
+              …
+            </span>
+          ) : (
+            <button
+              key={`page-${token}`}
+              type="button"
+              className={`pl-page-btn${token === currentPage ? ' is-current' : ''}`}
+              aria-current={token === currentPage ? 'page' : undefined}
+              onClick={() => goToPage(token, scrollToTop)}
+              disabled={status === 'loading' && token === currentPage}
+            >
+              {token}
+            </button>
+          )
+        )}
+      </div>
+
+      <button
+        type="button"
+        className="pl-page-btn pl-page-nav"
+        onClick={() => goToPage(currentPage + 1, scrollToTop)}
+        disabled={currentPage >= totalPages || status === 'loading'}
+      >
+        Sau →
+      </button>
+    </nav>
+  )
 
   return (
     <div className="pl-page">
@@ -202,8 +260,8 @@ function PokemonListPage() {
                 </span>
               </h1>
               <p className="pl-lead" data-load style={s({ '--d': '160ms', marginTop: '1rem' })}>
-                Truy vấn trực tiếp từ PokeAPI v2 với cơ chế chuyển mạch dự phòng tự động và lọc tức
-                thời theo tên hoặc mã số loài.
+                Truy vấn trực tiếp từng trang 20 loài từ PokeAPI v2 với cơ chế chuyển mạch dự phòng
+                tự động và lọc nhanh theo tên hoặc mã số.
               </p>
             </div>
 
@@ -216,7 +274,7 @@ function PokemonListPage() {
               }}
             >
               <label className="pl-input-wrap">
-                <span className="pl-input-label">Tìm kiếm Pokémon</span>
+                <span className="pl-input-label">Lọc trong trang hiện tại</span>
                 <input
                   className="pl-input"
                   type="search"
@@ -263,54 +321,58 @@ function PokemonListPage() {
                 <span className="pl-metric-val">{totalCount}</span>
               </div>
               <div className="pl-metric-cell">
-                <span className="pl-metric-lbl">Đã nạp</span>
-                <span className="pl-metric-val">{items.length}</span>
+                <span className="pl-metric-lbl">Trang hiện tại</span>
+                <span className="pl-metric-val">
+                  {currentPage}/{totalPages}
+                </span>
               </div>
               <div className="pl-metric-cell">
-                <span className="pl-metric-lbl">Đang lọc</span>
+                <span className="pl-metric-lbl">Đang hiển thị</span>
                 <span className="pl-metric-val">{filtered.length}</span>
               </div>
             </div>
 
-            <div className="pl-endpoint-box">
-              <span className="pl-metric-lbl">Cổng kết nối hiện hành</span>
-              <code className="pl-endpoint-url">{endpointInUse}</code>
+            <div className="pl-progress-box">
+              <div className="pl-progress-row">
+                <span className="pl-metric-lbl">Phạm vi đang xem</span>
+                <span className="pl-progress-text">
+                  Mục {rangeStart}–{rangeEnd} · {Math.round((currentPage / totalPages) * 100)}%
+                </span>
+              </div>
+              <div className="pl-progress-track" aria-hidden="true">
+                <span
+                  className="pl-progress-fill"
+                  style={{ width: `${Math.min(100, Math.max(2, (currentPage / totalPages) * 100))}%` }}
+                />
+              </div>
             </div>
           </aside>
         </section>
 
         {/* Catalog Grid */}
-        <section className="pl-catalog" aria-labelledby="pl-catalog-title">
+        <section className="pl-catalog" ref={catalogRef} aria-labelledby="pl-catalog-title">
           <div className="pl-catalog-header">
             <div>
               <h2 id="pl-catalog-title" className="pl-head">
                 Danh sách mẫu vật
               </h2>
               <p className="pl-catalog-sub">
-                Hiển thị {filtered.length} trên tổng số {totalCount} loài Pokémon đã ghi nhận.
+                Trang {currentPage} / {totalPages} · Mục {rangeStart}–{rangeEnd} trong tổng số{' '}
+                {totalCount} loài Pokémon.
               </p>
             </div>
-            {meta?.next && (
-              <button
-                className="pl-btn"
-                type="button"
-                onClick={() => setPageUrl(meta.next ?? endpointInUse)}
-                disabled={loadingMore}
-              >
-                {loadingMore ? 'Đang tải...' : 'Tải thêm 20 loài'}
-              </button>
-            )}
+            {totalPages > 1 && renderPagination(false)}
           </div>
 
           <div className="pl-grid">
-            {status === 'loading' && items.length === 0
+            {status === 'loading'
               ? Array.from({ length: 8 }).map((_, index) => (
-                  <div className="pl-card pl-skeleton" key={`skeleton-${index}`}>
-                    <div className="pl-skeleton-box" />
-                    <div className="pl-skeleton-line" />
-                    <div className="pl-skeleton-line short" />
-                  </div>
-                ))
+                <div className="pl-card pl-skeleton" key={`skeleton-${index}`}>
+                  <div className="pl-skeleton-box" />
+                  <div className="pl-skeleton-line" />
+                  <div className="pl-skeleton-line short" />
+                </div>
+              ))
               : null}
 
             {status === 'error' ? (
@@ -327,89 +389,77 @@ function PokemonListPage() {
               </div>
             ) : null}
 
-            {status !== 'error' && filtered.length === 0 && items.length > 0 ? (
+            {status !== 'error' && status !== 'loading' && filtered.length === 0 && items.length > 0 ? (
               <div className="pl-notice">
-                <h3>Không tìm thấy Pokémon phù hợp</h3>
-                <p>Hãy thử từ khóa khác hoặc nhấn Xóa lọc để xem lại danh sách.</p>
+                <h3>Không tìm thấy Pokémon phù hợp trên trang {currentPage}</h3>
+                <p>Hãy thử từ khóa khác, nhấn Xóa lọc hoặc chuyển sang trang khác.</p>
               </div>
             ) : null}
 
-            {filtered.map((item, index) => {
-              const id = extractId(item.url)
-              const primarySprite = animatedSpriteFor(id, item.name)
-              const fallbackSprite = spriteFor(id, item.name)
-              return (
-                <article
-                  className="pl-card pl-card-animate"
-                  key={`${item.name}-${index}`}
-                  style={s({ '--stagger': `${(index % 20) * 30}ms` })}
-                >
-                  <div className="pl-card-meta">
-                    <span className="pl-card-id">
-                      {id ? `#${id.toString().padStart(4, '0')}` : '---'}
-                    </span>
-                    <span className="pl-card-index">
-                      Mục {index + 1}
-                    </span>
-                  </div>
+            {status !== 'loading' &&
+              filtered.map((item, index) => {
+                const id = extractId(item.url)
+                const primarySprite = animatedSpriteFor(id, item.name)
+                const fallbackSprite = spriteFor(id, item.name)
+                return (
+                  <article
+                    className="pl-card pl-card-animate"
+                    key={`${currentPage}-${item.name}-${index}`}
+                    style={s({ '--stagger': `${index * 28}ms` })}
+                  >
+                    <div className="pl-card-meta">
+                      <span className="pl-card-id">
+                        {id ? `#${id.toString().padStart(4, '0')}` : '---'}
+                      </span>
+                      <span className="pl-card-index">Mục {startIndex + index + 1}</span>
+                    </div>
 
-                  <div className="pl-card-aperture">
-                    <span className="pl-aperture-sweep" aria-hidden="true" />
-                    {primarySprite ? (
-                      <img
-                        className="pl-sprite"
-                        src={primarySprite}
-                        alt={item.name ? `${formatName(item.name)} sprite` : 'Pokémon'}
-                        loading="lazy"
-                        onError={(event) => {
-                          const target = event.currentTarget
-                          if (fallbackSprite && target.src !== fallbackSprite) {
-                            target.src = fallbackSprite
-                          } else {
-                            target.style.visibility = 'hidden'
-                          }
-                        }}
-                      />
-                    ) : (
-                      <span className="pl-sprite-fallback">Chưa có ảnh</span>
-                    )}
-                  </div>
+                    <div className="pl-card-aperture">
+                      <span className="pl-aperture-sweep" aria-hidden="true" />
+                      {primarySprite ? (
+                        <img
+                          className="pl-sprite"
+                          src={primarySprite}
+                          alt={item.name ? `${formatName(item.name)} sprite` : 'Pokémon'}
+                          loading="lazy"
+                          onError={(event) => {
+                            const target = event.currentTarget
+                            if (fallbackSprite && target.src !== fallbackSprite) {
+                              target.src = fallbackSprite
+                            } else {
+                              target.style.visibility = 'hidden'
+                            }
+                          }}
+                        />
+                      ) : (
+                        <span className="pl-sprite-fallback">Chưa có ảnh</span>
+                      )}
+                    </div>
 
-                  <div className="pl-card-body">
-                    <h3 className="pl-card-name">{formatName(item.name)}</h3>
-                    <p className="pl-card-slug" title={item.url}>
-                      {item.url ? item.url.replace('https://pokeapi.co/api/v2', '') : 'Không có đường dẫn'}
-                    </p>
-                  </div>
-                </article>
-              )
-            })}
+                    <div className="pl-card-body">
+                      <h3 className="pl-card-name">{formatName(item.name)}</h3>
+
+                    </div>
+                  </article>
+                )
+              })}
           </div>
 
           <div className="pl-load-more-bar">
             <div className="pl-load-more-copy">
-              <h3>Trạng thái đồng bộ</h3>
+              <h3>Điều hướng trang</h3>
               <p>
-                {status === 'success'
-                  ? `Đã nạp ${items.length} / ${totalCount} loài từ PokeAPI v2.`
-                  : 'Đang chờ phản hồi từ máy chủ dữ liệu.'}
+                Trang {currentPage} / {totalPages} · Hiển thị {PAGE_SIZE} loài mỗi trang để giữ tốc
+                độ tải mượt mà.
               </p>
             </div>
-            <div className="pl-form-actions">
-              {meta?.next && (
-                <button
-                  className="pl-btn"
-                  type="button"
-                  onClick={() => setPageUrl(meta.next ?? endpointInUse)}
-                  disabled={loadingMore}
-                >
-                  {loadingMore ? 'Đang tải...' : 'Tải thêm 20 loài'}
-                </button>
-              )}
+            {totalPages > 1 ? (
+              renderPagination(true)
+            ) : (
               <button className="pl-btn pl-btn-ghost" type="button" onClick={handleRefresh}>
                 Tải lại từ đầu
               </button>
-            </div>
+            )}
           </div>
         </section>
       </main>
