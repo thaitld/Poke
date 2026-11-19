@@ -1,10 +1,94 @@
 import { useEffect, useMemo, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import { BorderBeam } from '../components/ui/BorderBeam'
+import type { CSSProperties } from 'react'
+import { Link, useNavigate, useParams } from 'react-router-dom'
+import { NAV_ITEMS } from '../config/navigation'
 import { extractId, formatName, spriteFor } from '../utils/pokemon'
+import SiteFooter from '../components/SiteFooter'
+import './PokedexPage.css'
 
 const POKEDEX_ENDPOINT = 'https://pokeapi.co/api/v2/pokedex/'
-const PREVIEW_LIMIT = 30
+const POKEMON_ENDPOINT = 'https://pokeapi.co/api/v2/pokemon/'
+const TILE_PAGE_SIZE = 30
+
+const PRESET_POKEDEXES = [
+  { query: 'kanto', label: 'Kanto' },
+  { query: 'national', label: 'National' },
+  { query: 'original-johto', label: 'Johto' },
+  { query: 'hoenn', label: 'Hoenn' },
+  { query: 'original-sinnoh', label: 'Sinnoh' },
+  { query: 'original-unova', label: 'Unova' },
+  { query: 'kalos-central', label: 'Kalos' },
+  { query: 'alola', label: 'Alola' },
+  { query: 'galar', label: 'Galar' },
+  { query: 'paldea', label: 'Paldea' },
+]
+
+const LANGUAGE_VI: Record<string, string> = {
+  'ja-hrkt': 'Tiếng Nhật (Kana)',
+  'ja-Hrkt': 'Tiếng Nhật (Kana)',
+  ko: 'Tiếng Hàn',
+  'zh-hant': 'Tiếng Trung (Phồn thể)',
+  'zh-Hant': 'Tiếng Trung (Phồn thể)',
+  fr: 'Tiếng Pháp',
+  de: 'Tiếng Đức',
+  es: 'Tiếng Tây Ban Nha',
+  'es-419': 'Tiếng Tây Ban Nha (Mỹ Latinh)',
+  it: 'Tiếng Ý',
+  en: 'Tiếng Anh',
+  ja: 'Tiếng Nhật',
+  'zh-hans': 'Tiếng Trung (Giản thể)',
+  'zh-Hans': 'Tiếng Trung (Giản thể)',
+}
+
+const TYPE_SHORT_VI: Record<string, string> = {
+  normal: 'Thường',
+  fighting: 'Giác Đấu',
+  flying: 'Bay',
+  poison: 'Độc',
+  ground: 'Đất',
+  rock: 'Đá',
+  bug: 'Bọ',
+  ghost: 'Ma',
+  steel: 'Thép',
+  fire: 'Lửa',
+  water: 'Nước',
+  grass: 'Cỏ',
+  electric: 'Điện',
+  psychic: 'Tâm Linh',
+  ice: 'Băng',
+  dragon: 'Rồng',
+  dark: 'Bóng Tối',
+  fairy: 'Tiên',
+}
+
+const TYPE_BG: Record<string, string> = {
+  normal: '#6b6f62',
+  fighting: '#b33328',
+  flying: '#5b6ec9',
+  poison: '#8e3a8e',
+  ground: '#a68232',
+  rock: '#8d7b38',
+  bug: '#6d8216',
+  ghost: '#5b4879',
+  steel: '#5b6a7a',
+  fire: '#c84b18',
+  water: '#2b6cb8',
+  grass: '#2d7a22',
+  electric: '#855e00',
+  psychic: '#c2305c',
+  ice: '#227477',
+  dragon: '#5229c4',
+  dark: '#524034',
+  fairy: '#b84980',
+}
+
+const homeArtworkFor = (id: number | null) =>
+  id ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${id}.png` : ''
+
+const officialArtworkFor = (id: number | null) =>
+  id
+    ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`
+    : ''
 
 type NamedResource = {
   name?: string
@@ -37,17 +121,10 @@ type PokedexResponse = {
   version_groups?: NamedResource[]
 }
 
-const artworkFor = (id: number | null, name?: string) => {
-  if (id) {
-    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`
-  }
-  if (name) {
-    return `https://img.pokemondb.net/sprites/home/normal/${name.toLowerCase()}.png`
-  }
-  return ''
-}
+const s = (vars: Record<string, string | number>): CSSProperties => vars as unknown as CSSProperties
 
 function PokedexPage() {
+  const navigate = useNavigate()
   const { idOrName } = useParams<{ idOrName?: string }>()
   const initialQuery = (idOrName ?? 'kanto').trim().toLowerCase() || 'kanto'
 
@@ -58,6 +135,9 @@ function PokedexPage() {
   const [pokedex, setPokedex] = useState<PokedexResponse | null>(null)
   const [selectedEntryNumber, setSelectedEntryNumber] = useState<number | null>(null)
   const [sortMode, setSortMode] = useState<'number' | 'name'>('number')
+  const [filterText, setFilterText] = useState('')
+  const [tileLimit, setTileLimit] = useState(TILE_PAGE_SIZE)
+  const [speciesTypes, setSpeciesTypes] = useState<Record<number, string[]>>({})
 
   useEffect(() => {
     const nextQuery = (idOrName ?? 'kanto').trim().toLowerCase() || 'kanto'
@@ -73,6 +153,8 @@ function PokedexPage() {
     const load = async () => {
       setStatus('loading')
       setErrorMessage('')
+      setTileLimit(TILE_PAGE_SIZE)
+      setFilterText('')
 
       try {
         const response = await fetch(`${POKEDEX_ENDPOINT}${clean}/`)
@@ -91,7 +173,7 @@ function PokedexPage() {
         setStatus('error')
         setPokedex(null)
         setErrorMessage(
-          error instanceof Error ? error.message : 'Khong the tai du lieu'
+          error instanceof Error ? error.message : 'Không thể tải dữ liệu Pokédex.'
         )
       }
     }
@@ -115,257 +197,517 @@ function PokedexPage() {
   const versionGroups = pokedex?.version_groups ?? []
   const localizedNames = pokedex?.names ?? []
   const statusLabel =
-    status === 'loading' ? 'Dang tai' : status === 'error' ? 'Loi' : 'San sang'
+    status === 'loading' ? 'Đang tải' : status === 'error' ? 'Lỗi kết nối' : 'Sẵn sàng'
 
   const sortedEntries = useMemo(() => {
-    const clone = [...pokemonEntries]
+    const keyword = filterText.trim().toLowerCase()
+    const filtered = keyword
+      ? pokemonEntries.filter((entry) => {
+          const name = (entry.pokemon_species?.name ?? '').toLowerCase()
+          const num = String(entry.entry_number ?? '')
+          return name.includes(keyword) || num.includes(keyword)
+        })
+      : [...pokemonEntries]
+
     if (sortMode === 'name') {
-      clone.sort((a, b) =>
+      filtered.sort((a, b) =>
         (a.pokemon_species?.name ?? '').localeCompare(b.pokemon_species?.name ?? '')
       )
-      return clone
+      return filtered
     }
 
-    clone.sort((a, b) => (a.entry_number ?? 0) - (b.entry_number ?? 0))
-    return clone
-  }, [pokemonEntries, sortMode])
+    filtered.sort((a, b) => (a.entry_number ?? 0) - (b.entry_number ?? 0))
+    return filtered
+  }, [pokemonEntries, sortMode, filterText])
+
+  const visibleTiles = useMemo(
+    () => sortedEntries.slice(0, tileLimit),
+    [sortedEntries, tileLimit]
+  )
 
   const selectedEntry = useMemo(() => {
-    if (!sortedEntries.length) return null
-    if (selectedEntryNumber == null) return sortedEntries[0]
+    if (!pokemonEntries.length) return null
+    if (selectedEntryNumber == null) return sortedEntries[0] ?? pokemonEntries[0]
     return (
-      sortedEntries.find((entry) => entry.entry_number === selectedEntryNumber) ??
-      sortedEntries[0]
+      pokemonEntries.find((entry) => entry.entry_number === selectedEntryNumber) ??
+      sortedEntries[0] ??
+      pokemonEntries[0]
     )
-  }, [sortedEntries, selectedEntryNumber])
+  }, [pokemonEntries, sortedEntries, selectedEntryNumber])
 
   const selectedSpeciesName = selectedEntry?.pokemon_species?.name
   const selectedSpeciesId = extractId(selectedEntry?.pokemon_species?.url)
-  const selectedArtwork = artworkFor(selectedSpeciesId, selectedSpeciesName)
-  const selectedSprite = spriteFor(selectedSpeciesId, selectedSpeciesName)
+  const selectedPrimaryArt =
+    homeArtworkFor(selectedSpeciesId) ||
+    officialArtworkFor(selectedSpeciesId) ||
+    spriteFor(selectedSpeciesId, selectedSpeciesName)
+
+  useEffect(() => {
+    if (!selectedSpeciesId || selectedSpeciesId in speciesTypes) return
+
+    let isActive = true
+    const loadSelectedTypes = async () => {
+      try {
+        const res = await fetch(`${POKEMON_ENDPOINT}${selectedSpeciesId}/`)
+        if (!res.ok) return
+        const data = (await res.json()) as {
+          types?: Array<{ slot?: number; type?: { name?: string } }>
+        }
+        if (!isActive) return
+        const resolved = (data.types ?? [])
+          .sort((a, b) => (a.slot ?? 0) - (b.slot ?? 0))
+          .map((item) => item.type?.name)
+          .filter((t): t is string => Boolean(t))
+        setSpeciesTypes((prev) => ({ ...prev, [selectedSpeciesId]: resolved }))
+      } catch {
+        // Ignore transient type fetch error
+      }
+    }
+
+    loadSelectedTypes()
+
+    return () => {
+      isActive = false
+    }
+  }, [selectedSpeciesId, speciesTypes])
+
+  const selectedTypes = selectedSpeciesId ? speciesTypes[selectedSpeciesId] ?? [] : []
+
+  const handleSelectPokedex = (query: string) => {
+    setInput(query)
+    setActiveQuery(query)
+    navigate(`/pokedex/${query}`)
+  }
 
   return (
-    <div className="app">
-      <header className="topbar">
-        <div className="brand">
-          <div className="brand-mark" aria-hidden="true">
-            <img src="/assets/logo.jpg" alt="Poke Hub Logo" className="brand-logo-img" />
-          </div>
-          <div>
-            <p className="eyebrow">Games Group</p>
-            <h1>Pokedexes</h1>
-          </div>
-        </div>
+    <div className="pdx-page">
+      {/* Synchronized Top Header */}
+      <header className="pdx-header">
+        <nav className="pdx-nav" aria-label="Điều hướng chính">
+          <Link to="/" className="pdx-wordmark">
+            <img src="/assets/logo.jpg" alt="Poke Hub Logo" className="pdx-wordmark-logo" />
+            <span>Poke Hub</span>
+          </Link>
+
+          <ul className="pdx-nav-links">
+            {NAV_ITEMS.filter((item) => !item.isAction).map((item) => (
+              <li key={item.path}>
+                <Link
+                  to={item.path}
+                  className={`pdx-link${item.path === '/pokedex' ? ' is-active' : ''}`}
+                  title={item.labelVi}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          <Link to="/battle" className="pdx-btn">
+            Battle Sim
+          </Link>
+        </nav>
       </header>
 
       <main>
-        <section className="characteristic-hero">
-          <div className="characteristic-copy">
-            <p className="lead">
-              Pokedex luu thong tin Pokemon theo region. Ban co the tra cuu bang ID hoac ten nhu kanto, national, original-johto.
+        {/* Hero Stage */}
+        <section className="pdx-hero" aria-label="Tra cứu Pokédex theo vùng">
+          <div className="pdx-hero-card">
+            <h1 className="pdx-title">
+              <span className="pdx-line">
+                <span data-line style={s({ '--i': 0 })}>
+                  Bách khoa Pokédex
+                </span>
+              </span>
+              <span className="pdx-line">
+                <span data-line style={s({ '--i': 1 })}>
+                  Theo Khu vực
+                </span>
+              </span>
+            </h1>
+
+            <p className="pdx-lead" data-load style={s({ '--d': '160ms' })}>
+              Tra cứu danh mục Pokémon theo từng vùng đất và phiên bản game. Chọn một Pokémon bất kỳ
+              trên bảng để xem hình ảnh 3D sắc nét, hệ nguyên tố và thông tin chi tiết.
             </p>
 
             <form
-              className="characteristic-form"
+              className="pdx-search-form"
+              data-load
+              style={s({ '--d': '220ms' })}
               onSubmit={(event) => {
                 event.preventDefault()
-                if (!input.trim()) return
-                setActiveQuery(input.trim().toLowerCase())
+                const clean = input.trim().toLowerCase()
+                if (!clean) return
+                handleSelectPokedex(clean)
               }}
             >
-              <label className="characteristic-input-group">
-                <span>Pokedex ID or Name</span>
+              <label className="pdx-input-wrap">
+                <span className="pdx-input-label">Mã số hoặc tên Pokédex</span>
                 <input
+                  className="pdx-input"
                   type="text"
                   value={input}
                   onChange={(event) => setInput(event.target.value)}
-                  placeholder="Vi du: 2, kanto, national"
+                  placeholder="Ví dụ: kanto, national, original-johto, paldea..."
                 />
               </label>
 
-              <div className="characteristic-actions">
-                <button className="btn primary" type="submit">
-                  Tra cuu
+              <div className="pdx-form-actions">
+                <button className="pdx-btn" type="submit">
+                  Tra cứu
                 </button>
                 <button
-                  className="btn ghost"
+                  className="pdx-btn pdx-btn-ghost"
                   type="button"
-                  onClick={() => {
-                    setInput('kanto')
-                    setActiveQuery('kanto')
-                  }}
+                  onClick={() => handleSelectPokedex('kanto')}
                 >
-                  Mac dinh
+                  Mặc định
                 </button>
               </div>
             </form>
+
+            <div className="pdx-presets" data-load style={s({ '--d': '280ms' })}>
+              <span className="pdx-presets-label">Khu vực nổi bật:</span>
+              {PRESET_POKEDEXES.map((preset) => {
+                const isSelected =
+                  activeQuery === preset.query || pokedex?.name === preset.query
+                return (
+                  <button
+                    key={preset.query}
+                    type="button"
+                    className={`pdx-chip${isSelected ? ' is-active' : ''}`}
+                    onClick={() => handleSelectPokedex(preset.query)}
+                  >
+                    {preset.label}
+                  </button>
+                )
+              })}
+            </div>
           </div>
 
-          <div className="characteristic-status-card">
-            <div className="characteristic-status-row">
-              <span className="status-pill" data-state={status}>
-                <span className="pulse-dot" aria-hidden="true" />
-                Pokedex: {statusLabel}
+          <aside
+            className="pdx-telemetry-stage"
+            data-ui
+            data-load
+            style={s({ '--d': '200ms' })}
+            aria-label="Hồ sơ Pokédex đang soi"
+          >
+            <div className="pdx-telemetry-head">
+              <h2 className="pdx-telemetry-title">Hồ sơ Pokédex đang soi</h2>
+              <span className="pdx-status-pill" data-state={status}>
+                <span className="pdx-pulse-beacon" aria-hidden="true" />
+                {statusLabel}
               </span>
             </div>
 
-            <div className="characteristic-meta-grid">
-              <p>
-                <strong>Active Query:</strong> {activeQuery}
-              </p>
-              <p>
-                <strong>Endpoint:</strong> {POKEDEX_ENDPOINT}
-                {'{id or name}/'}
-              </p>
-              <p>
-                <strong>Request URL:</strong> {POKEDEX_ENDPOINT}
-                {activeQuery}/
-              </p>
+            <div className="pdx-telemetry-metrics">
+              <div className="pdx-metric-cell">
+                <span className="pdx-metric-lbl">Mã Pokédex</span>
+                <span className="pdx-metric-val">
+                  {pokedex ? `#${pokedex.id.toString().padStart(3, '0')}` : '---'}
+                </span>
+              </div>
+              <div className="pdx-metric-cell">
+                <span className="pdx-metric-lbl">Khu vực</span>
+                <span className="pdx-metric-val">
+                  {pokedex?.region?.name ? formatName(pokedex.region.name) : 'Quốc gia'}
+                </span>
+              </div>
+              <div className="pdx-metric-cell">
+                <span className="pdx-metric-lbl">Tổng số loài</span>
+                <span className="pdx-metric-val">{pokemonEntries.length} loài</span>
+              </div>
+              <div className="pdx-metric-cell">
+                <span className="pdx-metric-lbl">Cụm phiên bản</span>
+                <span className="pdx-metric-val">{versionGroups.length} cụm</span>
+              </div>
             </div>
-          </div>
+          </aside>
         </section>
 
-        {status === 'error' ? (
-          <div className="notice">
-            <h3>Khong the tai du lieu</h3>
-            <p>{errorMessage || 'Vui long kiem tra lai pokedex ID/ten.'}</p>
-          </div>
-        ) : null}
+        {/* Main Content */}
+        <section className="pdx-content" aria-label="Bảng điều khiển Pokédex">
+          {status === 'error' ? (
+            <div className="pdx-notice">
+              <h3>Không thể tải dữ liệu Pokédex</h3>
+              <p>
+                {errorMessage ||
+                  'Vui lòng kiểm tra lại mã số hoặc tên Pokédex (ví dụ: kanto, national).'}
+              </p>
+            </div>
+          ) : null}
 
-        {status === 'success' && pokedex ? (
-          <section className="ability-details">
-            <div className="ability-card pokedex-console">
-              <div className="pokedex-console-left">
-                <div className="pokedex-screen">
-                  <p className="pokedex-screen-title">{formatName(englishName ?? pokedex.name)}</p>
-                  <p className="pokedex-screen-subtitle">
-                    Region {formatName(pokedex.region?.name)} · {pokedex.is_main_series ? 'Main Series' : 'Side Dex'}
-                  </p>
-
-                  <div className="pokedex-selected-art">
-                    <img
-                      src={selectedArtwork || selectedSprite || 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png'}
-                      alt={formatName(selectedSpeciesName)}
-                      onError={(event) => {
-                        event.currentTarget.src =
-                          selectedSprite ||
-                          'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png'
-                      }}
-                    />
-                  </div>
-
-                  <div className="pokedex-selected-meta">
-                    <span>
-                      #{String(selectedEntry?.entry_number ?? 0).padStart(3, '0')}
-                    </span>
-                    <strong>{formatName(selectedSpeciesName)}</strong>
-                  </div>
-                </div>
-
-                <div className="pokedex-flavor">
-                  <p>{englishDescription || 'No english description found for this pokedex.'}</p>
-                </div>
-              </div>
-
-              <div className="pokedex-console-right">
-                <div className="pokedex-console-toolbar">
-                  <p>
-                    Dex #{pokedex.id.toString().padStart(3, '0')} · {pokemonEntries.length} entries
-                  </p>
-                  <button
-                    className="btn ghost"
-                    type="button"
-                    onClick={() => setSortMode((mode) => (mode === 'number' ? 'name' : 'number'))}
-                  >
-                    Sort by {sortMode === 'number' ? 'name' : 'number'}
-                  </button>
-                </div>
-
-                <div className="pokedex-console-grid" role="list">
-                  {sortedEntries.slice(0, PREVIEW_LIMIT).map((entry) => {
-                    const speciesName = entry.pokemon_species?.name
-                    const speciesId = extractId(entry.pokemon_species?.url)
-                    const sprite = spriteFor(speciesId, speciesName)
-                    const isActive = entry.entry_number === selectedEntry?.entry_number
-
-                    return (
-                      <button
-                        key={`${entry.entry_number}-${speciesName}`}
-                        type="button"
-                        className={`pokedex-tile${isActive ? ' is-active' : ''}`}
-                        onClick={() => setSelectedEntryNumber(entry.entry_number ?? null)}
-                      >
-                        <div className="pokedex-tile-image">
-                          {sprite ? (
-                            <img
-                              src={sprite}
-                              alt={formatName(speciesName)}
-                              loading="lazy"
-                              onError={(event) => {
-                                event.currentTarget.src =
-                                  'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png'
-                              }}
-                            />
-                          ) : (
-                            <span>?</span>
-                          )}
-                        </div>
-                        <p className="pokedex-tile-number">
-                          {String(entry.entry_number ?? 0).padStart(3, '0')}
+          {status === 'success' && pokedex ? (
+            <>
+              {/* Modern Liquid Glass Pokédex Console */}
+              <div className="pdx-console">
+                {/* Left Showcase Screen */}
+                <div className="pdx-console-left">
+                  <div className="pdx-screen">
+                    <div className="pdx-screen-head">
+                      <div>
+                        <h2 className="pdx-screen-title">
+                          {formatName(englishName ?? pokedex.name)}
+                        </h2>
+                        <p className="pdx-screen-subtitle">
+                          Khu vực {pokedex.region?.name ? formatName(pokedex.region.name) : 'Quốc gia'}
                         </p>
-                      </button>
-                    )
-                  })}
+                      </div>
+                      <span className="pdx-series-badge">
+                        {pokedex.is_main_series ? 'Dòng chính' : 'Ngoại truyện'}
+                      </span>
+                    </div>
 
-                  {sortedEntries.length === 0 ? (
-                    <p className="muted">Khong co du lieu Pokemon entries.</p>
+                    <div className="pdx-showcase-stage">
+                      <img
+                        src={
+                          selectedPrimaryArt ||
+                          'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png'
+                        }
+                        alt={formatName(selectedSpeciesName)}
+                        onError={(event) => {
+                          const img = event.currentTarget
+                          if (!img.dataset.fallbackStep) {
+                            img.dataset.fallbackStep = 'official'
+                            const official = officialArtworkFor(selectedSpeciesId)
+                            if (official) {
+                              img.src = official
+                              return
+                            }
+                          }
+                          if (img.dataset.fallbackStep !== 'sprite') {
+                            img.dataset.fallbackStep = 'sprite'
+                            img.src =
+                              spriteFor(selectedSpeciesId, selectedSpeciesName) ||
+                              'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png'
+                          }
+                        }}
+                      />
+                    </div>
+
+                    <div className="pdx-selected-info">
+                      <div className="pdx-selected-row">
+                        <span className="pdx-selected-num">
+                          #{String(selectedEntry?.entry_number ?? 0).padStart(3, '0')}
+                        </span>
+                        <strong className="pdx-selected-name">
+                          {formatName(selectedSpeciesName)}
+                        </strong>
+                      </div>
+
+                      {selectedTypes.length > 0 ? (
+                        <div className="pdx-selected-types">
+                          {selectedTypes.map((typeKey) => (
+                            <span
+                              key={typeKey}
+                              className="pdx-type-chip"
+                              style={{ backgroundColor: TYPE_BG[typeKey] ?? '#35605b' }}
+                            >
+                              {TYPE_SHORT_VI[typeKey] ?? formatName(typeKey)}
+                            </span>
+                          ))}
+                        </div>
+                      ) : null}
+
+                      {selectedSpeciesId ? (
+                        <Link to={`/pokemon?id=${selectedSpeciesId}`} className="pdx-btn">
+                          Xem chi tiết Pokémon
+                        </Link>
+                      ) : null}
+                    </div>
+                  </div>
+
+                  <div className="pdx-flavor-box">
+                    <span className="pdx-flavor-lbl">Mô tả Pokédex</span>
+                    <p className="pdx-flavor-text">
+                      {englishDescription || 'Chưa có mô tả chi tiết cho Pokédex này.'}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Right Interactive Grid */}
+                <div className="pdx-console-right">
+                  <div className="pdx-console-toolbar">
+                    <p className="pdx-toolbar-meta">
+                      Dex #{pokedex.id.toString().padStart(3, '0')} · {sortedEntries.length} loài
+                    </p>
+
+                    <div className="pdx-toolbar-controls">
+                      <input
+                        className="pdx-filter-input"
+                        type="text"
+                        value={filterText}
+                        onChange={(event) => {
+                          setFilterText(event.target.value)
+                          setTileLimit(TILE_PAGE_SIZE)
+                        }}
+                        placeholder="Lọc nhanh tên hoặc số..."
+                        aria-label="Lọc nhanh Pokémon"
+                      />
+                      <button
+                        className="pdx-btn pdx-btn-dark"
+                        type="button"
+                        onClick={() =>
+                          setSortMode((mode) => (mode === 'number' ? 'name' : 'number'))
+                        }
+                      >
+                        Xếp theo: {sortMode === 'number' ? 'Số thứ tự' : 'Tên A–Z'}
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="pdx-tile-grid" role="list">
+                    {visibleTiles.map((entry) => {
+                      const speciesName = entry.pokemon_species?.name
+                      const speciesId = extractId(entry.pokemon_species?.url)
+                      const tileArt =
+                        homeArtworkFor(speciesId) || spriteFor(speciesId, speciesName)
+                      const isActive = entry.entry_number === selectedEntry?.entry_number
+
+                      return (
+                        <button
+                          key={`${entry.entry_number}-${speciesName}`}
+                          type="button"
+                          className={`pdx-tile${isActive ? ' is-active' : ''}`}
+                          onClick={() => setSelectedEntryNumber(entry.entry_number ?? null)}
+                        >
+                          <div className="pdx-tile-aperture">
+                            {tileArt ? (
+                              <img
+                                src={tileArt}
+                                alt={formatName(speciesName)}
+                                loading="lazy"
+                                onError={(event) => {
+                                  const img = event.currentTarget
+                                  if (!img.dataset.fallbackStep) {
+                                    img.dataset.fallbackStep = 'official'
+                                    const official = officialArtworkFor(speciesId)
+                                    if (official) {
+                                      img.src = official
+                                      return
+                                    }
+                                  }
+                                  if (img.dataset.fallbackStep !== 'sprite') {
+                                    img.dataset.fallbackStep = 'sprite'
+                                    img.src =
+                                      spriteFor(speciesId, speciesName) ||
+                                      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png'
+                                  }
+                                }}
+                              />
+                            ) : (
+                              <span>?</span>
+                            )}
+                          </div>
+                          <p className="pdx-tile-number">
+                            #{String(entry.entry_number ?? 0).padStart(3, '0')}
+                          </p>
+                          <p className="pdx-tile-name">{formatName(speciesName)}</p>
+                        </button>
+                      )
+                    })}
+
+                    {sortedEntries.length === 0 ? (
+                      <p className="pdx-empty-dark">Không tìm thấy loài Pokémon phù hợp.</p>
+                    ) : null}
+                  </div>
+
+                  {sortedEntries.length > visibleTiles.length ? (
+                    <div className="pdx-tile-footer">
+                      <button
+                        type="button"
+                        className="pdx-btn"
+                        onClick={() =>
+                          setTileLimit((prev) =>
+                            Math.min(prev + TILE_PAGE_SIZE, sortedEntries.length)
+                          )
+                        }
+                      >
+                        Xem thêm {Math.min(TILE_PAGE_SIZE, sortedEntries.length - visibleTiles.length)} loài
+                      </button>
+                      <button
+                        type="button"
+                        className="pdx-btn pdx-btn-dark"
+                        onClick={() => setTileLimit(sortedEntries.length)}
+                      >
+                        Hiện tất cả ({sortedEntries.length})
+                      </button>
+                    </div>
                   ) : null}
                 </div>
               </div>
-            </div>
 
-            <div className="ability-card">
-              <div className="section-header compact">
-                <div>
-                  <h3>Thong tin bo sung</h3>
-                  <p>Ten da ngon ngu va version groups cua Pokedex.</p>
+              {/* Overview & Supplementary Cards */}
+              <article className="pdx-glass-card">
+                <div className="pdx-section-head">
+                  <h3>Thông tin tổng quan Pokédex</h3>
+                  <p>Số liệu thống kê và chế độ hiển thị hiện tại.</p>
                 </div>
-              </div>
 
-              <div className="ability-grid">
-                <div>
-                  <p className="label">Localized Names</p>
-                  <p>{localizedNames.length}</p>
+                <div className="pdx-summary-grid">
+                  <div className="pdx-summary-box">
+                    <span className="pdx-summary-lbl">Tên đa ngôn ngữ</span>
+                    <span className="pdx-summary-val">{localizedNames.length} ngôn ngữ</span>
+                  </div>
+                  <div className="pdx-summary-box">
+                    <span className="pdx-summary-lbl">Cụm phiên bản</span>
+                    <span className="pdx-summary-val">{versionGroups.length} cụm</span>
+                  </div>
+                  <div className="pdx-summary-box">
+                    <span className="pdx-summary-lbl">Chế độ sắp xếp</span>
+                    <span className="pdx-summary-val">
+                      {sortMode === 'number' ? 'Theo số thứ tự' : 'Theo tên A–Z'}
+                    </span>
+                  </div>
                 </div>
-                <div>
-                  <p className="label">Version Groups</p>
-                  <p>{versionGroups.length}</p>
-                </div>
-                <div>
-                  <p className="label">Sort Mode</p>
-                  <p>{sortMode}</p>
-                </div>
-              </div>
+              </article>
 
-              <div className="generation-grid">
-                {versionGroups.map((item) => (
-                  <BorderBeam key={item.name} className="generation-beam">
-                    <div className="generation-item">
-                      <p className="generation-item-name">{formatName(item.name)}</p>
-                      <p className="generation-item-url">{item.url}</p>
-                    </div>
-                  </BorderBeam>
-                ))}
-                {versionGroups.length === 0 ? <p className="muted">Khong co du lieu.</p> : null}
+              <div className="pdx-split-grids">
+                <article className="pdx-glass-card">
+                  <div className="pdx-section-head">
+                    <h3>Tên gọi đa ngôn ngữ ({localizedNames.length})</h3>
+                    <p>Tên hiển thị của Pokédex tại các thị trường phát hành.</p>
+                  </div>
+                  <div className="pdx-names-grid">
+                    {localizedNames.map((entry, idx) => {
+                      const lang = entry.language?.name ?? 'unknown'
+                      return (
+                        <div key={`${lang}-${idx}`} className="pdx-name-card">
+                          <span className="pdx-lang-lbl">{LANGUAGE_VI[lang] ?? lang}</span>
+                          <strong className="pdx-lang-val">{entry.name}</strong>
+                        </div>
+                      )
+                    })}
+                    {localizedNames.length === 0 ? (
+                      <p className="pdx-empty">Không có dữ liệu tên đa ngôn ngữ.</p>
+                    ) : null}
+                  </div>
+                </article>
+
+                <article className="pdx-glass-card">
+                  <div className="pdx-section-head">
+                    <h3>Cụm phiên bản áp dụng ({versionGroups.length})</h3>
+                    <p>Các tựa game sử dụng danh mục Pokédex này.</p>
+                  </div>
+                  <div className="pdx-pill-grid">
+                    {versionGroups.map((vg) => (
+                      <span key={vg.name} className="pdx-resource-pill">
+                        {formatName(vg.name)}
+                      </span>
+                    ))}
+                    {versionGroups.length === 0 ? (
+                      <p className="pdx-empty">Chưa có dữ liệu cụm phiên bản.</p>
+                    ) : null}
+                  </div>
+                </article>
               </div>
-            </div>
-          </section>
-        ) : null}
+            </>
+          ) : null}
+        </section>
       </main>
 
-      <footer className="footer">
-        <p>Powered by PokeAPI</p>
-      </footer>
+      <SiteFooter />
     </div>
   )
 }
