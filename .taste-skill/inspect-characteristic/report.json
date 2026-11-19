@@ -1,0 +1,2286 @@
+{
+ "url": "http://localhost:4173/characteristic",
+ "at": "2026-11-19T15:13:29.963Z",
+ "allow": [
+  "glass"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 11,
+    "css": 11,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 2045,
+     "screens": 2.3,
+     "words": 289,
+     "img": 15,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 2,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 2,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Giải mã Đặc tính Chỉ số Cá thể IV",
+     "words": 9,
+     "chars": 33,
+     "lines": 2,
+     "size": 56,
+     "vw": 3.9,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 192,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Giải mã Đặc tính Chỉ số Cá thể IV",
+     "words": 9,
+     "lines": 2,
+     "size": 56.4,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Giải mã Đặc tính Chỉ số Cá thể IV",
+      "words": 9,
+      "chars": 33,
+      "lines": 2,
+      "size": 56.4,
+      "vw": 3.9,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.015,
+      "leading": 1.14,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.49,
+      "top": 192,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "#1 · Bulbasaur",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.15,
+      "top": 880,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "49",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 29.8,
+      "vw": 2.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.22,
+      "top": 1005,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "49",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 29.8,
+      "vw": 2.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.22,
+      "top": 1005,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "45",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 29.8,
+      "vw": 2.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 1006,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "45",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 29.8,
+      "vw": 2.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 1142,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "65",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 29.8,
+      "vw": 2.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.22,
+      "top": 1142,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "65",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 29.8,
+      "vw": 2.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.22,
+      "top": 1142,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Poke Hub",
+      "words": 2,
+      "chars": 8,
+      "lines": 2,
+      "size": 34.6,
+      "vw": 2.4,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.24,
+      "top": 1526,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      18,
+      19,
+      23,
+      30,
+      32,
+      35,
+      56
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 22.8,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 62,
+     "max": {
+      "size": 56.4,
+      "vw": 3.9,
+      "font": "Plus Jakarta Sans",
+      "text": "Giải mã Đặc tính"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.02,
+     "centerShare": 0.07,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Đặc tính #1",
+      "above": "#1 · Bulbasaur",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 13.8,
+      "top": 846
+     },
+     {
+      "text": "Tấn công",
+      "above": "49",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14.9,
+      "top": 974
+     },
+     {
+      "text": "Phòng thủ",
+      "above": "49",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14.9,
+      "top": 974
+     },
+     {
+      "text": "Cao nhất",
+      "above": "45",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12.8,
+      "top": 974
+     },
+     {
+      "text": "Tốc độ",
+      "above": "45",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14.9,
+      "top": 1112
+     },
+     {
+      "text": "Công phép",
+      "above": "65",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14.9,
+      "top": 1112
+     },
+     {
+      "text": "Thủ phép",
+      "above": "65",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14.9,
+      "top": 1112
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0d060b",
+     "bodyBgHsl": {
+      "h": 317,
+      "s": 0.37,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#f0faf8",
+       "top": 0,
+       "hsl": {
+        "h": 168,
+        "s": 0.5,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#f7fcfa",
+       "top": 731,
+       "hsl": {
+        "h": 156,
+        "s": 0.45,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#0a3834",
+       "top": 1451,
+       "hsl": {
+        "h": 175,
+        "s": 0.7,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0c2422",
+       "share": 0.43
+      },
+      {
+       "color": "#41625f",
+       "share": 0.19
+      },
+      {
+       "color": "#b3dbd7",
+       "share": 0.18
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.16
+      },
+      {
+       "color": "#00e676",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#e4f5f2",
+      "hsl": {
+       "h": 169,
+       "s": 0.46,
+       "l": 0.93
+      },
+      "fg": "#0c2422"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 11,
+     "inHero": 10,
+     "radius": 0,
+     "height": 31,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Characteristic",
+      "Battle Sim",
+      "Tra cứu",
+      "Mặc định",
+      "#1 Bulbasaur"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 957
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 1246
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.68
+     }
+    ],
+    "nav": {
+     "links": 9,
+     "fixed": false,
+     "height": 92,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 2045,
+    "margins": {
+     "left": 55,
+     "right": 75
+    },
+    "sections": [
+     {
+      "sel": "main",
+      "tag": "main",
+      "top": 92,
+      "height": 1359,
+      "words": 157,
+      "media": 1,
+      "middle": 102,
+      "heading": {
+       "text": "Giải mã Đặc tính",
+       "size": 56,
+       "tag": "h1"
+      },
+      "left": 79,
+      "right": 96,
+      "textLeft": 79,
+      "textRight": 96,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.sf-footer",
+      "tag": "footer",
+      "top": 1451,
+      "height": 595,
+      "words": 109,
+      "media": 0,
+      "middle": 29,
+      "heading": {
+       "text": "Poke",
+       "size": 35,
+       "tag": "span"
+      },
+      "left": 46,
+      "right": 46,
+      "textLeft": 46,
+      "textRight": 46,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Giải mã Đặc tính Chỉ số Cá thể IV",
+      "size": 56,
+      "top": 192,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 79,
+      "n": 3
+     },
+     {
+      "x": 144,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 4,
+    "bodySize": 23,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.13,
+    "voidBox": {
+     "x": 0,
+     "y": 720,
+     "w": 1440,
+     "h": 120
+    }
+   },
+   "app": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "dark": true,
+    "ground": "#0d060b",
+    "sidebar": null,
+    "topbar": {
+     "h": 92
+    },
+    "canvas": {
+     "left": 46,
+     "right": 75
+    },
+    "hero": {
+     "text": "Giải mã Đặc tính Chỉ số Cá thể IV",
+     "words": 9,
+     "chars": 33,
+     "lines": 2,
+     "size": 56,
+     "vw": 3.9,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 192,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 2,
+    "layout": {
+     "panels": 4,
+     "firstScreen": 3,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 14,
+     "radii": [
+      [
+       0,
+       14
+      ]
+     ],
+     "heavyBorders": 1,
+     "borderSamples": [
+      "#144743 on #062220 (1.6:1)"
+     ],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 2,
+     "hues": 2,
+     "samples": [
+      {
+       "hue": 175,
+       "size": 56,
+       "radius": "0px"
+      },
+      {
+       "hue": 344,
+       "size": 40,
+       "radius": "50%"
+      }
+     ]
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 7,
+     "tabularShare": 1,
+     "kpiMax": 29.75
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      21,
+      23,
+      30,
+      32,
+      35,
+      56
+     ]
+    },
+    "title": {
+     "text": "Giải mã Đặc tính\nChỉ số Cá thể IV",
+     "size": 56,
+     "top": 192
+    },
+    "colourShare": 0.152
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 3,
+   "filled": [
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 17,
+    "css": 11,
+    "transitions": 6,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 2774,
+     "screens": 2.7,
+     "words": 289,
+     "img": 15,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 2,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 2,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Giải mã Đặc tính Chỉ số Cá thể IV",
+     "words": 9,
+     "chars": 33,
+     "lines": 2,
+     "size": 40,
+     "vw": 5.2,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 201,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Giải mã Đặc tính Chỉ số Cá thể IV",
+     "words": 9,
+     "lines": 2,
+     "size": 39.6,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Giải mã Đặc tính Chỉ số Cá thể IV",
+      "words": 9,
+      "chars": 33,
+      "lines": 2,
+      "size": 39.6,
+      "vw": 5.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.015,
+      "leading": 1.14,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 201,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "49",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 29.8,
+      "vw": 3.9,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.38,
+      "top": 1369,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "45",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 29.8,
+      "vw": 3.9,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 1370,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "49",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 29.8,
+      "vw": 3.9,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 1506,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "45",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 29.8,
+      "vw": 3.9,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.38,
+      "top": 1506,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "65",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 29.8,
+      "vw": 3.9,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 1642,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "65",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 29.8,
+      "vw": 3.9,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.38,
+      "top": 1642,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Poke Hub",
+      "words": 2,
+      "chars": 8,
+      "lines": 2,
+      "size": 29.8,
+      "vw": 3.9,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.44,
+      "top": 2061,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      18,
+      19,
+      20,
+      26,
+      30,
+      40
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 20.1,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 67,
+     "max": {
+      "size": 39.6,
+      "vw": 5.2,
+      "font": "Plus Jakarta Sans",
+      "text": "Giải mã Đặc tính"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.02,
+     "centerShare": 0.07,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Tấn công",
+      "above": "49",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14.9,
+      "top": 1339
+     },
+     {
+      "text": "Cao nhất",
+      "above": "45",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12.8,
+      "top": 1339
+     },
+     {
+      "text": "Phòng thủ",
+      "above": "49",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14.9,
+      "top": 1476
+     },
+     {
+      "text": "Tốc độ",
+      "above": "45",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14.9,
+      "top": 1476
+     },
+     {
+      "text": "Công phép",
+      "above": "65",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14.9,
+      "top": 1612
+     },
+     {
+      "text": "Thủ phép",
+      "above": "65",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14.9,
+      "top": 1612
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0d060b",
+     "bodyBgHsl": {
+      "h": 317,
+      "s": 0.37,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#f0faf8",
+       "top": 0,
+       "hsl": {
+        "h": 168,
+        "s": 0.5,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#f7fcfa",
+       "top": 966,
+       "hsl": {
+        "h": 156,
+        "s": 0.45,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#0a3834",
+       "top": 2011,
+       "hsl": {
+        "h": 175,
+        "s": 0.7,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0c2422",
+       "share": 0.43
+      },
+      {
+       "color": "#41625f",
+       "share": 0.19
+      },
+      {
+       "color": "#b3dbd7",
+       "share": 0.18
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.16
+      },
+      {
+       "color": "#00e676",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#e4f5f2",
+      "hsl": {
+       "h": 169,
+       "s": 0.46,
+       "l": 0.93
+      },
+      "fg": "#0c2422"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 11,
+     "inHero": 10,
+     "radius": 0,
+     "height": 31,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Characteristic",
+      "Battle Sim",
+      "Tra cứu",
+      "Mặc định",
+      "#1 Bulbasaur"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 1322
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 1746
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.77
+     }
+    ],
+    "nav": {
+     "links": 9,
+     "fixed": false,
+     "height": 142,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 2774,
+    "margins": {
+     "left": 31,
+     "right": 45
+    },
+    "sections": [
+     {
+      "sel": "header.ch-header",
+      "tag": "header",
+      "top": 0,
+      "height": 142,
+      "words": 13,
+      "media": 0,
+      "middle": 29,
+      "heading": null,
+      "left": 31,
+      "right": 21,
+      "textLeft": 31,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.ch-hero",
+      "tag": "section",
+      "top": 142,
+      "height": 792,
+      "words": 91,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Giải mã Đặc tính",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 47,
+      "right": 47,
+      "textLeft": 47,
+      "textRight": 60,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.ch-content",
+      "tag": "section",
+      "top": 966,
+      "height": 1045,
+      "words": 66,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "45",
+       "size": 30,
+       "tag": "span"
+      },
+      "left": 58,
+      "right": 64,
+      "textLeft": 58,
+      "textRight": 64,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.sf-footer",
+      "tag": "footer",
+      "top": 2011,
+      "height": 763,
+      "words": 109,
+      "media": 0,
+      "middle": 441,
+      "heading": {
+       "text": "Poke",
+       "size": 30,
+       "tag": "span"
+      },
+      "left": 31,
+      "right": 0,
+      "textLeft": 31,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Giải mã Đặc tính Chỉ số Cá thể IV",
+      "size": 40,
+      "top": 201,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 47,
+      "n": 3
+     },
+     {
+      "x": 99,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 4,
+    "bodySize": 20,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "dark": true,
+    "ground": "#0d060b",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 31,
+     "right": -311
+    },
+    "hero": {
+     "text": "Giải mã Đặc tính Chỉ số Cá thể IV",
+     "words": 9,
+     "chars": 33,
+     "lines": 2,
+     "size": 40,
+     "vw": 5.2,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 201,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 2,
+    "layout": {
+     "panels": 4,
+     "firstScreen": 2,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 15,
+     "radii": [
+      [
+       0,
+       15
+      ]
+     ],
+     "heavyBorders": 1,
+     "borderSamples": [
+      "#144743 on #062220 (1.6:1)"
+     ],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 2,
+     "hues": 2,
+     "samples": [
+      {
+       "hue": 175,
+       "size": 56,
+       "radius": "0px"
+      },
+      {
+       "hue": 344,
+       "size": 40,
+       "radius": "50%"
+      }
+     ]
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 7,
+     "tabularShare": 1,
+     "kpiMax": 29.75
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      26,
+      30,
+      40
+     ]
+    },
+    "title": {
+     "text": "Giải mã Đặc tính\nChỉ số Cá thể IV",
+     "size": 40,
+     "top": 201
+    },
+    "colourShare": 0.128
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 17,
+    "css": 11,
+    "transitions": 6,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 4155,
+     "screens": 4.9,
+     "words": 289,
+     "img": 15,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 2,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 2,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Giải mã Đặc tính Chỉ số Cá thể IV",
+     "words": 9,
+     "chars": 33,
+     "lines": 2,
+     "size": 30,
+     "vw": 7.7,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 197,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Giải mã Đặc tính Chỉ số Cá thể IV",
+     "words": 9,
+     "lines": 2,
+     "size": 30.2,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Giải mã Đặc tính Chỉ số Cá thể IV",
+      "words": 9,
+      "chars": 33,
+      "lines": 2,
+      "size": 30.2,
+      "vw": 7.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.015,
+      "leading": 1.14,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 197,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "#1 · Bulbasaur",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 25.5,
+      "vw": 6.5,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 1341,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "45",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 29.8,
+      "vw": 7.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.66,
+      "top": 1699,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "49",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 29.8,
+      "vw": 7.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.66,
+      "top": 1835,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "49",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 29.8,
+      "vw": 7.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.66,
+      "top": 1970,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "45",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 29.8,
+      "vw": 7.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.66,
+      "top": 2106,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "65",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 29.8,
+      "vw": 7.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.66,
+      "top": 2242,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "65",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 29.8,
+      "vw": 7.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.66,
+      "top": 2377,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Poke Hub",
+      "words": 2,
+      "chars": 8,
+      "lines": 2,
+      "size": 29.8,
+      "vw": 7.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 2933,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      18,
+      19,
+      26,
+      30
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 19.1,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 32,
+     "max": {
+      "size": 30.2,
+      "vw": 7.7,
+      "font": "Plus Jakarta Sans",
+      "text": "Giải mã Đặc tính"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.02,
+     "centerShare": 0.07,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Cao nhất",
+      "above": "45",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12.8,
+      "top": 1667
+     },
+     {
+      "text": "Tấn công",
+      "above": "49",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14.9,
+      "top": 1805
+     },
+     {
+      "text": "Phòng thủ",
+      "above": "49",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14.9,
+      "top": 1940
+     },
+     {
+      "text": "Tốc độ",
+      "above": "45",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14.9,
+      "top": 2076
+     },
+     {
+      "text": "Công phép",
+      "above": "65",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14.9,
+      "top": 2212
+     },
+     {
+      "text": "Thủ phép",
+      "above": "65",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14.9,
+      "top": 2347
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0d060b",
+     "bodyBgHsl": {
+      "h": 317,
+      "s": 0.37,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#f0faf8",
+       "top": 0,
+       "hsl": {
+        "h": 168,
+        "s": 0.5,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#0a3834",
+       "top": 771,
+       "hsl": {
+        "h": 175,
+        "s": 0.7,
+        "l": 0.13
+       }
+      },
+      {
+       "color": "#f7fcfa",
+       "top": 1238,
+       "hsl": {
+        "h": 156,
+        "s": 0.45,
+        "l": 0.98
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0c2422",
+       "share": 0.43
+      },
+      {
+       "color": "#41625f",
+       "share": 0.19
+      },
+      {
+       "color": "#b3dbd7",
+       "share": 0.18
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.16
+      },
+      {
+       "color": "#00e676",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#e4f5f2",
+      "hsl": {
+       "h": 169,
+       "s": 0.46,
+       "l": 0.93
+      },
+      "fg": "#0c2422"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 11,
+     "inHero": 10,
+     "radius": 0,
+     "height": 31,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Characteristic",
+      "Battle Sim",
+      "Tra cứu",
+      "Mặc định",
+      "#1 Bulbasaur"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 1650
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 2481
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.83
+     }
+    ],
+    "nav": {
+     "links": 9,
+     "fixed": false,
+     "height": 142,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 4155,
+    "margins": {
+     "left": 29,
+     "right": 41
+    },
+    "sections": [
+     {
+      "sel": "header.ch-header",
+      "tag": "header",
+      "top": 0,
+      "height": 142,
+      "words": 10,
+      "media": 0,
+      "middle": 29,
+      "heading": null,
+      "left": 31,
+      "right": 21,
+      "textLeft": 31,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.ch-hero",
+      "tag": "section",
+      "top": 142,
+      "height": 1065,
+      "words": 91,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Giải mã Đặc tính",
+       "size": 30,
+       "tag": "h1"
+      },
+      "left": 43,
+      "right": 43,
+      "textLeft": 43,
+      "textRight": 59,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.ch-content",
+      "tag": "section",
+      "top": 1238,
+      "height": 1644,
+      "words": 66,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "45",
+       "size": 30,
+       "tag": "span"
+      },
+      "left": 58,
+      "right": 74,
+      "textLeft": 58,
+      "textRight": 74,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.sf-footer",
+      "tag": "footer",
+      "top": 2882,
+      "height": 1273,
+      "words": 109,
+      "media": 0,
+      "middle": 817,
+      "heading": {
+       "text": "Poke",
+       "size": 30,
+       "tag": "span"
+      },
+      "left": 29,
+      "right": 0,
+      "textLeft": 29,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Giải mã Đặc tính Chỉ số Cá thể IV",
+      "size": 30,
+      "top": 197,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 43,
+      "n": 3
+     },
+     {
+      "x": 99,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 4,
+    "bodySize": 19,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "dark": true,
+    "ground": "#0d060b",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 29,
+     "right": -687
+    },
+    "hero": {
+     "text": "Giải mã Đặc tính Chỉ số Cá thể IV",
+     "words": 9,
+     "chars": 33,
+     "lines": 2,
+     "size": 30,
+     "vw": 7.7,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 197,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 2,
+    "layout": {
+     "panels": 4,
+     "firstScreen": 2,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 15,
+     "radii": [
+      [
+       0,
+       15
+      ]
+     ],
+     "heavyBorders": 1,
+     "borderSamples": [
+      "#144743 on #062220 (1.6:1)"
+     ],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 2,
+     "hues": 2,
+     "samples": [
+      {
+       "hue": 175,
+       "size": 56,
+       "radius": "0px"
+      },
+      {
+       "hue": 344,
+       "size": 40,
+       "radius": "50%"
+      }
+     ]
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 7,
+     "tabularShare": 1,
+     "kpiMax": 29.75
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      21,
+      26,
+      30
+     ]
+    },
+    "title": {
+     "text": "Giải mã Đặc tính\nChỉ số Cá thể IV",
+     "size": 30,
+     "top": 197
+    },
+    "colourShare": 0.166
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "colour-sprawl",
+   "width": 1440,
+   "message": "15% of the first screen is strongly coloured.",
+   "fix": "Keep the screen neutral and spend colour on data and status: the studied screens sit near 3%, and only tinted styles reach 10–15%, as pale tints rather than saturated fills.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "app-title-size",
+   "width": 1440,
+   "message": "The h1 is 56px (\"Giải mã Đặc tính\nChỉ số Cá thể IV\").",
+   "fix": "An app screen is not a landing page: the title is 18-32px (20-24px on a phone).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-characteristic\\desktop-fold.jpg",
+   "pages": [
+    "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-characteristic\\desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-characteristic\\tablet-fold.jpg",
+   "pages": [
+    "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-characteristic\\tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-characteristic\\mobile-fold.jpg",
+   "pages": [
+    "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-characteristic\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

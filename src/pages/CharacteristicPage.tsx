@@ -1,14 +1,59 @@
 import { useEffect, useState } from 'react'
-import type { FormEvent } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import type { CSSProperties, FormEvent } from 'react'
+import { Link, useNavigate, useParams } from 'react-router-dom'
+import { NAV_ITEMS } from '../config/navigation'
 import { BorderBeam } from '../components/ui/BorderBeam'
 import { formatName } from '../utils/pokemon'
+import SiteFooter from '../components/SiteFooter'
+import './CharacteristicPage.css'
 
 const CHARACTERISTIC_ENDPOINT = 'https://pokeapi.co/api/v2/characteristic/'
 const POKEMON_ENDPOINT = 'https://pokeapi.co/api/v2/pokemon/'
 const MIN_ID = 1
 const MAX_ID = 250
 const CHARACTERISTIC_MAX_ID = 30
+
+const PRESET_POKEMON = [
+  { id: 1, label: '#1 Bulbasaur' },
+  { id: 6, label: '#6 Charizard' },
+  { id: 25, label: '#25 Pikachu' },
+  { id: 94, label: '#94 Gengar' },
+  { id: 150, label: '#150 Mewtwo' },
+  { id: 248, label: '#248 Tyranitar' },
+]
+
+const CHARACTERISTIC_VI: Record<number, string> = {
+  1: 'Thích ăn uống',
+  2: 'Tự hào về sức mạnh',
+  3: 'Cơ thể rắn rỏi',
+  4: 'Thích chạy nhảy',
+  5: 'Cực kỳ hiếu kỳ',
+  6: 'Ý chí kiên định',
+  7: 'Thường xuyên ngủ gật',
+  8: 'Thích xông pha hỗn chiến',
+  9: 'Chịu đòn dẻo dai',
+  10: 'Cực kỳ nhạy bén âm thanh',
+  11: 'Tinh nghịch phá phách',
+  12: 'Có phần kiêu ngạo',
+  13: 'Ngủ say không biết trời đất',
+  14: 'Có chút nóng nảy',
+  15: 'Kiên trì bền bỉ',
+  16: 'Nhanh nhẹn hoạt bát',
+  17: 'Cẩn trọng tỉ mỉ',
+  18: 'Cực kỳ bướng bỉnh',
+  19: 'Dễ bị phân tâm',
+  20: 'Thích chiến đấu',
+  21: 'Sức bền đáng nể',
+  22: 'Hấp tấp bồng bột',
+  23: 'Hay suy tư mông lung',
+  24: 'Rất ghét thua cuộc',
+  25: 'Thích thư giãn',
+  26: 'Tính khí thất thường',
+  27: 'Kiên định vững vàng',
+  28: 'Nhanh chân chạy trốn',
+  29: 'Rất cầu kỳ kỹ tính',
+  30: 'Có chút bướng bỉnh',
+}
 
 type DescriptionEntry = {
   description: string
@@ -48,13 +93,24 @@ type PokemonResponse = {
 }
 
 const STAT_COLUMNS = [
-  { key: 'hp', label: 'Hit Points' },
-  { key: 'attack', label: 'Attack' },
-  { key: 'defense', label: 'Defense' },
-  { key: 'speed', label: 'Speed' },
-  { key: 'special-attack', label: 'Sp. Attack' },
-  { key: 'special-defense', label: 'Sp. Defense' },
+  { key: 'hp', label: 'Sinh lực (HP)' },
+  { key: 'attack', label: 'Tấn công' },
+  { key: 'defense', label: 'Phòng thủ' },
+  { key: 'speed', label: 'Tốc độ' },
+  { key: 'special-attack', label: 'Công phép' },
+  { key: 'special-defense', label: 'Thủ phép' },
 ] as const
+
+const STAT_VI_MAP: Record<string, string> = {
+  hp: 'Sinh lực (HP)',
+  attack: 'Tấn công',
+  defense: 'Phòng thủ',
+  speed: 'Tốc độ',
+  'special-attack': 'Công phép',
+  'special-defense': 'Thủ phép',
+}
+
+const s = (vars: Record<string, string | number>): CSSProperties => vars as unknown as CSSProperties
 
 const normalizeId = (value: string, min = MIN_ID, max = MAX_ID) => {
   const parsed = Number(value)
@@ -114,7 +170,7 @@ function CharacteristicPage() {
         setStatus('error')
         setCharacteristic(null)
         setErrorMessage(
-          error instanceof Error ? error.message : 'Khong the tai du lieu'
+          error instanceof Error ? error.message : 'Không thể tải dữ liệu đặc tính.'
         )
       }
     }
@@ -148,7 +204,7 @@ function CharacteristicPage() {
         setPokemon(null)
         setPokemonStatus('error')
         setPokemonErrorMessage(
-          error instanceof Error ? error.message : 'Khong the tai du lieu Pokemon'
+          error instanceof Error ? error.message : 'Không thể tải dữ liệu Pokémon.'
         )
       }
     }
@@ -161,25 +217,30 @@ function CharacteristicPage() {
   }, [activePokemonId])
 
   const statusLabel =
-    status === 'loading' ? 'Dang tai' : status === 'error' ? 'Loi' : 'San sang'
+    status === 'loading' ? 'Đang tải' : status === 'error' ? 'Lỗi' : 'Sẵn sàng'
   const pokemonStatusLabel =
-    pokemonStatus === 'loading' ? 'Dang tai' : pokemonStatus === 'error' ? 'Loi' : 'San sang'
+    pokemonStatus === 'loading' ? 'Đang tải' : pokemonStatus === 'error' ? 'Lỗi' : 'Sẵn sàng'
+
+  const selectPokemonId = (id: number) => {
+    setPokemonInput(String(id))
+    setActiveCharacteristicInputId(id)
+    setActivePokemonId(id)
+    setActiveCharacteristicApiId(toCharacteristicApiId(id))
+    navigate(`/characteristic/${id}`)
+  }
 
   const submitId = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     const pokemonParsed = normalizeId(pokemonInput.trim())
 
     if (!pokemonParsed) {
-      setErrorMessage(`Chi chap nhan ID tu ${MIN_ID} den ${MAX_ID}.`)
+      setErrorMessage(`Chỉ chấp nhận mã Pokémon từ ${MIN_ID} đến ${MAX_ID}.`)
       setStatus('error')
       setCharacteristic(null)
       return
     }
 
-    setActiveCharacteristicInputId(pokemonParsed)
-    setActivePokemonId(pokemonParsed)
-    setActiveCharacteristicApiId(toCharacteristicApiId(pokemonParsed))
-    navigate(`/characteristic/${pokemonParsed}`)
+    selectPokemonId(pokemonParsed)
   }
 
   const pokemonSprite =
@@ -188,196 +249,282 @@ function CharacteristicPage() {
     ''
 
   const highestStatKey = characteristic?.highest_stat?.name ?? ''
-  const highestStatName = formatName(characteristic?.highest_stat?.name)
-  const moduloHint = `PokeAPI characteristic chi co 1-30. App map Characteristic ID ${activeCharacteristicInputId} -> API ID ${activeCharacteristicApiId} theo cong thuc ((id - 1) % 30) + 1.`
+  const highestStatVi =
+    STAT_VI_MAP[highestStatKey] ??
+    (highestStatKey ? formatName(highestStatKey) : 'Chưa rõ')
+
+  const enDescription = characteristic?.descriptions?.find(
+    (entry) => entry.language?.name === 'en'
+  )?.description
+  const viDescription =
+    (characteristic ? CHARACTERISTIC_VI[characteristic.id] : undefined) ||
+    enDescription ||
+    'Chưa có mô tả'
+
+  const possibleValuesText = characteristic?.possible_values?.length
+    ? characteristic.possible_values.join(', ')
+    : '0, 5, 10, 15, 20, 25, 30'
 
   const getStatValue = (key: (typeof STAT_COLUMNS)[number]['key']) => {
-    if (!pokemon?.stats) return '-'
+    if (!pokemon?.stats) return null
     const found = pokemon.stats.find((entry) => entry.stat?.name === key)
-    return typeof found?.base_stat === 'number' ? found.base_stat : '-'
+    return typeof found?.base_stat === 'number' ? found.base_stat : null
   }
 
   return (
-    <div className="app">
-      <header className="topbar">
-        <div className="brand">
-          <div className="brand-mark" aria-hidden="true">
-            <span className="brand-dot" />
-          </div>
-          <div>
-            <p className="eyebrow">Characteristic Probe</p>
-            <h1>Pokemon Characteristic</h1>
-          </div>
-        </div>
+    <div className="ch-page">
+      {/* Synchronized Top Header */}
+      <header className="ch-header">
+        <nav className="ch-nav" aria-label="Điều hướng chính">
+          <Link to="/" className="ch-wordmark">
+            <img src="/assets/logo.jpg" alt="Poke Hub Logo" className="ch-wordmark-logo" />
+            <span>Poke Hub</span>
+          </Link>
+
+          <ul className="ch-nav-links">
+            {NAV_ITEMS.filter((item) => !item.isAction).map((item) => (
+              <li key={item.path}>
+                <Link
+                  to={item.path}
+                  className={`ch-link${item.path === '/characteristic' ? ' is-active' : ''}`}
+                  title={item.labelVi}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          <Link to="/battle" className="ch-btn">
+            Battle Sim
+          </Link>
+        </nav>
       </header>
 
       <main>
-        <section className="characteristic-hero">
-          <div className="characteristic-copy">
-            <p className="lead">
-              Nhap Pokemon ID (1-250) de xem sprite, base stats va characteristic tu PokeAPI.
-            </p>
-            <form className="characteristic-form" onSubmit={submitId}>
-              <label className="characteristic-input-group">
-                <span>Pokemon ID</span>
+        {/* Hero & Characteristic Lookup Console */}
+        <section className="ch-hero" aria-labelledby="ch-hero-title">
+          <div className="ch-hero-card">
+            <div>
+              <h1 id="ch-hero-title" className="ch-display ch-lines">
+                <span className="ch-line">
+                  <span data-line style={s({ '--i': 0 })}>
+                    Giải mã Đặc tính
+                  </span>
+                </span>
+                <span className="ch-line">
+                  <span data-line style={s({ '--i': 1 })}>
+                    Chỉ số Cá thể IV
+                  </span>
+                </span>
+              </h1>
+              <p className="ch-lead" data-load style={s({ '--d': '160ms' })}>
+                Nhập mã Pokémon ({MIN_ID}–{MAX_ID}) để xem hình ảnh, 6 chỉ số gốc và câu mô tả đặc
+                tính IV theo thuật toán Modulo 5 từ PokeAPI v2.
+              </p>
+            </div>
+
+            <form
+              className="ch-search-form"
+              data-load
+              style={s({ '--d': '220ms' })}
+              onSubmit={submitId}
+            >
+              <label className="ch-input-wrap">
+                <span className="ch-input-label">Mã số Pokémon (1–250)</span>
                 <input
+                  className="ch-input"
                   type="number"
                   min={MIN_ID}
                   max={MAX_ID}
                   step={1}
                   value={pokemonInput}
                   onChange={(event) => setPokemonInput(event.target.value)}
-                  placeholder="1-250"
+                  placeholder="Nhập số từ 1 đến 250..."
                 />
               </label>
 
-              <div className="characteristic-actions">
-                <button className="btn primary" type="submit">
-                  Tra cuu
+              <div className="ch-form-actions">
+                <button className="ch-btn" type="submit">
+                  Tra cứu
                 </button>
                 <button
-                  className="btn ghost"
+                  className="ch-btn ch-btn-ghost"
                   type="button"
-                  onClick={() => {
-                    setPokemonInput(String(MIN_ID))
-                    setActiveCharacteristicInputId(MIN_ID)
-                    setActivePokemonId(MIN_ID)
-                    setActiveCharacteristicApiId(toCharacteristicApiId(MIN_ID))
-                    navigate(`/characteristic/${MIN_ID}`)
-                  }}
+                  onClick={() => selectPokemonId(MIN_ID)}
                 >
-                  Mac dinh
+                  Mặc định
                 </button>
               </div>
             </form>
+
+            <div className="ch-presets" data-load style={s({ '--d': '280ms' })}>
+              <span className="ch-presets-label">Chọn nhanh:</span>
+              {PRESET_POKEMON.map((preset) => (
+                <button
+                  key={preset.id}
+                  type="button"
+                  className={`ch-chip${activePokemonId === preset.id ? ' is-active' : ''}`}
+                  onClick={() => selectPokemonId(preset.id)}
+                >
+                  {preset.label}
+                </button>
+              ))}
+            </div>
           </div>
 
-          <div className="characteristic-status-card">
-            <div className="characteristic-status-row">
-              <span className="status-pill" data-state={status}>
-                <span className="pulse-dot" aria-hidden="true" />
-                Characteristic: {statusLabel}
-              </span>
-              <span className="status-pill" data-state={pokemonStatus}>
-                <span className="pulse-dot" aria-hidden="true" />
-                Pokemon: {pokemonStatusLabel}
-              </span>
+          <aside
+            className="ch-telemetry-stage"
+            data-ui
+            data-load
+            style={s({ '--d': '200ms' })}
+            aria-label="Trạng thái tra cứu đặc tính"
+          >
+            <div className="ch-telemetry-head">
+              <h2 className="ch-telemetry-title">Hồ sơ Đặc tính đang soi</h2>
+              <div className="ch-status-row">
+                <span className="ch-status-pill" data-state={status}>
+                  <span className="ch-pulse-beacon" aria-hidden="true" />
+                  Đặc tính: {statusLabel}
+                </span>
+                <span className="ch-status-pill" data-state={pokemonStatus}>
+                  <span className="ch-pulse-beacon" aria-hidden="true" />
+                  Pokémon: {pokemonStatusLabel}
+                </span>
+              </div>
             </div>
-            <div className="characteristic-meta-grid">
-              <p>
-                <strong>Characteristic Input:</strong> {activeCharacteristicInputId}
-              </p>
-              <p>
-                <strong>Characteristic API:</strong> {activeCharacteristicApiId} / {CHARACTERISTIC_MAX_ID}
-              </p>
-              <p>
-                <strong>Pokemon ID:</strong> {activePokemonId}
-              </p>
+
+            <div className="ch-telemetry-metrics">
+              <div className="ch-metric-cell">
+                <span className="ch-metric-lbl">Mã Pokémon</span>
+                <span className="ch-metric-val">
+                  #{activePokemonId.toString().padStart(3, '0')}
+                </span>
+              </div>
+              <div className="ch-metric-cell">
+                <span className="ch-metric-lbl">Mã đặc tính API</span>
+                <span className="ch-metric-val">
+                  {activeCharacteristicApiId} / {CHARACTERISTIC_MAX_ID}
+                </span>
+              </div>
+              <div className="ch-metric-cell">
+                <span className="ch-metric-lbl">Chỉ số cao nhất</span>
+                <span className="ch-metric-val">{highestStatVi}</span>
+              </div>
+              <div className="ch-metric-cell">
+                <span className="ch-metric-lbl">Số dư Modulo 5</span>
+                <span className="ch-metric-val">
+                  {characteristic?.gene_modulo ?? 0}
+                </span>
+              </div>
             </div>
-          </div>
+          </aside>
         </section>
 
-        {status === 'error' ? (
-          <div className="notice">
-            <h3>Khong the tai du lieu</h3>
-            <p>{errorMessage || 'Vui long kiem tra lai ID characteristic.'}</p>
-          </div>
-        ) : null}
+        {/* Main Content */}
+        <section className="ch-content" aria-label="Bảng chỉ số và đặc tính">
+          {status === 'error' ? (
+            <div className="ch-notice">
+              <h3>Không thể tải dữ liệu đặc tính</h3>
+              <p>{errorMessage || 'Vui lòng kiểm tra lại mã Pokémon hợp lệ (1–250).'}</p>
+            </div>
+          ) : null}
 
-        {pokemonStatus === 'error' ? (
-          <div className="notice">
-            <h3>Khong the tai du lieu Pokemon</h3>
-            <p>{pokemonErrorMessage || 'Vui long kiem tra lai Pokemon ID.'}</p>
-          </div>
-        ) : null}
+          {pokemonStatus === 'error' ? (
+            <div className="ch-notice">
+              <h3>Không thể tải dữ liệu Pokémon</h3>
+              <p>{pokemonErrorMessage || 'Vui lòng kiểm tra lại mã Pokémon.'}</p>
+            </div>
+          ) : null}
 
-        {status === 'success' && characteristic ? (
-          <section className="ability-details">
-            <div className="ability-card">
-              <div className="characteristic-summary">
-                <p className="characteristic-title">
-                  Characteristic #{characteristic.id}
-                </p>
+          {status === 'success' && characteristic ? (
+            <article className="ch-dossier-card">
+              <div className="ch-summary-top">
+                <div className="ch-summary-title-wrap">
+                  <span className="ch-tag">Đặc tính #{characteristic.id}</span>
+                  <h2 className="ch-pokemon-title">
+                    #{pokemon?.id ?? activePokemonId} ·{' '}
+                    {pokemon?.name ? formatName(pokemon.name) : `Pokémon #${activePokemonId}`}
+                  </h2>
+                </div>
                 <span
-                  className={`highest-stat-badge ${highestStatKey || 'unknown'}`}
-                  title={moduloHint}
-                  aria-label={moduloHint}
+                  className="ch-highest-pill"
+                  title={`PokeAPI có 30 nhóm đặc tính. Mã ${activeCharacteristicInputId} ánh xạ tới nhóm #${activeCharacteristicApiId}.`}
                 >
-                  Highest Stat: {highestStatName}
+                  Chỉ số nổi trội: {highestStatVi}
                 </span>
               </div>
 
-              <div
-                className="characteristic-board"
-                role="table"
-                aria-label="Characteristic stat board"
-              >
-                <div className="board-sprite board-fade" key={`sprite-${activePokemonId}`} aria-hidden="true">
-                  <BorderBeam
-                    className="sprite-beam"
-                    lightColor="#e4572e"
-                    lightWidth={350}
-                    duration={8}
-                    borderWidth={2}
-                  >
-                    {pokemonSprite ? (
-                      <img src={pokemonSprite} alt={pokemon?.name ? formatName(pokemon.name) : 'Pokemon'} />
-                    ) : (
-                      <img
-                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png"
-                        alt="Pokemon icon"
-                      />
-                    )}
-                  </BorderBeam>
-                </div>
+              <div className="ch-board" role="table" aria-label="Bảng 6 chỉ số gốc">
+                <BorderBeam
+                  key={`sprite-${activePokemonId}`}
+                  className="ch-sprite-beam"
+                  lightColor="#00e676"
+                  lightWidth={320}
+                  duration={6}
+                  borderWidth={2}
+                >
+                  <div className="ch-sprite-stage">
+                    <img
+                      className="ch-sprite-img"
+                      src={
+                        pokemonSprite ||
+                        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png'
+                      }
+                      alt={pokemon?.name ? formatName(pokemon.name) : 'Pokémon'}
+                    />
+                  </div>
+                </BorderBeam>
 
-                <div className="board-stat-grid">
-                  {STAT_COLUMNS.map((stat) => {
-                    const isHighest = characteristic.highest_stat?.name === stat.key
-                    return (
-                      <div
-                        key={`head-${stat.key}`}
-                        className={`board-cell board-head ${stat.key}${isHighest ? ' is-highest' : ''}`}
-                      >
-                        {stat.label}
-                      </div>
-                    )
-                  })}
-
+                <div className="ch-stats-grid">
                   {STAT_COLUMNS.map((stat) => {
                     const isHighest = characteristic.highest_stat?.name === stat.key
                     const value = getStatValue(stat.key)
+                    const pct = value !== null ? Math.min(100, Math.round((value / 160) * 100)) : 0
                     return (
                       <div
-                        key={`value-${stat.key}`}
-                        className={`board-cell board-value board-fade${isHighest ? ' is-highest' : ''}`}
-                        style={{ animationDelay: `${STAT_COLUMNS.findIndex((entry) => entry.key === stat.key) * 45}ms` }}
+                        key={stat.key}
+                        className={`ch-stat-card${isHighest ? ' is-highest' : ''}`}
                       >
-                        {value}
+                        <div className="ch-stat-head">
+                          <span className="ch-stat-name">{stat.label}</span>
+                          {isHighest ? <span className="ch-stat-badge">Cao nhất</span> : null}
+                        </div>
+                        <span className="ch-stat-num">{value ?? '—'}</span>
+                        <div className="ch-stat-bar" aria-hidden="true">
+                          <span className="ch-stat-bar-fill" style={{ width: `${pct}%` }} />
+                        </div>
                       </div>
                     )
                   })}
                 </div>
               </div>
 
-              <p>
-                Pokemon <strong>#{pokemon?.id ?? activePokemonId}</strong>
-                {pokemon?.name ? ` (${formatName(pokemon.name)})` : ''}.
-              </p>
-
-              <p>
-                Highest stat is <strong>{formatName(characteristic.highest_stat?.name)}</strong>,
-                gene_modulo is <strong>{characteristic.gene_modulo ?? 'Unknown'}</strong>,
-                characteristic text is <strong>"{characteristic.descriptions?.[0]?.description || 'Unknown'}"</strong>.
-              </p>
-            </div>
-          </section>
-        ) : null}
+              <div className="ch-analysis-grid">
+                <div className="ch-analysis-cell">
+                  <span className="ch-analysis-lbl">Mô tả đặc tính IV</span>
+                  <span className="ch-analysis-val">
+                    “{viDescription}”
+                    {enDescription && viDescription !== enDescription ? ` (${enDescription})` : ''}
+                  </span>
+                </div>
+                <div className="ch-analysis-cell">
+                  <span className="ch-analysis-lbl">Số dư phép chia IV % 5</span>
+                  <span className="ch-analysis-val">
+                    Dư {characteristic.gene_modulo ?? 0} (Nhóm #{characteristic.id})
+                  </span>
+                </div>
+                <div className="ch-analysis-cell">
+                  <span className="ch-analysis-lbl">Các giá trị IV khả dĩ</span>
+                  <span className="ch-analysis-val">{possibleValuesText}</span>
+                </div>
+              </div>
+            </article>
+          ) : null}
+        </section>
       </main>
 
-      <footer className="footer">
-        <p>Powered by PokeAPI</p>
-      </footer>
+      <SiteFooter />
     </div>
   )
 }
