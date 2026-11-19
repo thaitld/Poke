@@ -82,9 +82,9 @@ function App() {
         <Route path="/pokeathlon-stat" element={<PokeathlonStatPage />} />
         <Route path="/pokeathlon-stat/:idOrName" element={<PokeathlonStatPage />} />
         <Route path="/pokeathlon" element={<Navigate to="/pokeathlon-stat" replace />} />
+        <Route path="/games" element={<GenerationPage />} />
+        <Route path="/games/:idOrName" element={<GenerationPage />} />
         <Route element={<AppLayout />}>
-          <Route path="/games" element={<GenerationPage />} />
-          <Route path="/games/:idOrName" element={<GenerationPage />} />
           <Route path="/pokedex" element={<PokedexPage />} />
           <Route path="/pokedex/:idOrName" element={<PokedexPage />} />
           <Route path="/pokedexes" element={<Navigate to="/pokedex" replace />} />
