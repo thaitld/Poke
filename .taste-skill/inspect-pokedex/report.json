@@ -1,0 +1,1952 @@
+{
+ "url": "http://localhost:4175/pokedex",
+ "at": "2026-11-19T16:30:41.322Z",
+ "allow": [
+  "glass"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 9,
+    "css": 9,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 3380,
+     "screens": 3.8,
+     "words": 413,
+     "img": 45,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 3,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 3,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Bách khoa Pokédex Theo từng Khu vực",
+     "words": 7,
+     "chars": 35,
+     "lines": 2,
+     "size": 52,
+     "vw": 3.6,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 195,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Bách khoa Pokédex Theo từng Khu vực",
+     "words": 7,
+     "lines": 2,
+     "size": 51.8,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Bách khoa Pokédex Theo từng Khu vực",
+      "words": 7,
+      "chars": 35,
+      "lines": 2,
+      "size": 51.8,
+      "vw": 3.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.015,
+      "leading": 1.14,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.46,
+      "top": 195,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Poke Hub",
+      "words": 2,
+      "chars": 8,
+      "lines": 2,
+      "size": 34.6,
+      "vw": 2.4,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.24,
+      "top": 2861,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 2,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.94,
+       "mono": false
+      },
+      {
+       "family": "General Sans",
+       "share": 0.06,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      19,
+      20,
+      22,
+      35,
+      52
+     ],
+     "sizeCount": 9,
+     "notLoaded": [
+      "General Sans"
+     ],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 21.6,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 62,
+     "max": {
+      "size": 51.8,
+      "vw": 3.6,
+      "font": "Plus Jakarta Sans",
+      "text": "Bách khoa Pokédex"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.02,
+     "centerShare": 0.24,
+     "smallText": 2
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0d060b",
+     "bodyBgHsl": {
+      "h": 317,
+      "s": 0.37,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#f7fcfa",
+       "top": 0,
+       "hsl": {
+        "h": 156,
+        "s": 0.45,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#f0faf8",
+       "top": 774,
+       "hsl": {
+        "h": 168,
+        "s": 0.5,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#093834",
+       "top": 846,
+       "hsl": {
+        "h": 175,
+        "s": 0.72,
+        "l": 0.13
+       }
+      },
+      {
+       "color": "#0a3834",
+       "top": 2785,
+       "hsl": {
+        "h": 175,
+        "s": 0.7,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0a3834",
+       "share": 0.25
+      },
+      {
+       "color": "#35605b",
+       "share": 0.23
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.17
+      },
+      {
+       "color": "#0c2422",
+       "share": 0.09
+      },
+      {
+       "color": "#164641",
+       "share": 0.08
+      }
+     ],
+     "button": {
+      "bg": "#e4f5f2",
+      "hsl": {
+       "h": 169,
+       "s": 0.46,
+       "l": 0.93
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 14,
+     "inHero": 10,
+     "radius": 0,
+     "height": 31,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Battle Sim",
+      "Tra cứu",
+      "Mặc định",
+      "Kanto",
+      "National"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 2,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 28,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 974
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.74
+     }
+    ],
+    "nav": {
+     "links": 9,
+     "fixed": true,
+     "height": 77,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 3380,
+    "margins": {
+     "left": 66,
+     "right": 75
+    },
+    "sections": [
+     {
+      "sel": "section.pdx-hero",
+      "tag": "section",
+      "top": 77,
+      "height": 665,
+      "words": 81,
+      "media": 1,
+      "middle": 111,
+      "heading": {
+       "text": "Bách khoa Pokédex",
+       "size": 52,
+       "tag": "h1"
+      },
+      "left": 104,
+      "right": 107,
+      "textLeft": 104,
+      "textRight": 107,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.pdx-console",
+      "tag": "div",
+      "top": 846,
+      "height": 1222,
+      "words": 100,
+      "media": 1,
+      "middle": 69,
+      "heading": {
+       "text": "Kanto",
+       "size": 25,
+       "tag": "h2"
+      },
+      "left": 114,
+      "right": 94,
+      "textLeft": 114,
+      "textRight": 127,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "article.pdx-glass-card",
+      "tag": "article",
+      "top": 2102,
+      "height": 242,
+      "words": 34,
+      "media": 0,
+      "middle": 323,
+      "heading": {
+       "text": "Thông tin tổng quan Pokédex",
+       "size": 22,
+       "tag": "h3"
+      },
+      "left": 96,
+      "right": 355,
+      "textLeft": 96,
+      "textRight": 355,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.pdx-split-grids",
+      "tag": "div",
+      "top": 2378,
+      "height": 335,
+      "words": 64,
+      "media": 0,
+      "middle": 162,
+      "heading": {
+       "text": "Tên gọi đa ngôn ngữ (",
+       "size": 22,
+       "tag": "h3"
+      },
+      "left": 96,
+      "right": 176,
+      "textLeft": 96,
+      "textRight": 176,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.sf-footer",
+      "tag": "footer",
+      "top": 2785,
+      "height": 595,
+      "words": 109,
+      "media": 0,
+      "middle": 29,
+      "heading": {
+       "text": "Poke",
+       "size": 35,
+       "tag": "span"
+      },
+      "left": 46,
+      "right": 46,
+      "textLeft": 46,
+      "textRight": 46,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Bách khoa Pokédex Theo từng Khu vực",
+      "size": 52,
+      "top": 195,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 96,
+      "n": 5
+     },
+     {
+      "x": 773,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 6,
+    "bodySize": 15,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.11,
+    "voidBox": {
+     "x": 0,
+     "y": 780,
+     "w": 1140,
+     "h": 120
+    }
+   },
+   "app": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "dark": true,
+    "ground": "#0d060b",
+    "sidebar": null,
+    "topbar": {
+     "h": 77
+    },
+    "canvas": {
+     "left": 58,
+     "right": 75
+    },
+    "hero": {
+     "text": "Bách khoa Pokédex Theo từng Khu vực",
+     "words": 7,
+     "chars": 35,
+     "lines": 2,
+     "size": 52,
+     "vw": 3.6,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 195,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 2,
+    "layout": {
+     "panels": 7,
+     "firstScreen": 3,
+     "ragged": [
+      {
+       "diff": 90,
+       "top": 2378
+      }
+     ],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 45,
+     "radii": [
+      [
+       0,
+       45
+      ]
+     ],
+     "heavyBorders": 2,
+     "borderSamples": [
+      "#d81b4c on #ffffff (5.02:1)",
+      "#144743 on #062220 (1.6:1)"
+     ],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 2,
+     "hues": 2,
+     "samples": [
+      {
+       "hue": 175,
+       "size": 56,
+       "radius": "0px"
+      },
+      {
+       "hue": 344,
+       "size": 40,
+       "radius": "50%"
+      }
+     ]
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      22,
+      23,
+      25,
+      35,
+      52
+     ]
+    },
+    "title": {
+     "text": "Bách khoa Pokédex\nTheo từng Khu vực",
+     "size": 52,
+     "top": 195
+    },
+    "colourShare": 0.1
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 9,
+    "css": 9,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 4823,
+     "screens": 4.7,
+     "words": 413,
+     "img": 45,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 3,
+     "uiAbuse": true,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 3,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Bách khoa Pokédex Theo từng Khu vực",
+     "words": 7,
+     "chars": 35,
+     "lines": 2,
+     "size": 36,
+     "vw": 4.7,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 196,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Bách khoa Pokédex Theo từng Khu vực",
+     "words": 7,
+     "lines": 2,
+     "size": 36.1,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Bách khoa Pokédex Theo từng Khu vực",
+      "words": 7,
+      "chars": 35,
+      "lines": 2,
+      "size": 36.1,
+      "vw": 4.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.015,
+      "leading": 1.14,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 196,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Poke Hub",
+      "words": 2,
+      "chars": 8,
+      "lines": 2,
+      "size": 29.8,
+      "vw": 3.9,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.44,
+      "top": 4111,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 2,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.94,
+       "mono": false
+      },
+      {
+       "family": "General Sans",
+       "share": 0.06,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      19,
+      20,
+      30,
+      36
+     ],
+     "sizeCount": 8,
+     "notLoaded": [
+      "General Sans"
+     ],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 19.1,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 68,
+     "max": {
+      "size": 36.1,
+      "vw": 4.7,
+      "font": "Plus Jakarta Sans",
+      "text": "Bách khoa Pokédex"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.02,
+     "centerShare": 0.24,
+     "smallText": 2
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0d060b",
+     "bodyBgHsl": {
+      "h": 317,
+      "s": 0.37,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#f7fcfa",
+       "top": 0,
+       "hsl": {
+        "h": 156,
+        "s": 0.45,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#f0faf8",
+       "top": 999,
+       "hsl": {
+        "h": 168,
+        "s": 0.5,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#093834",
+       "top": 1042,
+       "hsl": {
+        "h": 175,
+        "s": 0.72,
+        "l": 0.13
+       }
+      },
+      {
+       "color": "#062220",
+       "top": 1065,
+       "hsl": {
+        "h": 176,
+        "s": 0.7,
+        "l": 0.08
+       }
+      },
+      {
+       "color": "#0a3834",
+       "top": 4061,
+       "hsl": {
+        "h": 175,
+        "s": 0.7,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0a3834",
+       "share": 0.25
+      },
+      {
+       "color": "#35605b",
+       "share": 0.23
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.17
+      },
+      {
+       "color": "#0c2422",
+       "share": 0.09
+      },
+      {
+       "color": "#164641",
+       "share": 0.08
+      }
+     ],
+     "button": {
+      "bg": "#e4f5f2",
+      "hsl": {
+       "h": 169,
+       "s": 0.46,
+       "l": 0.93
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 14,
+     "inHero": 9,
+     "radius": 0,
+     "height": 31,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Battle Sim",
+      "Tra cứu",
+      "Mặc định",
+      "Kanto",
+      "National"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 2,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 28,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 1832
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.82
+     }
+    ],
+    "nav": {
+     "links": 9,
+     "fixed": true,
+     "height": 124,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 4823,
+    "margins": {
+     "left": 35,
+     "right": 54
+    },
+    "sections": [
+     {
+      "sel": "header.pdx-header",
+      "tag": "header",
+      "top": 0,
+      "height": 124,
+      "words": 13,
+      "media": 0,
+      "middle": 9,
+      "heading": null,
+      "left": 31,
+      "right": 54,
+      "textLeft": 31,
+      "textRight": 54,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "section.pdx-hero",
+      "tag": "section",
+      "top": 124,
+      "height": 843,
+      "words": 81,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Bách khoa Pokédex",
+       "size": 36,
+       "tag": "h1"
+      },
+      "left": 56,
+      "right": 60,
+      "textLeft": 56,
+      "textRight": 70,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.pdx-console",
+      "tag": "div",
+      "top": 1042,
+      "height": 2205,
+      "words": 100,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Kanto",
+       "size": 25,
+       "tag": "h2"
+      },
+      "left": 54,
+      "right": 54,
+      "textLeft": 72,
+      "textRight": 88,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "article.pdx-glass-card",
+      "tag": "article",
+      "top": 3281,
+      "height": 213,
+      "words": 34,
+      "media": 0,
+      "middle": 126,
+      "heading": {
+       "text": "Thông tin tổng quan Pokédex",
+       "size": 19,
+       "tag": "h3"
+      },
+      "left": 56,
+      "right": 117,
+      "textLeft": 56,
+      "textRight": 117,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.pdx-split-grids",
+      "tag": "div",
+      "top": 3528,
+      "height": 490,
+      "words": 64,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Tên gọi đa ngôn ngữ (",
+       "size": 19,
+       "tag": "h3"
+      },
+      "left": 56,
+      "right": 104,
+      "textLeft": 56,
+      "textRight": 104,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.sf-footer",
+      "tag": "footer",
+      "top": 4061,
+      "height": 763,
+      "words": 109,
+      "media": 0,
+      "middle": 441,
+      "heading": {
+       "text": "Poke",
+       "size": 30,
+       "tag": "span"
+      },
+      "left": 31,
+      "right": 0,
+      "textLeft": 31,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Bách khoa Pokédex Theo từng Khu vực",
+      "size": 36,
+      "top": 196,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 56,
+      "n": 6
+     }
+    ],
+    "leftBlocks": 6,
+    "bodySize": 15,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "dark": true,
+    "ground": "#0d060b",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 35,
+     "right": -9
+    },
+    "hero": {
+     "text": "Bách khoa Pokédex Theo từng Khu vực",
+     "words": 7,
+     "chars": 35,
+     "lines": 2,
+     "size": 36,
+     "vw": 4.7,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 196,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 2,
+    "layout": {
+     "panels": 7,
+     "firstScreen": 2,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 46,
+     "radii": [
+      [
+       0,
+       46
+      ]
+     ],
+     "heavyBorders": 2,
+     "borderSamples": [
+      "#d81b4c on #ffffff (5.02:1)",
+      "#144743 on #062220 (1.6:1)"
+     ],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 2,
+     "hues": 2,
+     "samples": [
+      {
+       "hue": 175,
+       "size": 56,
+       "radius": "0px"
+      },
+      {
+       "hue": 344,
+       "size": 40,
+       "radius": "50%"
+      }
+     ]
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      23,
+      25,
+      30,
+      36
+     ]
+    },
+    "title": {
+     "text": "Bách khoa Pokédex\nTheo từng Khu vực",
+     "size": 36,
+     "top": 196
+    },
+    "colourShare": 0.053
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 9,
+    "css": 9,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 7429,
+     "screens": 8.8,
+     "words": 413,
+     "img": 45,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 3,
+     "uiAbuse": true,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 3,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Bách khoa Pokédex Theo từng Khu vực",
+     "words": 7,
+     "chars": 35,
+     "lines": 4,
+     "size": 36,
+     "vw": 9.3,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 186,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Bách khoa Pokédex Theo từng Khu vực",
+     "words": 7,
+     "lines": 4,
+     "size": 36.1,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Bách khoa Pokédex Theo từng Khu vực",
+      "words": 7,
+      "chars": 35,
+      "lines": 4,
+      "size": 36.1,
+      "vw": 9.3,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.015,
+      "leading": 1.14,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 186,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Kanto",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 24.7,
+      "vw": 6.3,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.25,
+      "top": 1330,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Bulbasaur",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 23,
+      "vw": 5.9,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.29,
+      "top": 1687,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "Poke Hub",
+      "words": 2,
+      "chars": 8,
+      "lines": 2,
+      "size": 29.8,
+      "vw": 7.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 6233,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 4,
+     "maxLines": 4,
+     "over2Lines": 1,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.94,
+       "mono": false
+      },
+      {
+       "family": "General Sans",
+       "share": 0.06,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      19,
+      20,
+      30,
+      36
+     ],
+     "sizeCount": 8,
+     "notLoaded": [
+      "General Sans"
+     ],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 19.1,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 32,
+     "max": {
+      "size": 36.1,
+      "vw": 9.3,
+      "font": "Plus Jakarta Sans",
+      "text": "Bách khoa Pokédex"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.02,
+     "centerShare": 0.24,
+     "smallText": 2
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0d060b",
+     "bodyBgHsl": {
+      "h": 317,
+      "s": 0.37,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#f7fcfa",
+       "top": 0,
+       "hsl": {
+        "h": 156,
+        "s": 0.45,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#0a3834",
+       "top": 840,
+       "hsl": {
+        "h": 175,
+        "s": 0.7,
+        "l": 0.13
+       }
+      },
+      {
+       "color": "#f0faf8",
+       "top": 1244,
+       "hsl": {
+        "h": 168,
+        "s": 0.5,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#093834",
+       "top": 1287,
+       "hsl": {
+        "h": 175,
+        "s": 0.72,
+        "l": 0.13
+       }
+      },
+      {
+       "color": "#062220",
+       "top": 1306,
+       "hsl": {
+        "h": 176,
+        "s": 0.7,
+        "l": 0.08
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0a3834",
+       "share": 0.25
+      },
+      {
+       "color": "#35605b",
+       "share": 0.23
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.17
+      },
+      {
+       "color": "#0c2422",
+       "share": 0.09
+      },
+      {
+       "color": "#164641",
+       "share": 0.08
+      }
+     ],
+     "button": {
+      "bg": "#e4f5f2",
+      "hsl": {
+       "h": 169,
+       "s": 0.46,
+       "l": 0.93
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 14,
+     "inHero": 9,
+     "radius": 0,
+     "height": 31,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Battle Sim",
+      "Tra cứu",
+      "Mặc định",
+      "Kanto",
+      "National"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 2,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.85
+     }
+    ],
+    "nav": {
+     "links": 9,
+     "fixed": true,
+     "height": 124,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 7429,
+    "margins": {
+     "left": 33,
+     "right": 41
+    },
+    "sections": [
+     {
+      "sel": "header.pdx-header",
+      "tag": "header",
+      "top": 0,
+      "height": 124,
+      "words": 10,
+      "media": 0,
+      "middle": 9,
+      "heading": null,
+      "left": 21,
+      "right": 21,
+      "textLeft": 21,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "section.pdx-hero",
+      "tag": "section",
+      "top": 124,
+      "height": 1088,
+      "words": 81,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Bách khoa Pokédex",
+       "size": 36,
+       "tag": "h1"
+      },
+      "left": 41,
+      "right": 41,
+      "textLeft": 41,
+      "textRight": 48,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.pdx-console",
+      "tag": "div",
+      "top": 1287,
+      "height": 3511,
+      "words": 100,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Kanto",
+       "size": 25,
+       "tag": "h2"
+      },
+      "left": 41,
+      "right": 41,
+      "textLeft": 59,
+      "textRight": 71,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "article.pdx-glass-card",
+      "tag": "article",
+      "top": 4831,
+      "height": 408,
+      "words": 34,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Thông tin tổng quan Pokédex",
+       "size": 19,
+       "tag": "h3"
+      },
+      "left": 47,
+      "right": 54,
+      "textLeft": 47,
+      "textRight": 54,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.pdx-split-grids",
+      "tag": "div",
+      "top": 5274,
+      "height": 866,
+      "words": 64,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Tên gọi đa ngôn ngữ (",
+       "size": 19,
+       "tag": "h3"
+      },
+      "left": 47,
+      "right": 51,
+      "textLeft": 47,
+      "textRight": 51,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.sf-footer",
+      "tag": "footer",
+      "top": 6182,
+      "height": 1247,
+      "words": 109,
+      "media": 0,
+      "middle": 817,
+      "heading": {
+       "text": "Poke",
+       "size": 30,
+       "tag": "span"
+      },
+      "left": 29,
+      "right": 0,
+      "textLeft": 29,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Bách khoa Pokédex Theo từng Khu vực",
+      "size": 36,
+      "top": 186,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 41,
+      "n": 6
+     }
+    ],
+    "leftBlocks": 6,
+    "bodySize": 15,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "dark": true,
+    "ground": "#0d060b",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 33,
+     "right": -385
+    },
+    "hero": {
+     "text": "Bách khoa Pokédex Theo từng Khu vực",
+     "words": 7,
+     "chars": 35,
+     "lines": 4,
+     "size": 36,
+     "vw": 9.3,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1.14,
+     "top": 186,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 2,
+    "layout": {
+     "panels": 7,
+     "firstScreen": 1,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 46,
+     "radii": [
+      [
+       0,
+       46
+      ]
+     ],
+     "heavyBorders": 2,
+     "borderSamples": [
+      "#d81b4c on #ffffff (5.02:1)",
+      "#144743 on #062220 (1.6:1)"
+     ],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 2,
+     "hues": 2,
+     "samples": [
+      {
+       "hue": 175,
+       "size": 56,
+       "radius": "0px"
+      },
+      {
+       "hue": 344,
+       "size": 40,
+       "radius": "50%"
+      }
+     ]
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      23,
+      25,
+      30,
+      36
+     ]
+    },
+    "title": {
+     "text": "Bách khoa Pokédex\nTheo từng Khu vực",
+     "size": 36,
+     "top": 186
+    },
+    "colourShare": 0.051
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "font-fallback",
+   "width": 1440,
+   "message": "Typeface(s) declared but not loaded, so a fallback is rendering: General Sans",
+   "fix": "Fix the font URL / family name, or the screenshots you are judging are not the design.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "ragged-row",
+   "width": 1440,
+   "message": "1 pair(s) of cards in one row end at different heights (by 90px).",
+   "fix": "Cards that share a row share a bottom edge: balance them by their content (the same number of rows, a block of similar height beside it), or stack them. In testing, ragged rows were marked down every time."
+  },
+  {
+   "level": "WARN",
+   "id": "below-fold",
+   "width": 1440,
+   "message": "Only 3 of 7 blocks start on the first 1440px screen.",
+   "fix": "Every block the brief names shows its header and first rows on the first desktop screen: size the headline block to its question, cap long lists with \"View all\", and put time-sensitive blocks before long tables."
+  },
+  {
+   "level": "WARN",
+   "id": "app-title-size",
+   "width": 1440,
+   "message": "The h1 is 52px (\"Bách khoa Pokédex\nTheo từng Khu vực\").",
+   "fix": "An app screen is not a landing page: the title is 18-32px (20-24px on a phone).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "ui-wrapper",
+   "width": 768,
+   "message": "A data-ui element wraps a heading or more than a screen and a half of the page.",
+   "fix": "data-ui marks a cropped interface fragment only. Remove it from page-level wrappers.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 390,
+   "message": "1 headline(s) wrap past two lines at 390px: \"Bách khoa Pokédex Theo từng Khu vực\" → 4 lines (7 words, 36.1px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-pokedex\\desktop-fold.jpg",
+   "pages": [
+    "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-pokedex\\desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-pokedex\\tablet-fold.jpg",
+   "pages": [
+    "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-pokedex\\tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-pokedex\\mobile-fold.jpg",
+   "pages": [
+    "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-pokedex\\mobile-page-01.jpg",
+    "D:\\My-Web\\Poke\\Pokemon\\.taste-skill\\inspect-pokedex\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
